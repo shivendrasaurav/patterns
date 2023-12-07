@@ -1,5 +1,6 @@
-Mozilla Public License Version 2.0
+Invrz Open Source License Version 1.0
 ==================================
+Based on Mozilla Public License 2.0
 
 1. Definitions
 --------------
@@ -205,7 +206,7 @@ the extent required to remedy known factual inaccuracies.
 
 3.5. Application of Additional Terms
 
-You may choose to offer, and to charge a fee for, warranty, support,
+You may choose to offer, and to charge a fee for, warranty, support, 
 indemnity or liability obligations to one or more recipients of Covered
 Software. However, You may do so only on Your own behalf, and not on
 behalf of any Contributor. You must make it absolutely clear that any
@@ -215,6 +216,11 @@ liability incurred by such Contributor as a result of warranty, support,
 indemnity or liability terms You offer. You may include additional
 disclaimers of warranty and limitations of liability specific to any
 jurisdiction.
+
+For the avoidance of doubt, if You are not a Contributor, any commercial 
+usage of the Covered Software that is not covered by the warranty, 
+support, indemnity, or liability obligations You explicitly offer, is 
+not granted under this License.
 
 4. Inability to Comply Due to Statute or Regulation
 ---------------------------------------------------
