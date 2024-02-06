@@ -1,0 +1,172 @@
+.gridRow {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr); /* Divide each row into 15 equal columns */
+
+    /* Define the column width classes */
+    .colWd-1 {
+        grid-column: span 1; /* Take up 1/15th of the row width */
+    }
+
+    .colWd-2 {
+        grid-column: span 2; /* Take up 2/15th of the row width */
+    }
+
+    .colWd-3 {
+        grid-column: span 3; /* Take up 3/15th of the row width */
+    }
+
+    .colWd-4 {
+        grid-column: span 4; /* Take up 4/15th of the row width */
+    }
+
+    .colWd-5 {
+        grid-column: span 5; /* Take up 5/15th of the row width */
+    }
+
+    .colWd-6 {
+        grid-column: span 6; /* Take up 6/15th of the row width */
+    }
+
+    .colWd-7 {
+        grid-column: span 7; /* Take up 7/15th of the row width */
+    }
+
+    .colWd-8 {
+        grid-column: span 8; /* Take up 8/15th of the row width */
+    }
+
+    .colWd-9 {
+        grid-column: span 9; /* Take up 9/15th of the row width */
+    }
+
+    .colWd-10 {
+        grid-column: span 10; /* Take up 10/15th of the row width */
+    }
+
+    .colWd-11 {
+        grid-column: span 11; /* Take up 11/15th of the row width */
+    }
+
+    .colWd-12 {
+        grid-column: span 12; /* Take up 12/15th of the row width */
+    }
+
+    .colWd-13 {
+        grid-column: span 13; /* Take up 13/15th of the row width */
+    }
+
+    .colWd-14 {
+        grid-column: span 14; /* Take up 14/15th of the row width */
+    }
+
+    .colWd-15 {
+        grid-column: span 15; /* Take up 15/15th of the row width */
+    }
+
+    /* Apply align-self and justify-self to all elements inside the column classes */
+    .colWd-*{
+        align-self: center; /* Align the element vertically in the center of the grid area */
+        justify-self: center; /* Align the element horizontally in the center of the grid area */
+    }
+
+    /* Define the column fill classes */
+    .colFillLeft {
+        justify-self: start; /* Fill the column from the left side */
+    }
+    
+    .colFillRight {
+        justify-self: end; /* Fill the column from the right side */
+    }
+    
+    .colFillCenter {
+        justify-self: center; /* Fill the column from the center */
+    }
+
+    /* Define the element vertical alignment classes */
+    .colTop {
+        align-self: start; /* Align the element to the top of the grid area */
+    }
+    
+    .colBottom {
+        align-self: end; /* Align the element to the bottom of the grid area */
+    }
+    
+    .colMiddle {
+        align-self: center; /* Align the element to the middle of the grid area */
+    }
+    
+    .colStretch {
+        align-self: stretch; /* Stretch the element to fill the grid area */
+    }
+}
+
+/* Define the row alignment classes */
+.rowLeft {
+    justify-content: start; /* Align the columns to the left of the row */
+}
+
+.rowRight {
+    justify-content: end; /* Align the columns to the right of the row */
+}
+
+.rowCenter {
+    justify-content: center; /* Align the columns to the center of the row */
+}
+
+/* Define the row vertical alignment classes */
+.rowTop {
+    align-items: start; /* Align the elements to the top of the grid area */
+}
+
+.rowBottom {
+    align-items: end; /* Align the elements to the bottom of the grid area */
+}
+
+.rowMiddle {
+    align-items: center; /* Align the elements to the middle of the grid area */
+}
+
+.rowStretch {
+    align-items: stretch; /* Stretch the elements to fill the grid area */
+}
+  
+/* Define the row height classes */
+.rowHi-1 {
+    height: 10vh; /* Take up 10% of the viewport height */
+}
+
+.rowHi-2 {
+    height: 20vh; /* Take up 20% of the viewport height */
+}
+
+.rowHi-3 {
+    height: 30vh; /* Take up 30% of the viewport height */
+}
+
+.rowHi-4 {
+    height: 40vh; /* Take up 40% of the viewport height */
+}
+
+.rowHi-5 {
+    height: 50vh; /* Take up 50% of the viewport height */
+}
+
+.rowHi-6 {
+    height: 60vh; /* Take up 60% of the viewport height */
+}
+
+.rowHi-7 {
+    height: 70vh; /* Take up 70% of the viewport height */
+}
+
+.rowHi-8 {
+    height: 80vh; /* Take up 80% of the viewport height */
+}
+
+.rowHi-9 {
+    height: 90vh; /* Take up 90% of the viewport height */
+}
+
+.rowHi-10 {
+    height: 100vh; /* Take up 100% of the viewport height */
+}
