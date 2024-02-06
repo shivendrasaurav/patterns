@@ -1,0 +1,69 @@
+@import "colors";
+
+/* Navigation Bar Base */
+.navBar {
+    display: flex;
+    align-items: center;
+
+    .itemGroup{
+        display: flex;
+        flex: 1;
+
+        &.onLeft{
+            margin-left: 0;
+            justify-content: flex-start;
+            
+            *{
+                margin-right: 0.4rem;
+            }
+        }
+        &.onRight{
+            margin-left: auto;
+            justify-content: flex-end;
+            
+            *{
+                margin-left: 0.4rem;
+            }
+        }
+        &.onCenter{
+            margin: 0 auto;
+            justify-content: center;    
+
+            *{
+                margin: 0 0.4rem;
+            }
+        }
+    }
+
+    .navItem, .navBrand{
+        font-size: 1.2rem;
+        font-weight: 500;
+        background-color: transparent;
+        border: 2px solid transparent;
+        padding: 0.2rem 0.5rem;
+        cursor: pointer;
+
+        &.outline{
+            border: 2px solid #acacac;
+        }
+        &.underline{
+            border-bottom: 2px solid #acacac;
+        }
+        &.solid{
+            background-color: $primaryBackground;
+            color: $primaryText;
+        }
+        &:hover{
+            filter: contrast(125%);
+            transition: 360ms;
+        }
+        &:active{
+            filter: contrast(125%) saturate(160%);
+        }
+    }
+
+    .navBrand{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+}
