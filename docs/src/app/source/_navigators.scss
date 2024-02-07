@@ -1,4 +1,4 @@
-@import "colors";
+@import "variables";
 
 /* Navigation Bar Base */
 .navBar {
@@ -44,10 +44,10 @@
         cursor: pointer;
 
         &.outline{
-            border: 2px solid #acacac;
+            border: 2px solid $primaryText;
         }
         &.underline{
-            border-bottom: 2px solid #acacac;
+            border-bottom: 2px solid $primaryText;
         }
         &.solid{
             background-color: $primaryBackground;
@@ -65,5 +65,97 @@
     .navBrand{
         font-size: 1.6rem;
         font-weight: bold;
+    }
+}
+
+.sideNav{    
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    margin: 0 auto;
+    border-radius: $brSmooth;
+
+    .itemGroup{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        &.onTop{
+            justify-content: flex-start;
+            
+            *{
+                margin-top: 0.4rem;
+            }
+        }
+        &.onBottom{
+            justify-content: flex-end;
+            
+            *{
+                margin-bottom: 0.4rem;
+            }
+        }
+        &.onMiddle{
+            align-content: center;    
+
+            *{
+                margin: 0 0.4rem;
+            }
+        }
+    }
+    
+
+    .navItem, .navTitle, .navBrand{
+        font-size: 0.9rem;
+        font-weight: 500;
+        border: 2px solid transparent;
+        padding: 0.5rem 0.8rem;
+        border-radius: $sidenavItemBR;
+
+        &.outline{
+            border: 2px solid $primaryText;
+        }
+        &.underline{
+            border-bottom: 2px solid $primaryText;
+        }
+        &.solid{
+            background-color: $primaryBackground;
+            color: $primaryText;
+        }
+        &:hover{
+            filter: contrast(125%);
+            transition: 360ms;
+        }
+        &:active{
+            filter: contrast(125%) saturate(160%);
+        }
+    }
+
+    .navItem{
+        color: $sidenavItemColor;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $primaryBackground;
+        }
+        &:active{
+            background-color: $accentBackground;
+        }
+        &.active{
+            background-color: $accentBackground;
+            filter: saturate(160%) contrast(200%);
+        }
+    }
+
+    .navBrand{
+        font-size: 1.6rem;
+        font-weight: bold;
+        border-radius: $sidenavBrandBR;
+    }
+
+    .navTitle{
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: $sidenavTitleColor;
+        border-radius: $sidenavTitleBR;
     }
 }

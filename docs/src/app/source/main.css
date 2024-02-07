@@ -6,6 +6,7 @@
   border-radius: 0px;
   margin: 0px;
   padding: 0px;
+  line-height: 1.2;
 }
 
 .gridRow {
@@ -166,6 +167,22 @@
   position: relative; /* Set the position to relative */
 }
 
+/* Define the pageView class */
+.contentWrapper {
+  height: 100%; /* Inherit the height from the parent element */
+  width: 100%; /* Inherit the width from the parent element */
+}
+
+.withPrimaryBackground {
+  background-color: rgba(14, 16, 90, 0.2);
+  -webkit-backdrop-filter: saturate(180%) contrast(120%) blur(4px);
+          backdrop-filter: saturate(180%) contrast(120%) blur(4px);
+}
+
+.paddingSmall {
+  padding: 4px 10px;
+}
+
 /* Navigation Bar Base */
 .navBar {
   display: flex;
@@ -205,14 +222,14 @@
   cursor: pointer;
 }
 .navBar .navItem.outline, .navBar .navBrand.outline {
-  border: 2px solid #acacac;
+  border: 2px solid #eaeaca;
 }
 .navBar .navItem.underline, .navBar .navBrand.underline {
-  border-bottom: 2px solid #acacac;
+  border-bottom: 2px solid #eaeaca;
 }
 .navBar .navItem.solid, .navBar .navBrand.solid {
   background-color: #0e105a;
-  color: #fafada;
+  color: #eaeaca;
 }
 .navBar .navItem:hover, .navBar .navBrand:hover {
   filter: contrast(125%);
@@ -224,4 +241,104 @@
 .navBar .navBrand {
   font-size: 1.6rem;
   font-weight: bold;
+}
+
+.sideNav {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  margin: 0 auto;
+  border-radius: 0.2rem;
+}
+.sideNav .itemGroup {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.sideNav .itemGroup.onTop {
+  justify-content: flex-start;
+}
+.sideNav .itemGroup.onTop * {
+  margin-top: 0.4rem;
+}
+.sideNav .itemGroup.onBottom {
+  justify-content: flex-end;
+}
+.sideNav .itemGroup.onBottom * {
+  margin-bottom: 0.4rem;
+}
+.sideNav .itemGroup.onMiddle {
+  align-content: center;
+}
+.sideNav .itemGroup.onMiddle * {
+  margin: 0 0.4rem;
+}
+.sideNav .navItem, .sideNav .navTitle, .sideNav .navBrand {
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 2px solid transparent;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+}
+.sideNav .navItem.outline, .sideNav .navTitle.outline, .sideNav .navBrand.outline {
+  border: 2px solid #eaeaca;
+}
+.sideNav .navItem.underline, .sideNav .navTitle.underline, .sideNav .navBrand.underline {
+  border-bottom: 2px solid #eaeaca;
+}
+.sideNav .navItem.solid, .sideNav .navTitle.solid, .sideNav .navBrand.solid {
+  background-color: #0e105a;
+  color: #eaeaca;
+}
+.sideNav .navItem:hover, .sideNav .navTitle:hover, .sideNav .navBrand:hover {
+  filter: contrast(125%);
+  transition: 360ms;
+}
+.sideNav .navItem:active, .sideNav .navTitle:active, .sideNav .navBrand:active {
+  filter: contrast(125%) saturate(160%);
+}
+.sideNav .navItem {
+  color: #dadaba;
+  cursor: pointer;
+}
+.sideNav .navItem:hover {
+  background-color: #0e105a;
+}
+.sideNav .navItem:active {
+  background-color: #3e40ba;
+}
+.sideNav .navItem.active {
+  background-color: #3e40ba;
+  filter: saturate(160%) contrast(200%);
+}
+.sideNav .navBrand {
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 0px;
+}
+.sideNav .navTitle {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #eaeaca;
+  border-radius: 3px;
+}
+
+.taCenter {
+  text-align: center;
+}
+
+.taLeft {
+  text-align: left;
+}
+
+.taRight {
+  text-align: right;
+}
+
+.taJustify {
+  text-align: right;
+}
+
+.noDecoration {
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */

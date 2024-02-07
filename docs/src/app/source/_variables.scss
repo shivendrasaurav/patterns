@@ -1,0 +1,29 @@
+//Global Variables
+$primaryBackground: #0e105a;
+$primaryText: #eaeaca;
+
+$accentBackground: #3e40ba;
+$accentText: #dadaba;
+
+//Navigation Variables
+$sidenavBackdropFilter: saturate(180%) contrast(120%) blur(4px);
+$sidenavTitleColor: $primaryText;
+$sidenavItemColor: $accentText;
+$sidenavBrandBR: 0px;
+$sidenavTitleBR: 3px;
+$sidenavItemBR: 5px;
+
+//Border Radius
+$brSmooth: 0.2rem;
+$brSmoother: 0.4rem;
+$brSmoothest: 1rem;
+$brCircle: 100%;
+
+//Backgrounds
+.withPrimaryBackground{
+    background-color: transparentize($primaryBackground, 0.8);
+    backdrop-filter: $sidenavBackdropFilter;
+}
+.paddingSmall{
+    padding: 4px 10px;
+}
