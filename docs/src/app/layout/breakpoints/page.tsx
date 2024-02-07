@@ -1,9 +1,9 @@
-import "../globals.css";
-import "../source/main.css";
-import DocsSideNav from "../templates/docsSideNav";
-import DocsTopNav from "../templates/docsTopNav";
+import "../../globals.css";
+import "../../source/main.css";
+import DocsSideNav from "../../templates/docsSideNav";
+import DocsTopNav from "../../templates/docsTopNav";
 
-const Grids = () => {
+const Breakpoints = () => {
 
     return(
         <div className="pageView">
@@ -16,7 +16,7 @@ const Grids = () => {
                 </div>
                 <div className="colWd-10">
                     <div className="withPrimaryBackground contentWrapper paddingSmall">
-                        <h1>Grids</h1>
+                        <h1>Breakpoints</h1>
                         <h2>Define your app{"'"}s layout</h2>
                     </div>
                 </div>      
@@ -26,4 +26,4 @@ const Grids = () => {
 
 }
 
-export default Grids;
+export default Breakpoints;

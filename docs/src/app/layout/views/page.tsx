@@ -1,7 +1,7 @@
-import "../globals.css";
-import "../source/main.css";
-import DocsSideNav from "../templates/docsSideNav";
-import DocsTopNav from "../templates/docsTopNav";
+import "../../globals.css";
+import "../../source/main.css";
+import DocsSideNav from "../../templates/docsSideNav";
+import DocsTopNav from "../../templates/docsTopNav";
 
 const Views = () => {
 
