@@ -11,7 +11,7 @@
   ;
 }
 body{
-  backdrop-filter: invert(0%) blur(6px);
+  backdrop-filter: invert(100%) blur(6px);
   width: 100%;
   height: 100vh;
   background-color: transparent;

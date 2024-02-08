@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'docs - grids',
-  description: 'documentation for grids of invrz patterns ui library',
+  title: 'Docs - Views',
+  description: 'documentation for diffent view types of invrz patterns ui library',
 }
 
 export default function RootLayout({

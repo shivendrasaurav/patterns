@@ -12,15 +12,17 @@ h1, h2, h3, h4, h5, h6{
 .title{
     font-size: 2.8315594825rem;
     font-weight: 800;
+    padding: 0rem 2vw 0rem 0rem;
 }
 .subtitle{
     font-size: 1.75rem;
     color: $accentText;
+    padding: 0rem 2vw 0rem 0rem;
 }
 .text{
     font-size: 1.081559479476695rem;
     color: $accentText;
-    padding: 0.5rem 2rem 0.5rem 0rem;
+    padding: 0rem 2vw 0rem 0rem;
 }
 strong{
     color: $primaryText;
@@ -54,7 +56,7 @@ ul{
     font-family: monospace;
 }
 .codeBlock{
-    margin: 1rem 2rem 0.5rem 0rem;
+    margin: 1rem 2vw 0.5rem 0rem;
     border-radius: $brSmoother;
     background: transparentize($accentBackground, 0.6);
 
@@ -72,6 +74,26 @@ ul{
         text-wrap: wrap;
         padding: 1rem 0.6rem;
         font-family: monospace;
+    }
+    
+}
+.previewBlock{
+    margin: 1rem 2vw 0.5rem 0rem;
+    border-radius: $brSmoother;
+    background: transparentize($accentBackground, 0.6);
+
+    .previewTitle{
+        width: 100%;
+        padding: 0.4rem 0.6rem;
+        font-size: 1rem;
+        background:  transparentize($accentText, 0.6);
+        color: $accentBackground;
+        border-radius: $brSmoother;
+        font-weight: bold;
+    }
+    .previewRender{
+        display: block;
+        padding: 1rem 0.6rem;
     }
     
 }
