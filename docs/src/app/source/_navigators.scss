@@ -110,6 +110,7 @@
         border: 2px solid transparent;
         padding: 0.5rem 0.8rem;
         border-radius: $sidenavItemBR;
+        cursor: pointer;
 
         &.outline{
             border: 2px solid $primaryText;
@@ -132,7 +133,6 @@
 
     .navItem{
         color: $sidenavItemColor;
-        cursor: pointer;
 
         &:hover{
             background-color: $primaryBackground;

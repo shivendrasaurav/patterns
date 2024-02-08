@@ -6,8 +6,8 @@
   position: relative; /* Set the position to relative */
 }
 
-/* Define the scrollViewHrzn class */
-.scrollViewHrzn {
+/* Define the scrollHorizontal class */
+.scrollHorizontal {
   height: inherit; /* Inherit the height from the parent element */
   width: inherit; /* Inherit the width from the parent element */
   overflow-x: auto; /* Make the view horizontally scrollable */
@@ -16,8 +16,8 @@
   white-space: nowrap; /* Prevent the elements from wrapping to the next line */
 }
 
-/* Define the scrollViewVert class */
-.scrollViewVert {
+/* Define the scrollVertical class */
+.scrollVertical {
   height: inherit; /* Inherit the height from the parent element */
   width: inherit; /* Inherit the width from the parent element */
   overflow-x: hidden; /* Hide the horizontal overflow content */
@@ -25,8 +25,10 @@
   position: relative; /* Set the position to relative */
 }
 
-/* Define the pageView class */
-.contentWrapper {
-  height: 100%; /* Inherit the height from the parent element */
-  width: 100%; /* Inherit the width from the parent element */
+/* Define the contentView class */
+.contentView {
+  height: 100%; /* Takes up 100% height from the parent element */
+  width: 100%; /* Takes up 100% width from the parent element */
+  overflow: auto; /* Hide the overflow content */
+  position: relative; /* Set the position to relative */
 }

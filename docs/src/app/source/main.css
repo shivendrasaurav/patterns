@@ -6,7 +6,6 @@
   border-radius: 0px;
   margin: 0px;
   padding: 0px;
-  line-height: 1.2;
 }
 
 .gridRow {
@@ -100,6 +99,11 @@
 }
 
 /* Define the row height classes */
+.rowHi-auto {
+  height: -moz-max-content;
+  height: max-content;
+}
+
 .rowHi-1 {
   height: 10vh; /* Take up 10% of the viewport height */
 }
@@ -148,8 +152,8 @@
   position: relative; /* Set the position to relative */
 }
 
-/* Define the scrollViewHrzn class */
-.scrollViewHrzn {
+/* Define the scrollHorizontal class */
+.scrollHorizontal {
   height: inherit; /* Inherit the height from the parent element */
   width: inherit; /* Inherit the width from the parent element */
   overflow-x: auto; /* Make the view horizontally scrollable */
@@ -158,8 +162,8 @@
   white-space: nowrap; /* Prevent the elements from wrapping to the next line */
 }
 
-/* Define the scrollViewVert class */
-.scrollViewVert {
+/* Define the scrollVertical class */
+.scrollVertical {
   height: inherit; /* Inherit the height from the parent element */
   width: inherit; /* Inherit the width from the parent element */
   overflow-x: hidden; /* Hide the horizontal overflow content */
@@ -167,14 +171,24 @@
   position: relative; /* Set the position to relative */
 }
 
-/* Define the pageView class */
-.contentWrapper {
-  height: 100%; /* Inherit the height from the parent element */
-  width: 100%; /* Inherit the width from the parent element */
+/* Define the contentView class */
+.contentView {
+  height: 100%; /* Takes up 100% height from the parent element */
+  width: 100%; /* Takes up 100% width from the parent element */
+  overflow: auto; /* Hide the overflow content */
+  position: relative; /* Set the position to relative */
 }
 
+/*
+//Global Variables - Dark
+$primaryBackground: #0e105a;
+$primaryText: #eaeaca;
+
+$accentBackground: #3e40ba;
+$accentText: #dadaba;
+*/
 .withPrimaryBackground {
-  background-color: rgba(14, 16, 90, 0.2);
+  background-color: rgba(14, 17, 90, 0.2);
   -webkit-backdrop-filter: saturate(180%) contrast(120%) blur(4px);
           backdrop-filter: saturate(180%) contrast(120%) blur(4px);
 }
@@ -222,14 +236,14 @@
   cursor: pointer;
 }
 .navBar .navItem.outline, .navBar .navBrand.outline {
-  border: 2px solid #eaeaca;
+  border: 2px solid #1e1e1e;
 }
 .navBar .navItem.underline, .navBar .navBrand.underline {
-  border-bottom: 2px solid #eaeaca;
+  border-bottom: 2px solid #1e1e1e;
 }
 .navBar .navItem.solid, .navBar .navBrand.solid {
-  background-color: #0e105a;
-  color: #eaeaca;
+  background-color: #0e115a;
+  color: #1e1e1e;
 }
 .navBar .navItem:hover, .navBar .navBrand:hover {
   filter: contrast(125%);
@@ -279,16 +293,17 @@
   border: 2px solid transparent;
   padding: 0.5rem 0.8rem;
   border-radius: 5px;
+  cursor: pointer;
 }
 .sideNav .navItem.outline, .sideNav .navTitle.outline, .sideNav .navBrand.outline {
-  border: 2px solid #eaeaca;
+  border: 2px solid #1e1e1e;
 }
 .sideNav .navItem.underline, .sideNav .navTitle.underline, .sideNav .navBrand.underline {
-  border-bottom: 2px solid #eaeaca;
+  border-bottom: 2px solid #1e1e1e;
 }
 .sideNav .navItem.solid, .sideNav .navTitle.solid, .sideNav .navBrand.solid {
-  background-color: #0e105a;
-  color: #eaeaca;
+  background-color: #0e115a;
+  color: #1e1e1e;
 }
 .sideNav .navItem:hover, .sideNav .navTitle:hover, .sideNav .navBrand:hover {
   filter: contrast(125%);
@@ -298,11 +313,10 @@
   filter: contrast(125%) saturate(160%);
 }
 .sideNav .navItem {
-  color: #dadaba;
-  cursor: pointer;
+  color: #0e0e0e;
 }
 .sideNav .navItem:hover {
-  background-color: #0e105a;
+  background-color: #0e115a;
 }
 .sideNav .navItem:active {
   background-color: #3e40ba;
@@ -319,8 +333,56 @@
 .sideNav .navTitle {
   font-size: 1.4rem;
   font-weight: bold;
-  color: #eaeaca;
+  color: #1e1e1e;
   border-radius: 3px;
+}
+
+/*
+//Global Variables - Dark
+$primaryBackground: #0e105a;
+$primaryText: #eaeaca;
+
+$accentBackground: #3e40ba;
+$accentText: #dadaba;
+*/
+.withPrimaryBackground {
+  background-color: rgba(14, 17, 90, 0.2);
+  -webkit-backdrop-filter: saturate(180%) contrast(120%) blur(4px);
+          backdrop-filter: saturate(180%) contrast(120%) blur(4px);
+}
+
+.paddingSmall {
+  padding: 4px 10px;
+}
+
+* {
+  color: #1e1e1e;
+  font-weight: regular;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  width: inherit;
+}
+
+.title {
+  font-size: 2.8315594825rem;
+  font-weight: 800;
+}
+
+.subtitle {
+  font-size: 1.75rem;
+  color: #0e0e0e;
+}
+
+.text {
+  font-size: 1.0815594795rem;
+  color: #0e0e0e;
+  padding: 0.5rem 2rem 0.5rem 0rem;
+}
+
+strong {
+  color: #1e1e1e;
 }
 
 .taCenter {
@@ -341,4 +403,38 @@
 
 .noDecoration {
   text-decoration: none;
+}
+
+ul {
+  margin-left: 1rem;
+}
+
+.inlineCode {
+  border: 1px solid #3e40ba;
+  background: rgba(62, 64, 186, 0.4);
+  color: #0e0e0e;
+  border-radius: 0.4rem;
+  padding: 0 0.2rem;
+  font-family: monospace;
+}
+
+.codeBlock {
+  margin: 1rem 2rem 0.5rem 0rem;
+  border-radius: 0.4rem;
+  background: rgba(62, 64, 186, 0.4);
+}
+.codeBlock .codeLanguage {
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  font-size: 1rem;
+  background: rgba(14, 14, 14, 0.4);
+  color: #3e40ba;
+  border-radius: 0.4rem;
+  font-weight: bold;
+}
+.codeBlock .codeText {
+  white-space: pre;
+  text-wrap: wrap;
+  padding: 1rem 0.6rem;
+  font-family: monospace;
 }/*# sourceMappingURL=main.css.map */

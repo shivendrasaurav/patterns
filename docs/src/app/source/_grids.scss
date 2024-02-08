@@ -91,6 +91,9 @@
 }
   
 /* Define the row height classes */
+.rowHi-auto{
+    height: max-content;
+}
 .rowHi-1 {
     height: 10vh; /* Take up 10% of the viewport height */
 }

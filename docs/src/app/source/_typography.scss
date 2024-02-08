@@ -1,4 +1,30 @@
+@import "variables";
 
+*{
+    color: $primaryText;
+    font-weight: regular;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 600;
+    width: inherit;
+}
+.title{
+    font-size: 2.8315594825rem;
+    font-weight: 800;
+}
+.subtitle{
+    font-size: 1.75rem;
+    color: $accentText;
+}
+.text{
+    font-size: 1.081559479476695rem;
+    color: $accentText;
+    padding: 0.5rem 2rem 0.5rem 0rem;
+}
+strong{
+    color: $primaryText;
+}
 .taCenter{
     text-align: center;
 }
@@ -13,4 +39,39 @@
 }
 .noDecoration{
     text-decoration: none;
+}
+ul{
+    margin-left: 1rem;
+}
+
+//codeblocks
+.inlineCode{
+    border: 1px solid $accentBackground;
+    background: transparentize($accentBackground, 0.6);
+    color: $accentText;
+    border-radius: $brSmoother;
+    padding: 0 0.2rem;
+    font-family: monospace;
+}
+.codeBlock{
+    margin: 1rem 2rem 0.5rem 0rem;
+    border-radius: $brSmoother;
+    background: transparentize($accentBackground, 0.6);
+
+    .codeLanguage{
+        width: 100%;
+        padding: 0.4rem 0.6rem;
+        font-size: 1rem;
+        background:  transparentize($accentText, 0.6);
+        color: $accentBackground;
+        border-radius: $brSmoother;
+        font-weight: bold;
+    }
+    .codeText{
+        white-space: pre;
+        text-wrap: wrap;
+        padding: 1rem 0.6rem;
+        font-family: monospace;
+    }
+    
 }
