@@ -46,7 +46,6 @@ const Content = () => {
                                     {'</div>'}
                                 </p>
                             </div>
-                            <br/>
                             <div className="previewBlock">
                                 <p className="previewTitle">Preview</p>
                                 <p className="previewRender">
@@ -73,7 +72,6 @@ const Content = () => {
                                     {'</div>'}
                                 </p>
                             </div>
-                            <br/>
                             <div className="previewBlock">
                                 <p className="previewTitle">Preview</p>
                                 <p className="previewRender">
@@ -111,7 +109,6 @@ const Content = () => {
                                     {'</div>'}
                                 </p>
                             </div>
-                            <br/>
                             <div className="previewBlock">
                                 <p className="previewTitle">Preview</p>
                                 <p className="previewRender">
@@ -158,7 +155,6 @@ const Content = () => {
                                     {'</div>'}
                                 </p>
                             </div>
-                            <br/>
                             <div className="previewBlock">
                                 <p className="previewTitle">Preview</p>
                                 <p className="previewRender">
@@ -203,7 +199,6 @@ const Content = () => {
                                     {'</div>'}
                                 </p>
                             </div>
-                            <br/>
                             <div className="previewBlock">
                                 <p className="previewTitle">Preview</p>
                                 <p className="previewRender">

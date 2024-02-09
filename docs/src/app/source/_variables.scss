@@ -1,18 +1,19 @@
+
+/*
 //Global Variables - Dark
 $primaryBackground: #0e105a;
 $primaryText: #eaeaca;
 
 $accentBackground: #3e40ba;
 $accentText: #dadaba;
+*/
 
-/*
 //Global Variables - Light
 $primaryBackground: #0e115a;
 $primaryText: #1e1e1e;
 
 $accentBackground: #3e40ba;
 $accentText: #0e0e0e;
-*/
 
 
 //Navigation Variables
@@ -28,6 +29,11 @@ $brSmooth: 0.2rem;
 $brSmoother: 0.4rem;
 $brSmoothest: 1rem;
 $brCircle: 100%;
+
+.brSmooth{border-radius: 0.2rem};
+.brSmoother{border-radius: 0.4rem};
+.brSmoothest{border-radius: 1rem};
+.brCircle{border-radius: 100%};
 
 //Backgrounds
 .withPrimaryBackground{

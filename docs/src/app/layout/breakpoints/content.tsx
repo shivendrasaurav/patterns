@@ -1,204 +1,91 @@
 const Content = () => {
     return(
-        <div className="withPrimaryBackground scrollVertical paddingSmall">
+        <div className="withPrimaryBackground scrollVertical paddingSmall brSmooth">
                         <h1 className="title">Breakpoints</h1>
-                        <h2 className="subtitle">The basic building blocks</h2>
+                        <h2 className="subtitle">Control how your app looks in different devicess</h2>
                         <p className="text">
-                            Views in Patterns UI are fundamental components that serve as the basic building blocks for constructing user interfaces. These views provide structural elements and layout options for organizing content within an application. There are different types of views you can use in invrz patterns which are:
+                            Breakpoints are the points at which the layout of your app changes based on the screen size or orientation of the device. They help you create responsive and adaptive designs that work well on different devices. Breakpoints are usually defined by the device width, such as 320px, 768px, or 1024px. However, this approach can be limiting and inconsistent, as different devices may have different aspect ratios, pixel densities, or resolutions.
                             <br/>
-                            <ul>
-                                <li>
-                                    <strong>Page view:</strong> 
-                                    A view that occupies the entire screen or a portion of it. It can contain any other type of view inside it. It is the main wrapper for any other view type.
-                                </li>
-                                <li>
-                                    <strong>Content view:</strong> 
-                                    A view that takes up 100% of the height and width of its parent view. It can contain any content, such as text, images, buttons, etc. It is useful for displaying simple content without any scrolling or nesting.
-                                </li>
-                                <li>
-                                    <strong>Scroll view horizontal:</strong> 
-                                    A view that allows horizontal scrolling of its content. It can contain any content, such as text, images, buttons, etc. It is useful for creating carousels, sliders, or tabs.
-                                </li>
-                                <li>
-                                    <strong>Scroll view vertical:</strong> 
-                                    A view that allows vertical scrolling of its content. It can contain any content, such as text, images, buttons, etc. It is useful for creating lists, cards, or forms.
-                                </li>
-                                <li>
-                                    <strong>Nested views:</strong> 
-                                    A combination of different types of views inside each other. It can create complex layouts and interactions. It is useful for creating grids, columns, rows, or stacks.
-                                </li>
-                            </ul>
+                            In Patterns UI, breakpoints are defined by the aspect ratio of the device, such as 16:9, 11:21, or 1:1. This approach is unique and innovative, as it targets the shape of the device instead of the width. This way, you can create truly responsive layouts that adapt to any device, regardless of its size or resolution.
+                            <br/><br/>
+                            <span className="inlineCode">
+                                !!important - sometimes square breakpoints will not necessarily mean targetted to square screens but rather everything between portrait and landscape aspect ratios!!
+                            </span>
+                            <br/>
                         </p>
 
                         <br/>
 
-                        <h2 className="subtitle">Page View</h2>
+                        <h2 className="subtitle">Breakpoints in Patterns UI</h2>
                         <p className="text">
-                            A page view is a view that occupies the entire viewport and scrolls to show its content. A page view is useful for creating web pages that have a lot of content or need to adapt to different screen sizes.
+                            Patterns UI provides three types of breakpoints that correspond to three common types of device shapes: portrait, landscape, and square. Each breakpoint has a class name that ends with <span className="inlineCode">-sm</span>, <span className="inlineCode">-ld</span>, or <span className="inlineCode">-sq</span>. These classes can be applied to any element to change its style or behavior based on the device aspect ratio. The types of breakpoints in Patterns UI are:
                             <br/>
-                            To create a page view, you need to use the <span className="inlineCode">.pageView</span> class on a <span className="inlineCode">{"<div>"}</span> element. For example:
-                            <br/>
-                            <div className="codeBlock">
-                                <p className="codeLanguage">HTML</p>
-                                <p className="codeText">
-                                    {'<div class="pageView">\n'}
-                                    {'  <!-- page content goes here -->\n'}
-                                    {'</div>'}
-                                </p>
-                            </div>
-                            <br/>
-                            <div className="previewBlock">
-                                <p className="previewTitle">Preview</p>
-                                <p className="previewRender">
-                                    <div className="pageView">
-                                        {'<!-- page content goes here -->\n'}
-                                    </div>
-                                </p>
-                            </div>
+                            <ul>
+                                <li>
+                                    <strong>Portrait Breakpoint: </strong>
+                                    This breakpoint applies to devices that have a portrait orientation, such as phones or tablets. The aspect ratio range for this breakpoint is from 0.29 to 0.58. The class name for this breakpoint is <span className="inlineCode">-sm</span>.
+                                </li>
+                                <li>
+                                    <strong>Landscape Breakpoint: </strong>
+                                    This breakpoint applies to devices that have a landscape orientation, such as desktops, laptops, or TVs. The aspect ratio range for this breakpoint is from 1.25 to 2.33. The class name for this breakpoint is <span className="inlineCode">-ld</span>.
+                                </li>
+                                <li>
+                                    <strong>Square Breakpoint:</strong>
+                                    This breakpoint applies to devices that have a square shape, such as watches or hubs. The aspect ratio range for this breakpoint is from 0.8 to 1.2. The class name for this breakpoint is <span className="inlineCode">-sq</span>.
+                                </li>
+                            </ul>
                         </p>
 
                         <br />
 
-                        <h2 className="subtitle">Content View</h2>
+                        <h2 className="subtitle">colWd-0-* classes</h2>
                         <p className="text">
-                            A content view is a view that takes up 100% of the height and width of its parent view. It can contain any content, such as text, images, buttons, etc. It is useful for displaying simple content without any scrolling or nesting. To use a content view in HTML, you need to add the class <span className="inlineCode">.contentView</span> to a <span className="inlineCode">{"<div>"}</span> element. For example:
+                            The <span className="inlineColde">colWd-0-*</span> classes are special classes that can be used to hide columns from view based on the device aspect ratio. These classes can be applied to any column element to set its display property to none. This way, you can control which columns are visible or hidden on different devices. The <span className="inlineColde">colWd-0-*</span> classes are:
                             <br/>
-                            <div className="codeBlock">
-                                <p className="codeLanguage">HTML</p>
-                                <p className="codeText">
-                                    {'<div class="pageView">\n'}
-                                    {'  <div class="contentView paddingSmall">\n'}
-                                    {'    <!-- page content goes here -->\n'}
-                                    {'  </div>\n'}
-                                    {'</div>'}
-                                </p>
-                            </div>
-                            <br/>
-                            <div className="previewBlock">
-                                <p className="previewTitle">Preview</p>
-                                <p className="previewRender">
-                                    <div className="pageView">
-                                        <div className="contentView paddingSmall">
-                                            {'<!-- page content goes here -->'}
-                                        </div>
-                                    </div>
-                                </p>
-                            </div>
+                            <ul>
+                                <li>
+                                    <strong>colWd-0-sm: </strong>
+                                    This class hides the column on portrait devices. It sets the display property to none when the aspect ratio is between 0.29 and 0.58.
+                                </li>
+                                <li>
+                                    <strong>colWd-0-ld: </strong>
+                                    This class hides the column on landscape devices. It sets the display property to none when the aspect ratio is between 1.25 and 2.33.
+                                </li>
+                                <li>
+                                    <strong>colWd-0-sq:</strong>
+                                    This class hides the column on square devices. It sets the display property to none when the aspect ratio is between 0.8 and 1.2.
+                                </li>
+                            </ul>
                         </p>
 
                         <br />
 
-                        <h2 className="subtitle">Scroll View Horizontal</h2>
+                        <h2 className="subtitle">Truly responsive pages</h2>
                         <p className="text">
-                            A scroll view horizontal is a view that allows horizontal scrolling of its content. It can contain any content, such as text, images, buttons, etc. It is useful for creating carousels, sliders, or tabs. To use a scroll view horizontal in HTML, you need to add the class <span className="inlineCode">.scrrollHorizonal</span> to a <span className="inlineCode">{"<div>"}</span> element. For example:
-                            <br/>
-                            <div className="codeBlock">
-                                <p className="codeLanguage">HTML</p>
-                                <p className="codeText">
-                                    {'<div class="pageView">\n'}
-                                    {'  <div class="scrollHorizontal paddingSmall">\n'}
-                                    {'    <div id="1">Element 1</div>\n'}
-                                    {'    <div id="2">Element 2</div>\n'}
-                                    {'    <div id="3">Element 3</div>\n'}
-                                    {'    <div id="4">Element 4</div>\n'}
-                                    {'    <div id="5">Element 5</div>\n'}
-                                    {'    <div id="1">Element 6</div>\n'}
-                                    {'    <div id="2">Element 7</div>\n'}
-                                    {'    <div id="3">Element 8</div>\n'}
-                                    {'    <div id="4">Element 9</div>\n'}
-                                    {'    <div id="5">Element 10</div>\n'}
-                                    {'  </div>\n'}
-                                    {'</div>'}
-                                </p>
-                            </div>
-                            <br/>
-                            <div className="previewBlock">
-                                <p className="previewTitle">Preview</p>
-                                <p className="previewRender">
-                                    <div className="pageView">
-                                     <div className="scrollHorizontal paddingSmall">
-                                       <div id="1" className="paddingSmall">Element 1</div>
-                                       <div id="2" className="paddingSmall">Element 2</div>
-                                       <div id="3" className="paddingSmall">Element 3</div>
-                                       <div id="4" className="paddingSmall">Element 4</div>
-                                       <div id="5" className="paddingSmall">Element 5</div>
-                                       <div id="1" className="paddingSmall">Element 6</div>
-                                       <div id="2" className="paddingSmall">Element 7</div>
-                                       <div id="3" className="paddingSmall">Element 8</div>
-                                       <div id="4" className="paddingSmall">Element 9</div>
-                                       <div id="5" className="paddingSmall">Element 10</div>
-                                     </div>
-                                    </div>
-                                </p>
-                            </div>
-                        </p>
-
-                        <br />
-
-                        <h2 className="subtitle">Scroll View Vertical</h2>
-                        <p className="text">
-                            A scroll view vertical is a view that allows vertical scrolling of its content. It can contain any content, such as text, images, buttons, etc. It is useful for creating lists, cards, or forms. To use a scroll view vertical in HTML, you need to add the class <span className="inlineCode">.scrrollVertical</span> to a <span className="inlineCode">{"<div>"}</span> element. For example:
-                            <br/>
-                            <div className="codeBlock">
-                                <p className="codeLanguage">HTML</p>
-                                <p className="codeText">
-                                    {'<div class="pageView">\n'}
-                                    {'  <div class="scrrollVertical paddingSmall">\n'}
-                                    {'    <div id="1">Element 1</div>\n'}
-                                    {'    <div id="2">Element 2</div>\n'}
-                                    {'    <div id="3">Element 3</div>\n'}
-                                    {'    <div id="4">Element 4</div>\n'}
-                                    {'    <div id="5">Element 5</div>\n'}
-                                    {'    <div id="1">Element 6</div>\n'}
-                                    {'    <div id="2">Element 7</div>\n'}
-                                    {'    <div id="3">Element 8</div>\n'}
-                                    {'    <div id="4">Element 9</div>\n'}
-                                    {'    <div id="5">Element 10</div>\n'}
-                                    {'  </div>\n'}
-                                    {'</div>'}
-                                </p>
-                            </div>
-                            <br/>
-                            <div className="previewBlock">
-                                <p className="previewTitle">Preview</p>
-                                <p className="previewRender">
-                                    <div className="gridRow colHi-2">
-                                        <div className="pageView">
-                                            <div className="scrollVertical paddingSmall">
-                                                <div id="1" className="paddingSmall">Element 1</div>
-                                                <div id="2" className="paddingSmall">Element 2</div>
-                                                <div id="3" className="paddingSmall">Element 3</div>
-                                                <div id="4" className="paddingSmall">Element 4</div>
-                                                <div id="5" className="paddingSmall">Element 5</div>
-                                                <div id="1" className="paddingSmall">Element 6</div>
-                                                <div id="2" className="paddingSmall">Element 7</div>
-                                                <div id="3" className="paddingSmall">Element 8</div>
-                                                <div id="4" className="paddingSmall">Element 9</div>
-                                                <div id="5" className="paddingSmall">Element 10</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </p>
-                            </div>
-                        </p>
-
-                        <br />
-
-                        <h2 className="subtitle">Nested Views</h2>
-                        <p className="text">
-                            Nested views are a combination of different types of views inside each other. It can create complex layouts and interactions. It is useful for creating grids, columns, rows, or stacks. To use nested views in HTML, you need to nest <span className="inlineCode">{"<div>"}</span> elements with different view classes. For example:
+                            You can use a combination of the breakpoint classes and the <span className="inlineColde">colWd-0-*</span> classes to create truly responsive pages that adapt to any device shape. You can use the breakpoint classes to change the style or behavior of any element based on the device aspect ratio. You can use the <span className="inlineColde">colWd-0-*</span> classes to hide or show columns based on the device aspect ratio. Here are some examples of how to use these classes to create truly responsive pages:
                             <br/>
                             <div className="codeBlock">
                                 <p className="codeLanguage">HTML</p>
                                 <p className="codeText">
                                     {'<div class="pageView">\n'}
                                     {'  <div class="rowCenter gridRow">\n'}
-                                    {'    <div class="colWd-3-ld scrollVertical">\n'}
-                                    {'      <!-- 3 Column Content -->\n'}
+
+                                    {'    <div class="colWd-15-sm colWd-0-ld colWd-0-sq">\n'}
+                                    {'      <div class="contentView" style={{backgroundColor: "purple"}}>\n'}
+                                    {'        <p>This is a portrait/mobile screen type.</p>\n'}
+                                    {'      </div>\n'}
                                     {'    </div>\n'}
-                                    {'    <div class="colWd-10-ld scrollVertical">\n'}
-                                    {'      <!-- 10 Column Content -->\n'}
+                                    {'    <div class="colWd-0-sm colWd-15-ld colWd-0-sq">\n'}
+                                    {'      <div class="contentView" style={{backgroundColor: "orange"}}>\n'}
+                                    {'        <p>This is a landscape/desktop screen type.</p>\n'}
+                                    {'      </div>\n'}
                                     {'    </div>\n'}
+                                    {'    <div class="colWd-0-sm colWd-0-ld colWd-15-sq">\n'}
+                                    {'      <div class="contentView" style={{backgroundColor: "brickred"}}>\n'}
+                                    {'        <p>This is a square/hub screen type.</p>\n'}
+                                    {'      </div>\n'}
+                                    {'    </div>\n'}
+
                                     {'  </div>\n'}
                                     {'</div>'}
                                 </p>
@@ -207,26 +94,35 @@ const Content = () => {
                             <div className="previewBlock">
                                 <p className="previewTitle">Preview</p>
                                 <p className="previewRender">
-                                    <div className="pageView">
-                                      <div className="rowCenter gridRow">
-                                        <div className="colWd-3-ld scrollVertical">
-                                          {'<!-- 3 Column Content -->'}
+                                    
+                                 <div className="pageView">
+                                        <div className="rowCenter gridRow">
+                                            <div className="colWd-15-sm colWd-0-ld colWd-0-sq">
+                                                <div className="contentView" style={{backgroundColor: "purple"}}>
+                                                    <p>This is a portrait/mobile screen type.</p>
+                                                </div>
+                                            </div>
+                                            <div className="colWd-0-sm colWd-15-ld colWd-0-sq">
+                                                <div className="contentView" style={{backgroundColor: "orange"}}>
+                                                    <p>This is a landscape/desktop screen type.</p>
+                                                </div>
+                                            </div>
+                                            <div className="colWd-0-sm colWd-0-ld colWd-15-sq">
+                                                <div className="contentView" style={{backgroundColor: "brickred"}}>
+                                                    <p>This is a square/hub screen type.</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div className="colWd-10-ld scrollVertical">
-                                          {'<!-- 10 Column Content -->'}
-                                        </div>
-                                      </div>
                                     </div>
+
                                 </p>
                             </div>
-                            <br/>
-                            This example creates a nested view with a page view as the outermost wrapper, a grid row with two columns inside it, a scroll view vertical in the first column, and another page view in the second column. You can use any combination of view classes to create different nested views.
-                            <br/>
-                            Fun Fact, the above example mimics the layout of invrz patterns docs.
+                            The above example shows a truly responsive page which takes upto full row width and has different content and background color based on different screen sizes/types.
                         </p>
 
                         <br/><br/>
-                        <a className="buttonLink" href="./grids">Next: Grids</a>
+                        <a className="buttonLink" href="./columns">Prev: Columns</a>
+                        <a className="buttonLink" href="./aligners">Next: Aligners</a>
                         <br/><br/>
                     </div>
     );
