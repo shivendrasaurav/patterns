@@ -2,47 +2,26 @@ const Content = () => {
     return(
         <div className="withPrimaryBackground scrollVertical paddingSmall">
                         <h1 className="title">Aligners</h1>
-                        <h2 className="subtitle">The basic building blocks</h2>
+                        <h2 className="subtitle">Align adapt justify</h2>
                         <p className="text">
-                            Views in Patterns UI are fundamental components that serve as the basic building blocks for constructing user interfaces. These views provide structural elements and layout options for organizing content within an application. There are different types of views you can use in invrz patterns which are:
+                            Aligners are a set of classes that help you align content and objects in your app. They allow you to control the horizontal and vertical alignment of text, images, divs, and other elements. They also allow you to adjust the spacing and distribution of elements in a grid. Aligners are useful for creating consistent and responsive layouts that adapt to different screen sizes and orientations.
                             <br/>
-                            <ul>
-                                <li>
-                                    <strong>Page view:</strong> 
-                                    A view that occupies the entire screen or a portion of it. It can contain any other type of view inside it. It is the main wrapper for any other view type.
-                                </li>
-                                <li>
-                                    <strong>Content view:</strong> 
-                                    A view that takes up 100% of the height and width of its parent view. It can contain any content, such as text, images, buttons, etc. It is useful for displaying simple content without any scrolling or nesting.
-                                </li>
-                                <li>
-                                    <strong>Scroll view horizontal:</strong> 
-                                    A view that allows horizontal scrolling of its content. It can contain any content, such as text, images, buttons, etc. It is useful for creating carousels, sliders, or tabs.
-                                </li>
-                                <li>
-                                    <strong>Scroll view vertical:</strong> 
-                                    A view that allows vertical scrolling of its content. It can contain any content, such as text, images, buttons, etc. It is useful for creating lists, cards, or forms.
-                                </li>
-                                <li>
-                                    <strong>Nested views:</strong> 
-                                    A combination of different types of views inside each other. It can create complex layouts and interactions. It is useful for creating grids, columns, rows, or stacks.
-                                </li>
-                            </ul>
                         </p>
 
                         <br/>
 
-                        <h2 className="subtitle">Page View</h2>
+                        <h2 className="subtitle">Text align</h2>
                         <p className="text">
-                            A page view is a view that occupies the entire viewport and scrolls to show its content. A page view is useful for creating web pages that have a lot of content or need to adapt to different screen sizes.
-                            <br/>
-                            To create a page view, you need to use the <span className="inlineCode">.pageView</span> class on a <span className="inlineCode">{"<div>"}</span> element. For example:
+                            The <span className="inlineCode">.ta*</span> classes are used to align text within an element. They set the <span className="inlineCode">text-align</span> property to one of the following values: <span className="inlineCode">left</span>, <span className="inlineCode">right</span>, <span className="inlineCode">center</span>, or <span className="inlineCode">justify</span>. To use a text align class in HTML, you need to add the class to the element that contains the text. For example:
                             <br/>
                             <div className="codeBlock">
                                 <p className="codeLanguage">HTML</p>
                                 <p className="codeText">
                                     {'<div class="pageView">\n'}
-                                    {'  <!-- page content goes here -->\n'}
+                                    {'  <p class="taJustify" style="background: #6cacac">This text is justified.</p>\n'}
+                                    {'  <p class="taLeft" style="background: #acacac">This text is aligned to the left.</p>\n'}
+                                    {'  <p class="taCenter" style="background: #ac6cac">This text is centered.</p>\n'}
+                                    {'  <p class="taRight" style="background: #acac6c">This text is aligned to the right.</p>\n'}
                                     {'</div>'}
                                 </p>
                             </div>
@@ -51,154 +30,134 @@ const Content = () => {
                                 <p className="previewTitle">Preview</p>
                                 <p className="previewRender">
                                     <div className="pageView">
-                                        {'<!-- page content goes here -->\n'}
-                                    </div>
-                                </p>
-                            </div>
-                        </p>
-
-                        <br />
-
-                        <h2 className="subtitle">Content View</h2>
-                        <p className="text">
-                            A content view is a view that takes up 100% of the height and width of its parent view. It can contain any content, such as text, images, buttons, etc. It is useful for displaying simple content without any scrolling or nesting. To use a content view in HTML, you need to add the class <span className="inlineCode">.contentView</span> to a <span className="inlineCode">{"<div>"}</span> element. For example:
-                            <br/>
-                            <div className="codeBlock">
-                                <p className="codeLanguage">HTML</p>
-                                <p className="codeText">
-                                    {'<div class="pageView">\n'}
-                                    {'  <div class="contentView paddingSmall">\n'}
-                                    {'    <!-- page content goes here -->\n'}
-                                    {'  </div>\n'}
-                                    {'</div>'}
-                                </p>
-                            </div>
-                            <br/>
-                            <div className="previewBlock">
-                                <p className="previewTitle">Preview</p>
-                                <p className="previewRender">
-                                    <div className="pageView">
-                                        <div className="contentView paddingSmall">
-                                            {'<!-- page content goes here -->'}
-                                        </div>
-                                    </div>
-                                </p>
-                            </div>
-                        </p>
-
-                        <br />
-
-                        <h2 className="subtitle">Scroll View Horizontal</h2>
-                        <p className="text">
-                            A scroll view horizontal is a view that allows horizontal scrolling of its content. It can contain any content, such as text, images, buttons, etc. It is useful for creating carousels, sliders, or tabs. To use a scroll view horizontal in HTML, you need to add the class <span className="inlineCode">.scrrollHorizonal</span> to a <span className="inlineCode">{"<div>"}</span> element. For example:
-                            <br/>
-                            <div className="codeBlock">
-                                <p className="codeLanguage">HTML</p>
-                                <p className="codeText">
-                                    {'<div class="pageView">\n'}
-                                    {'  <div class="scrollHorizontal paddingSmall">\n'}
-                                    {'    <div id="1">Element 1</div>\n'}
-                                    {'    <div id="2">Element 2</div>\n'}
-                                    {'    <div id="3">Element 3</div>\n'}
-                                    {'    <div id="4">Element 4</div>\n'}
-                                    {'    <div id="5">Element 5</div>\n'}
-                                    {'    <div id="1">Element 6</div>\n'}
-                                    {'    <div id="2">Element 7</div>\n'}
-                                    {'    <div id="3">Element 8</div>\n'}
-                                    {'    <div id="4">Element 9</div>\n'}
-                                    {'    <div id="5">Element 10</div>\n'}
-                                    {'  </div>\n'}
-                                    {'</div>'}
-                                </p>
-                            </div>
-                            <br/>
-                            <div className="previewBlock">
-                                <p className="previewTitle">Preview</p>
-                                <p className="previewRender">
-                                    <div className="pageView">
-                                     <div className="scrollHorizontal paddingSmall">
-                                       <div id="1" className="paddingSmall">Element 1</div>
-                                       <div id="2" className="paddingSmall">Element 2</div>
-                                       <div id="3" className="paddingSmall">Element 3</div>
-                                       <div id="4" className="paddingSmall">Element 4</div>
-                                       <div id="5" className="paddingSmall">Element 5</div>
-                                       <div id="1" className="paddingSmall">Element 6</div>
-                                       <div id="2" className="paddingSmall">Element 7</div>
-                                       <div id="3" className="paddingSmall">Element 8</div>
-                                       <div id="4" className="paddingSmall">Element 9</div>
-                                       <div id="5" className="paddingSmall">Element 10</div>
-                                     </div>
-                                    </div>
-                                </p>
-                            </div>
-                        </p>
-
-                        <br />
-
-                        <h2 className="subtitle">Scroll View Vertical</h2>
-                        <p className="text">
-                            A scroll view vertical is a view that allows vertical scrolling of its content. It can contain any content, such as text, images, buttons, etc. It is useful for creating lists, cards, or forms. To use a scroll view vertical in HTML, you need to add the class <span className="inlineCode">.scrrollVertical</span> to a <span className="inlineCode">{"<div>"}</span> element. For example:
-                            <br/>
-                            <div className="codeBlock">
-                                <p className="codeLanguage">HTML</p>
-                                <p className="codeText">
-                                    {'<div class="pageView">\n'}
-                                    {'  <div class="scrrollVertical paddingSmall">\n'}
-                                    {'    <div id="1">Element 1</div>\n'}
-                                    {'    <div id="2">Element 2</div>\n'}
-                                    {'    <div id="3">Element 3</div>\n'}
-                                    {'    <div id="4">Element 4</div>\n'}
-                                    {'    <div id="5">Element 5</div>\n'}
-                                    {'    <div id="1">Element 6</div>\n'}
-                                    {'    <div id="2">Element 7</div>\n'}
-                                    {'    <div id="3">Element 8</div>\n'}
-                                    {'    <div id="4">Element 9</div>\n'}
-                                    {'    <div id="5">Element 10</div>\n'}
-                                    {'  </div>\n'}
-                                    {'</div>'}
-                                </p>
-                            </div>
-                            <br/>
-                            <div className="previewBlock">
-                                <p className="previewTitle">Preview</p>
-                                <p className="previewRender">
-                                    <div className="gridRow colHi-2">
-                                        <div className="pageView">
-                                            <div className="scrollVertical paddingSmall">
-                                                <div id="1" className="paddingSmall">Element 1</div>
-                                                <div id="2" className="paddingSmall">Element 2</div>
-                                                <div id="3" className="paddingSmall">Element 3</div>
-                                                <div id="4" className="paddingSmall">Element 4</div>
-                                                <div id="5" className="paddingSmall">Element 5</div>
-                                                <div id="1" className="paddingSmall">Element 6</div>
-                                                <div id="2" className="paddingSmall">Element 7</div>
-                                                <div id="3" className="paddingSmall">Element 8</div>
-                                                <div id="4" className="paddingSmall">Element 9</div>
-                                                <div id="5" className="paddingSmall">Element 10</div>
+                                        <div className="gridRow rowCenter">
+                                            <div className="colWd-12-ld colWd-12-sq colWd-12-sm">
+                                                <p className="taJustify" style={{background: "#6cacac"}}>This text is justified.</p>
+                                                <p className="taLeft" style={{background: "#acacac"}}>This text is aligned to the left.</p>
+                                                <p className="taCenter" style={{background: "#ac6cac"}}>This text is centered.</p>
+                                                <p className="taRight" style={{background: "#acac6c"}}>This text is aligned to the right.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </p>
                             </div>
+                            This example shows how to use the text align classes to align text in different ways.
                         </p>
 
                         <br />
 
-                        <h2 className="subtitle">Nested Views</h2>
+                        <h2 className="subtitle">Horizontal object align</h2>
                         <p className="text">
-                            Nested views are a combination of different types of views inside each other. It can create complex layouts and interactions. It is useful for creating grids, columns, rows, or stacks. To use nested views in HTML, you need to nest <span className="inlineCode">{"<div>"}</span> elements with different view classes. For example:
+                            The <span className="inlineCode">.obj*</span> classes are used to align objects, such as images, divs, or other elements, horizontally within a parent element. To use a horizontal object align class in HTML, you need to add the class to the object element and make sure the parent element has the <span className="inlineCode">objAligner</span> class set to <span className="inlineCode">relative</span>. For example:
+                            <br/>
+                            <div className="codeBlock">
+                                <p className="codeLanguage">HTML</p>
+                                <p className="codeText">
+                                    {'<div class="contentView ">\n'}
+                                    {'  <img src="https://www.invrz.com/icon.png" class="objLeft" alt="Logo" />\n'}
+                                    {'  <img src="https://www.invrz.com/icon.png" class="objCenter" alt="Logo" />\n'}
+                                    {'  <img src="https://www.invrz.com/icon.png" class="objRight" alt="Logo" />\n'}
+                                    {'</div>'}
+                                </p>
+                            </div>
+                            <br/>
+                            <div className="previewBlock">
+                                <p className="previewTitle">Preview</p>
+                                <p className="previewRender">
+                                    <div className="pageView">
+                                        <div className="gridRow rowCenter">
+                                            <div className="colWd-12-ld colWd-12-sq colWd-12-sm">
+                                                <div className="contentView objAligner" style={{position: "relative"}}>
+                                                    <img src="https://www.invrz.com/icon.png" className="objLeft imgIcon" alt="Logo" />
+                                                    <img src="https://www.invrz.com/icon.png" className="objCenter imgIcon" alt="Logo" />
+                                                    <img src="https://www.invrz.com/icon.png" className="objRight imgIcon" alt="Logo" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </p>
+                            </div>
+                            This example shows how to use the horizontal object align classes to align images horizontally in different positions within a parent element.
+                        </p>
+
+                        <br />
+
+                        <h2 className="subtitle">Horizontal grid align</h2>
+                        <p className="text">
+                            The <span className="inlineCode">.rowLeft</span>, <span className="inlineCode">.rowRight</span> and <span className="inlineCode">.rowCenter</span> classes are used to align columns horizontally within a grid row. To use horizontal grid align classes in HTML, you need to add the class to the <span className="inlineCode">.gridRow</span> element that contains the grid items. For example:
                             <br/>
                             <div className="codeBlock">
                                 <p className="codeLanguage">HTML</p>
                                 <p className="codeText">
                                     {'<div class="pageView">\n'}
-                                    {'  <div class="rowCenter gridRow">\n'}
-                                    {'    <div class="colWd-3-ld scrollVertical">\n'}
-                                    {'      <!-- 3 Column Content -->\n'}
-                                    {'    </div>\n'}
-                                    {'    <div class="colWd-10-ld scrollVertical">\n'}
-                                    {'      <!-- 10 Column Content -->\n'}
-                                    {'    </div>\n'}
+                                    {'  <div class="gridRow rowLeft colHi-1" style="background: #acac6c">\n'}
+                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">left</p>\n'}
+                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">aligned</p>\n'}
+                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">columns</p>\n'}
+                                    {'  </div>\n'}
+                                    {'  <div class="gridRow rowCenter colHi-1" style="background: #ac6cac">\n'}
+                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">center</p>\n'}
+                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">aligned</p>\n'}
+                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">columns</p>\n'}
+                                    {'  </div>\n'}
+                                    {'  <div class="gridRow rowRight colHi-1" style="background: #6cacac">\n'}
+                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">right</p>\n'}
+                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">aligned</p>\n'}
+                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">columns</p>\n'}
+                                    {'  </div>\n'}
+                                    {'</div>'}
+                                </p>
+                            </div>
+                            <br/>
+                            <div className="previewBlock">
+                                <p className="previewTitle">Preview</p>
+                                    <p className="previewRender">
+                                        <div className="pageView">
+                                            <div className="gridRow rowLeft colHi-1" style={{background: "#acac6c"}}>
+                                                <p className="colWd-2-ld colWd-2-sm colWd-2-sq">left</p>
+                                                <p className="colWd-2-ld colWd-2-sm colWd-2-sq">aligned</p>
+                                                <p className="colWd-2-ld colWd-2-sm colWd-2-sq">columns</p>
+                                            </div>
+                                            <div className="gridRow rowCenter colHi-1" style={{background: "#ac6c6a"}}>
+                                                <p className="colWd-2-ld colWd-2-sm colWd-2-sq">center</p>
+                                                <p className="colWd-2-ld colWd-2-sm colWd-2-sq">aligned</p>
+                                                <p className="colWd-2-ld colWd-2-sm colWd-2-sq">columns</p>
+                                            </div>
+                                            <div className="gridRow rowRight colHi-1" style={{background: "#6cacac"}}>
+                                                <p className="colWd-2-ld colWd-2-sm colWd-2-sq">right</p>
+                                                <p className="colWd-2-ld colWd-2-sm colWd-2-sq">aligned</p>
+                                                <p className="colWd-2-ld colWd-2-sm colWd-2-sq">columns</p>
+                                            </div>
+                                        </div>
+                                </p>
+                            </div>
+                            This example shows how to use the horizontal grid align classes to align grid items horizontally in different ways within a grid row.
+                        </p>
+
+                        <br />
+
+                        <h2 className="subtitle">Vertical grid align</h2>
+                        <p className="text">
+                            The <span className="inlineCode">.rowTop</span>, <span className="inlineCode">.rowBottom</span> and <span className="inlineCode">.rowMiddle</span> classes are used to align columns vertically within a grid row. To use vertical grid align classes in HTML, you need to add the class to the <span className="inlineCode">.gridRow</span> element that contains the grid items. For example:
+                            <br/>
+                            <div className="codeBlock">
+                                <p className="codeLanguage">HTML</p>
+                                <p className="codeText">
+                                    {'<div class="pageView">\n'}
+                                    {'  <div class="gridRow colHi-2 rowTop" style="background: #acac6c">\n'}
+                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">top</p>\n'}
+                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">aligned</p>\n'}
+                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">columns</p>\n'}
+                                    {'  </div>\n'}
+                                    {'  <div class="gridRow colHi-2 rowMiddle" style="background: #ac6cac">\n'}
+                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">middle</p>\n'}
+                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">aligned</p>\n'}
+                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">columns</p>\n'}
+                                    {'  </div>\n'}
+                                    {'  <div class="gridRow colHi-3 rowBottom" style="background: #6cacac">\n'}
+                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">bottom</p>\n'}
+                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">aligned</p>\n'}
+                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">columns</p>\n'}
                                     {'  </div>\n'}
                                     {'</div>'}
                                 </p>
@@ -208,24 +167,62 @@ const Content = () => {
                                 <p className="previewTitle">Preview</p>
                                 <p className="previewRender">
                                     <div className="pageView">
-                                      <div className="rowCenter gridRow">
-                                        <div className="colWd-3-ld scrollVertical">
-                                          {'<!-- 3 Column Content -->'}
+                                        <div className="gridRow colHi-2 rowTop" style={{background: "#acac6c"}}>
+                                            <p className="colWd-2-ld colWd-2-sm colWd-2-sq">top</p>
+                                            <p className="colWd-2-ld colWd-2-sm colWd-2-sq">aligned</p>
+                                            <p className="colWd-2-ld colWd-2-sm colWd-2-sq">columns</p>
                                         </div>
-                                        <div className="colWd-10-ld scrollVertical">
-                                          {'<!-- 10 Column Content -->'}
+                                        <div className="gridRow colHi-2 rowMiddle" style={{background: "#ac6c6a"}}>
+                                            <p className="colWd-2-ld colWd-2-sm colWd-2-sq">middle</p>
+                                            <p className="colWd-2-ld colWd-2-sm colWd-2-sq">aligned</p>
+                                            <p className="colWd-2-ld colWd-2-sm colWd-2-sq">columns</p>
                                         </div>
-                                      </div>
+                                        <div className="gridRow colHi-2 rowBottom" style={{background: "#6cacac"}}>
+                                            <p className="colWd-2-ld colWd-2-sm colWd-2-sq">bottom</p>
+                                            <p className="colWd-2-ld colWd-2-sm colWd-2-sq">aligned</p>
+                                            <p className="colWd-2-ld colWd-2-sm colWd-2-sq">columns</p>
+                                        </div>
+                                    </div>
+                                </p>
+                            </div>
+                            This example shows how to use the vertical grid align classes to align grid items vertically in different ways within a grid row.
+                        </p>
+
+                        <br />
+
+                        <h2 className="subtitle">Mixed Aligners</h2>
+                        <p className="text">
+                            Patterns UI allows you to mix different types of aligners to align grids and objects however necessary. You can use the <span className="inlineCode">.ta*</span>, <span className="inlineCode">.obj*</span>, and <span className="inlineCode">.row*</span> classes together to create various combinations of horizontal and vertical alignment for text, images, divs, and other elements within a grid to create flexible and responsive layouts that adapt to different screen sizes and orientations.
+                            <br/>
+                            Here is an example of a grid where the <span className="inlineCode">.rowGrid</span> has a height of <span className="inlineCode">.colHi-2</span> and the columns are centrally aligned with text centrally aligned as well. The row, column, and text have different background colors to make them easier to differentiate:
+                            <br/>
+                            <div className="codeBlock">
+                                <p className="codeLanguage">HTML</p>
+                                <p className="codeText">
+                                    {'<div class="pageView">\n'}
+                                    {'  <div class="gridRow colHi-2 rowCenter" style="background: #acac6c">\n'}
+                                    {'    <p class="colWd-8-ld colWd-8-sm colWd-8-sqtaCenter" style="background: #ac6cac">this text is centrally aligned inside a centrally aligned row</p>\n'}
+                                    {'  </div>\n'}
+                                    {'</div>'}
+                                </p>
+                            </div>
+                            <br/>
+                            <div className="previewBlock">
+                                <p className="previewTitle">Preview</p>
+                                <p className="previewRender">
+                                    <div className="pageView">
+                                        <div className="gridRow colHi-2 rowCenter rowMiddle" style={{background: "#acac6c"}}>
+                                            <p className="colWd-8-ld colWd-8-sm colWd-8-sqtaCenter" style={{background: "#ac6cac"}}>this text is centrally aligned inside a centrally aligned row</p>
+                                        </div>
                                     </div>
                                 </p>
                             </div>
                             <br/>
-                            This example creates a nested view with a page view as the outermost wrapper, a grid row with two columns inside it, a scroll view vertical in the first column, and another page view in the second column. You can use any combination of view classes to create different nested views.
-                            <br/>
-                            Fun Fact, the above example mimics the layout of invrz patterns docs.
+                            This example shows how to use the mixed aligners to align grids and objects in different ways.
                         </p>
 
                         <br/><br/>
+                        <a className="buttonLink" href="./breakpoints">Prev: Breakpoints</a>
                         <a className="buttonLink" href="./grids">Next: Grids</a>
                         <br/><br/>
                     </div>

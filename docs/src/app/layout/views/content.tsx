@@ -221,7 +221,7 @@ const Content = () => {
                         </p>
 
                         <br/><br/>
-                        <a className="buttonLink" href="./grids">Next: Grids</a>
+                        <a className="buttonLink" href="./columns">Next: Columns</a>
                         <br/><br/>
                     </div>
     );

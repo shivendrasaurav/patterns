@@ -4,14 +4,14 @@
   width: 100%;
   height: 100vh;
   background: 
-  radial-gradient(circle at top left, #fafaaa, transparent),
-  radial-gradient(circle at top right, #aafafa, transparent),
-  radial-gradient(circle at bottom right, #faaafa, transparent),
+  radial-gradient(circle at top left, #fafada, transparent),
+  radial-gradient(circle at top right, #dafafa, transparent),
+  radial-gradient(circle at bottom right, #fadafa, transparent),
   radial-gradient(circle at bottom left, cyan, transparent)
   ;
 }
 body{
-  backdrop-filter: invert(0%) hue-rotate(180deg);
+  backdrop-filter: invert(100%) hue-rotate(0deg);
   width: 100%;
   height: 100vh;
   background-color: transparent;
@@ -26,4 +26,9 @@ body{
   display: inline-block;
   margin-right: 1rem;
   margin-bottom: 1rem;
+}
+.imgIcon{
+  width: 100px;
+  aspect-ratio: 1;
+  object-fit: cover;
 }

@@ -8,7 +8,7 @@
   padding: 0px;
 }
 
-@media screen and (min-aspect-ratio: 0.69) and (max-aspect-ratio: 1.24) {
+@media screen and (min-aspect-ratio: 0.69) and (max-aspect-ratio: 1.25) {
   .gridRow {
     display: flex;
     flex-grow: 1;
@@ -18,91 +18,76 @@
     display: none;
   }
   .gridRow .colWd-1-sq {
-    display: flex;
     flex: 0.0666666667;
     min-width: 6.6666666667%;
     max-width: 6.6666666667%;
   }
   .gridRow .colWd-2-sq {
-    display: flex;
     flex: 0.1333333333;
     min-width: 13.3333333333%;
     max-width: 20%;
   }
   .gridRow .colWd-3-sq {
-    display: flex;
     flex: 0.2;
     min-width: 20%;
     max-width: 20%;
   }
   .gridRow .colWd-4-sq {
-    display: flex;
     flex: 0.2666666667;
     min-width: 26.6666666667%;
     max-width: 26.6666666667%;
   }
   .gridRow .colWd-5-sq {
-    display: flex;
     flex: 0.3333333333;
     min-width: 33.3333333333%;
     max-width: 33.3333333333%;
   }
   .gridRow .colWd-6-sq {
-    display: flex;
     flex: 0.4;
     min-width: 40%;
     max-width: 40%;
   }
   .gridRow .colWd-7-sq {
-    display: flex;
     flex: 0.4666666667;
     min-width: 46.6666666667%;
     max-width: 46.6666666667%;
   }
   .gridRow .colWd-8-sq {
-    display: flex;
     flex: 0.5333333333;
     min-width: 53.3333333333%;
     max-width: 53.3333333333%;
   }
   .gridRow .colWd-9-sq {
-    display: flex;
     flex: 0.6;
     min-width: 60%;
     max-width: 60%;
   }
   .gridRow .colWd-10-sq {
-    display: flex;
     flex: 0.6666666667;
     min-width: 66.6666666667%;
     max-width: 66.6666666667%;
   }
   .gridRow .colWd-11-sq {
-    display: flex;
     flex: 0.7333333333;
     min-width: 73.3333333333%;
     max-width: 73.3333333333%;
   }
   .gridRow .colWd-12-sq {
-    display: flex;
     flex: 0.8;
     min-width: 80%;
     max-width: 80%;
   }
   .gridRow .colWd-13-sq {
-    display: flex;
     flex: 0.8666666667;
     min-width: 86.6666666667%;
     max-width: 86.6666666667%;
   }
   .gridRow .colWd-14-sq {
-    display: flex;
     flex: 0.9333333333;
     min-width: 93.3333333333%;
     max-width: 93.3333333333%;
   }
   .gridRow .colWd-15-sq {
-    display: flex;
     flex: 1;
     min-width: 100%;
     max-width: 100%;
@@ -142,91 +127,76 @@
     display: none;
   }
   .gridRow .colWd-1-ld {
-    display: flex;
     flex: 0.0666666667;
     min-width: 6.6666666667%;
     max-width: 6.6666666667%;
   }
   .gridRow .colWd-2-ld {
-    display: flex;
     flex: 0.1333333333;
     min-width: 13.3333333333%;
     max-width: 20%;
   }
   .gridRow .colWd-3-ld {
-    display: flex;
     flex: 0.2;
     min-width: 20%;
     max-width: 20%;
   }
   .gridRow .colWd-4-ld {
-    display: flex;
     flex: 0.2666666667;
     min-width: 26.6666666667%;
     max-width: 26.6666666667%;
   }
   .gridRow .colWd-5-ld {
-    display: flex;
     flex: 0.3333333333;
     min-width: 33.3333333333%;
     max-width: 33.3333333333%;
   }
   .gridRow .colWd-6-ld {
-    display: flex;
     flex: 0.4;
     min-width: 40%;
     max-width: 40%;
   }
   .gridRow .colWd-7-ld {
-    display: flex;
     flex: 0.4666666667;
     min-width: 46.6666666667%;
     max-width: 46.6666666667%;
   }
   .gridRow .colWd-8-ld {
-    display: flex;
     flex: 0.5333333333;
     min-width: 53.3333333333%;
     max-width: 53.3333333333%;
   }
   .gridRow .colWd-9-ld {
-    display: flex;
     flex: 0.6;
     min-width: 60%;
     max-width: 60%;
   }
   .gridRow .colWd-10-ld {
-    display: flex;
     flex: 0.6666666667;
     min-width: 66.6666666667%;
     max-width: 66.6666666667%;
   }
   .gridRow .colWd-11-ld {
-    display: flex;
     flex: 0.7333333333;
     min-width: 73.3333333333%;
     max-width: 73.3333333333%;
   }
   .gridRow .colWd-12-ld {
-    display: flex;
     flex: 0.8;
     min-width: 80%;
     max-width: 80%;
   }
   .gridRow .colWd-13-ld {
-    display: flex;
     flex: 0.8666666667;
     min-width: 86.6666666667%;
     max-width: 86.6666666667%;
   }
   .gridRow .colWd-14-ld {
-    display: flex;
     flex: 0.9333333333;
     min-width: 93.3333333333%;
     max-width: 93.3333333333%;
   }
   .gridRow .colWd-15-ld {
-    display: flex;
     flex: 1;
     min-width: 100%;
     max-width: 100%;
@@ -256,7 +226,7 @@
     align-content: center;
   }
 }
-@media screen and (min-aspect-ratio: 0.29) and (max-aspect-ratio: 0.68) {
+@media screen and (min-aspect-ratio: 0.29) and (max-aspect-ratio: 0.69) {
   .gridRow {
     display: flex;
     flex-grow: 1;
@@ -268,92 +238,77 @@
   .gridRow .colWd-0-sm {
     display: none;
   }
-  .gridRow .colWd-1-sm {
-    display: flex;
+  .gridRow .colWd-1-sq {
     flex: 0.0666666667;
     min-width: 6.6666666667%;
     max-width: 6.6666666667%;
   }
-  .gridRow .colWd-2-sm {
-    display: flex;
+  .gridRow .colWd-2-sq {
     flex: 0.1333333333;
     min-width: 13.3333333333%;
     max-width: 20%;
   }
-  .gridRow .colWd-3-sm {
-    display: flex;
+  .gridRow .colWd-3-sq {
     flex: 0.2;
     min-width: 20%;
     max-width: 20%;
   }
-  .gridRow .colWd-4-sm {
-    display: flex;
+  .gridRow .colWd-4-sq {
     flex: 0.2666666667;
     min-width: 26.6666666667%;
     max-width: 26.6666666667%;
   }
-  .gridRow .colWd-5-sm {
-    display: flex;
+  .gridRow .colWd-5-sq {
     flex: 0.3333333333;
     min-width: 33.3333333333%;
     max-width: 33.3333333333%;
   }
-  .gridRow .colWd-6-sm {
-    display: flex;
+  .gridRow .colWd-6-sq {
     flex: 0.4;
     min-width: 40%;
     max-width: 40%;
   }
-  .gridRow .colWd-7-sm {
-    display: flex;
+  .gridRow .colWd-7-sq {
     flex: 0.4666666667;
     min-width: 46.6666666667%;
     max-width: 46.6666666667%;
   }
-  .gridRow .colWd-8-sm {
-    display: flex;
+  .gridRow .colWd-8-sq {
     flex: 0.5333333333;
     min-width: 53.3333333333%;
     max-width: 53.3333333333%;
   }
-  .gridRow .colWd-9-sm {
-    display: flex;
+  .gridRow .colWd-9-sq {
     flex: 0.6;
     min-width: 60%;
     max-width: 60%;
   }
-  .gridRow .colWd-10-sm {
-    display: flex;
+  .gridRow .colWd-10-sq {
     flex: 0.6666666667;
     min-width: 66.6666666667%;
     max-width: 66.6666666667%;
   }
-  .gridRow .colWd-11-sm {
-    display: flex;
+  .gridRow .colWd-11-sq {
     flex: 0.7333333333;
     min-width: 73.3333333333%;
     max-width: 73.3333333333%;
   }
-  .gridRow .colWd-12-sm {
-    display: flex;
+  .gridRow .colWd-12-sq {
     flex: 0.8;
     min-width: 80%;
     max-width: 80%;
   }
-  .gridRow .colWd-13-sm {
-    display: flex;
+  .gridRow .colWd-13-sq {
     flex: 0.8666666667;
     min-width: 86.6666666667%;
     max-width: 86.6666666667%;
   }
-  .gridRow .colWd-14-sm {
-    display: flex;
+  .gridRow .colWd-14-sq {
     flex: 0.9333333333;
     min-width: 93.3333333333%;
     max-width: 93.3333333333%;
   }
-  .gridRow .colWd-15-sm {
-    display: flex;
+  .gridRow .colWd-15-sq {
     flex: 1;
     min-width: 100%;
     max-width: 100%;
@@ -470,12 +425,12 @@
 }
 
 /*
-//Global Variables - Dark
-$primaryBackground: #0e105a;
-$primaryText: #eaeaca;
+//Global Variables - Light
+$primaryBackground: #0e115a;
+$primaryText: #1e1e1e;
 
 $accentBackground: #3e40ba;
-$accentText: #dadaba;
+$accentText: #0e0e0e;
 */
 .brSmooth {
   border-radius: 0.2rem;
@@ -494,7 +449,7 @@ $accentText: #dadaba;
 }
 
 .withPrimaryBackground {
-  background-color: rgba(14, 17, 90, 0.2);
+  background-color: rgba(14, 16, 90, 0.2);
   -webkit-backdrop-filter: saturate(180%) contrast(120%) blur(4px);
           backdrop-filter: saturate(180%) contrast(120%) blur(4px);
 }
@@ -542,14 +497,14 @@ $accentText: #dadaba;
   cursor: pointer;
 }
 .navBar .navItem.outline, .navBar .navBrand.outline {
-  border: 2px solid #1e1e1e;
+  border: 2px solid #eaeaca;
 }
 .navBar .navItem.underline, .navBar .navBrand.underline {
-  border-bottom: 2px solid #1e1e1e;
+  border-bottom: 2px solid #eaeaca;
 }
 .navBar .navItem.solid, .navBar .navBrand.solid {
-  background-color: #0e115a;
-  color: #1e1e1e;
+  background-color: #0e105a;
+  color: #eaeaca;
 }
 .navBar .navItem:hover, .navBar .navBrand:hover {
   filter: contrast(125%);
@@ -602,14 +557,14 @@ $accentText: #dadaba;
   cursor: pointer;
 }
 .sideNav .navItem.outline, .sideNav .navTitle.outline, .sideNav .navBrand.outline {
-  border: 2px solid #1e1e1e;
+  border: 2px solid #eaeaca;
 }
 .sideNav .navItem.underline, .sideNav .navTitle.underline, .sideNav .navBrand.underline {
-  border-bottom: 2px solid #1e1e1e;
+  border-bottom: 2px solid #eaeaca;
 }
 .sideNav .navItem.solid, .sideNav .navTitle.solid, .sideNav .navBrand.solid {
-  background-color: #0e115a;
-  color: #1e1e1e;
+  background-color: #0e105a;
+  color: #eaeaca;
 }
 .sideNav .navItem:hover, .sideNav .navTitle:hover, .sideNav .navBrand:hover {
   filter: contrast(125%);
@@ -619,10 +574,10 @@ $accentText: #dadaba;
   filter: contrast(125%) saturate(160%);
 }
 .sideNav .navItem {
-  color: #0e0e0e;
+  color: #dadaba;
 }
 .sideNav .navItem:hover {
-  background-color: #0e115a;
+  background-color: #0e105a;
 }
 .sideNav .navItem:active {
   background-color: #3e40ba;
@@ -639,17 +594,17 @@ $accentText: #dadaba;
 .sideNav .navTitle {
   font-size: 1.4rem;
   font-weight: bold;
-  color: #1e1e1e;
+  color: #eaeaca;
   border-radius: 3px;
 }
 
 /*
-//Global Variables - Dark
-$primaryBackground: #0e105a;
-$primaryText: #eaeaca;
+//Global Variables - Light
+$primaryBackground: #0e115a;
+$primaryText: #1e1e1e;
 
 $accentBackground: #3e40ba;
-$accentText: #dadaba;
+$accentText: #0e0e0e;
 */
 .brSmooth {
   border-radius: 0.2rem;
@@ -668,7 +623,7 @@ $accentText: #dadaba;
 }
 
 .withPrimaryBackground {
-  background-color: rgba(14, 17, 90, 0.2);
+  background-color: rgba(14, 16, 90, 0.2);
   -webkit-backdrop-filter: saturate(180%) contrast(120%) blur(4px);
           backdrop-filter: saturate(180%) contrast(120%) blur(4px);
 }
@@ -678,7 +633,7 @@ $accentText: #dadaba;
 }
 
 * {
-  color: #1e1e1e;
+  color: #eaeaca;
   font-weight: regular;
 }
 
@@ -695,18 +650,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .subtitle {
   font-size: 1.75rem;
-  color: #0e0e0e;
+  color: #dadaba;
   padding: 0rem 2vw 0rem 0rem;
 }
 
 .text {
   font-size: 1.0815594795rem;
-  color: #0e0e0e;
+  color: #dadaba;
   padding: 0rem 2vw 0rem 0rem;
 }
 
 strong {
-  color: #1e1e1e;
+  color: #eaeaca;
 }
 
 .taCenter {
@@ -722,21 +677,47 @@ strong {
 }
 
 .taJustify {
-  text-align: right;
+  text-align: justify;
 }
 
 .noDecoration {
   text-decoration: none;
 }
 
-ul {
+ul, ol {
   margin-left: 1rem;
+}
+
+.objAligner {
+  display: flex;
+}
+.objAligner .objLeft {
+  display: block;
+  margin-left: 0;
+}
+.objAligner .objRight {
+  display: block;
+  margin-left: auto;
+}
+.objAligner .objCenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.objAligner .objTop {
+  align-self: top;
+}
+.objAligner .objBottom {
+  align-self: bottom;
+}
+.objAligner .objMiddle {
+  align-self: center;
 }
 
 .inlineCode {
   border: 1px solid #3e40ba;
   background: rgba(62, 64, 186, 0.4);
-  color: #0e0e0e;
+  color: #dadaba;
   border-radius: 0.4rem;
   padding: 0 0.2rem;
   font-family: monospace;
@@ -751,7 +732,7 @@ ul {
   width: 100%;
   padding: 0.4rem 0.6rem;
   font-size: 1rem;
-  background: rgba(14, 14, 14, 0.4);
+  background: rgba(218, 218, 186, 0.4);
   color: #3e40ba;
   border-radius: 0.4rem;
   font-weight: bold;
@@ -773,7 +754,7 @@ ul {
   width: 100%;
   padding: 0.4rem 0.6rem;
   font-size: 1rem;
-  background: rgba(14, 14, 14, 0.4);
+  background: rgba(218, 218, 186, 0.4);
   color: #3e40ba;
   border-radius: 0.4rem;
   font-weight: bold;

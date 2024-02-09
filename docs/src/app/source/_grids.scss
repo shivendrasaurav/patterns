@@ -1,4 +1,4 @@
-@media screen and (min-aspect-ratio: 0.69) and (max-aspect-ratio: 1.24) {
+@media screen and (min-aspect-ratio: 0.69) and (max-aspect-ratio: 1.25) {
     .gridRow {
         display: flex;
         flex-grow: 1;
@@ -8,91 +8,76 @@
             display: none;
         }
         .colWd-1-sq{
-            display: flex;
             flex: calc(1/15);
             min-width: calc(100%/15*1);
             max-width: calc(100%/15*1);
         }
         .colWd-2-sq{
-            display: flex;
             flex: calc(2/15);
             min-width: calc(100%/15*2);
             max-width: calc(100%/15*3);
         }
         .colWd-3-sq{
-            display: flex;
             flex: calc(3/15);
             min-width: calc(100%/15*3);
             max-width: calc(100%/15*3);
         }
         .colWd-4-sq{
-            display: flex;
             flex: calc(4/15);
             min-width: calc(100%/15*4);
             max-width: calc(100%/15*4);
         }
         .colWd-5-sq{
-            display: flex;
             flex: calc(5/15);
             min-width: calc(100%/15*5);
             max-width: calc(100%/15*5);
         }
         .colWd-6-sq{
-            display: flex;
             flex: calc(6/15);
             min-width: calc(100%/15*6);
             max-width: calc(100%/15*6);
         }
         .colWd-7-sq{
-            display: flex;
             flex: calc(7/15);
             min-width: calc(100%/15*7);
             max-width: calc(100%/15*7);
         }
         .colWd-8-sq{
-            display: flex;
             flex: calc(8/15);
             min-width: calc(100%/15*8);
             max-width: calc(100%/15*8);
         }
         .colWd-9-sq{
-            display: flex;
             flex: calc(9/15);
             min-width: calc(100%/15*9);
             max-width: calc(100%/15*9);
         }
         .colWd-10-sq{
-            display: flex;
             flex: calc(10/15);
             min-width: calc(100%/15*10);
             max-width: calc(100%/15*10);
         }
         .colWd-11-sq{
-            display: flex;
             flex: calc(11/15);
             min-width: calc(100%/15*11);
             max-width: calc(100%/15*11);
         }
         .colWd-12-sq{
-            display: flex;
             flex: calc(12/15);
             min-width: calc(100%/15*12);
             max-width: calc(100%/15*12);
         }
         .colWd-13-sq{
-            display: flex;
             flex: calc(13/15);
             min-width: calc(100%/15*13);
             max-width: calc(100%/15*13);
         }
         .colWd-14-sq{
-            display: flex;
             flex: calc(14/15);
             min-width: calc(100%/15*14);
             max-width: calc(100%/15*14);
         }
         .colWd-15-sq{
-            display: flex;
             flex: calc(15/15);
             min-width: calc(100%/15*15);
             max-width: calc(100%/15*15);
@@ -134,91 +119,76 @@
             display: none;
         }
         .colWd-1-ld{
-            display: flex;
             flex: calc(1/15);
             min-width: calc(100%/15*1);
             max-width: calc(100%/15*1);
         }
         .colWd-2-ld{
-            display: flex;
             flex: calc(2/15);
             min-width: calc(100%/15*2);
             max-width: calc(100%/15*3);
         }
         .colWd-3-ld{
-            display: flex;
             flex: calc(3/15);
             min-width: calc(100%/15*3);
             max-width: calc(100%/15*3);
         }
         .colWd-4-ld{
-            display: flex;
             flex: calc(4/15);
             min-width: calc(100%/15*4);
             max-width: calc(100%/15*4);
         }
         .colWd-5-ld{
-            display: flex;
             flex: calc(5/15);
             min-width: calc(100%/15*5);
             max-width: calc(100%/15*5);
         }
         .colWd-6-ld{
-            display: flex;
             flex: calc(6/15);
             min-width: calc(100%/15*6);
             max-width: calc(100%/15*6);
         }
         .colWd-7-ld{
-            display: flex;
             flex: calc(7/15);
             min-width: calc(100%/15*7);
             max-width: calc(100%/15*7);
         }
         .colWd-8-ld{
-            display: flex;
             flex: calc(8/15);
             min-width: calc(100%/15*8);
             max-width: calc(100%/15*8);
         }
         .colWd-9-ld{
-            display: flex;
             flex: calc(9/15);
             min-width: calc(100%/15*9);
             max-width: calc(100%/15*9);
         }
         .colWd-10-ld{
-            display: flex;
             flex: calc(10/15);
             min-width: calc(100%/15*10);
             max-width: calc(100%/15*10);
         }
         .colWd-11-ld{
-            display: flex;
             flex: calc(11/15);
             min-width: calc(100%/15*11);
             max-width: calc(100%/15*11);
         }
         .colWd-12-ld{
-            display: flex;
             flex: calc(12/15);
             min-width: calc(100%/15*12);
             max-width: calc(100%/15*12);
         }
         .colWd-13-ld{
-            display: flex;
             flex: calc(13/15);
             min-width: calc(100%/15*13);
             max-width: calc(100%/15*13);
         }
         .colWd-14-ld{
-            display: flex;
             flex: calc(14/15);
             min-width: calc(100%/15*14);
             max-width: calc(100%/15*14);
         }
         .colWd-15-ld{
-            display: flex;
             flex: calc(15/15);
             min-width: calc(100%/15*15);
             max-width: calc(100%/15*15);
@@ -250,7 +220,7 @@
         }
     }
 }
-@media screen and (min-aspect-ratio: 0.29) and (max-aspect-ratio: 0.68) {
+@media screen and (min-aspect-ratio: 0.29) and (max-aspect-ratio: 0.69) {
     .gridRow {
         display: flex;
         flex-grow: 1;
@@ -263,92 +233,77 @@
         .colWd-0-sm{
             display: none;
         }
-        .colWd-1-sm{
-            display: flex;
+        .colWd-1-sq{
             flex: calc(1/15);
             min-width: calc(100%/15*1);
             max-width: calc(100%/15*1);
         }
-        .colWd-2-sm{
-            display: flex;
+        .colWd-2-sq{
             flex: calc(2/15);
             min-width: calc(100%/15*2);
             max-width: calc(100%/15*3);
         }
-        .colWd-3-sm{
-            display: flex;
+        .colWd-3-sq{
             flex: calc(3/15);
             min-width: calc(100%/15*3);
             max-width: calc(100%/15*3);
         }
-        .colWd-4-sm{
-            display: flex;
+        .colWd-4-sq{
             flex: calc(4/15);
             min-width: calc(100%/15*4);
             max-width: calc(100%/15*4);
         }
-        .colWd-5-sm{
-            display: flex;
+        .colWd-5-sq{
             flex: calc(5/15);
             min-width: calc(100%/15*5);
             max-width: calc(100%/15*5);
         }
-        .colWd-6-sm{
-            display: flex;
+        .colWd-6-sq{
             flex: calc(6/15);
             min-width: calc(100%/15*6);
             max-width: calc(100%/15*6);
         }
-        .colWd-7-sm{
-            display: flex;
+        .colWd-7-sq{
             flex: calc(7/15);
             min-width: calc(100%/15*7);
             max-width: calc(100%/15*7);
         }
-        .colWd-8-sm{
-            display: flex;
+        .colWd-8-sq{
             flex: calc(8/15);
             min-width: calc(100%/15*8);
             max-width: calc(100%/15*8);
         }
-        .colWd-9-sm{
-            display: flex;
+        .colWd-9-sq{
             flex: calc(9/15);
             min-width: calc(100%/15*9);
             max-width: calc(100%/15*9);
         }
-        .colWd-10-sm{
-            display: flex;
+        .colWd-10-sq{
             flex: calc(10/15);
             min-width: calc(100%/15*10);
             max-width: calc(100%/15*10);
         }
-        .colWd-11-sm{
-            display: flex;
+        .colWd-11-sq{
             flex: calc(11/15);
             min-width: calc(100%/15*11);
             max-width: calc(100%/15*11);
         }
-        .colWd-12-sm{
-            display: flex;
+        .colWd-12-sq{
             flex: calc(12/15);
             min-width: calc(100%/15*12);
             max-width: calc(100%/15*12);
         }
-        .colWd-13-sm{
-            display: flex;
+        .colWd-13-sq{
             flex: calc(13/15);
             min-width: calc(100%/15*13);
             max-width: calc(100%/15*13);
         }
-        .colWd-14-sm{
-            display: flex;
+        .colWd-14-sq{
             flex: calc(14/15);
             min-width: calc(100%/15*14);
             max-width: calc(100%/15*14);
         }
-        .colWd-15-sm{
-            display: flex;
+        .colWd-15-sq{
             flex: calc(15/15);
             min-width: calc(100%/15*15);
             max-width: calc(100%/15*15);

@@ -37,13 +37,42 @@ strong{
     text-align: right;
 }
 .taJustify{
-    text-align: right;
+    text-align: justify;
 }
 .noDecoration{
     text-decoration: none;
 }
-ul{
+ul, ol{
     margin-left: 1rem;
+}
+
+//Object aligners
+.objAligner{
+    display: flex;
+
+    .objLeft{
+        display: block;
+        margin-left: 0;
+    }
+    .objRight{
+        display: block;
+        margin-left: auto;
+    }
+    .objCenter{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .objTop{
+        align-self: top;
+    }
+    .objBottom{
+        align-self: bottom;
+    }
+    .objMiddle{
+        align-self: center;
+    }
+    
 }
 
 //codeblocks
