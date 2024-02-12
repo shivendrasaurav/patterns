@@ -1,0 +1,22 @@
+{
+    "name": "patterns-ui",
+    "version": "0.0.1",
+    "description": "A truly responsive css framwork",
+    "main": "./styles/main.css",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/invrz/patterns.git"
+    },
+    "author": "Shivendra Saurav",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/invrz/patterns/issues"
+    },
+    "homepage": "https://invrz.com",
+    "publishConfig": {
+      "registry": "https://registry.npmjs.org/"
+    }
+  }
