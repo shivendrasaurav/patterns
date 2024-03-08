@@ -11,9 +11,10 @@ const Views = () => {
                 <DocsTopNav />
             </div>
             <div className="gridRow rowHi-8 rowCenter">
-                <div className="colWd-3">
+                <div className="colWd-2">
                     <DocsSideNav />
                 </div>
+                <div className="gutterWd-1"></div>
                 <div className="colWd-10">
                     <div className="withPrimaryBackground contentWrapper paddingSmall">
                         <h1>Views</h1>

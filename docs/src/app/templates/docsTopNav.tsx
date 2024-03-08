@@ -6,7 +6,7 @@ const DocsTopNav = () =>{
                 <p className="navBrand">invrz patterns</p>
             </div>
             <div className="itemGroup onRight">
-                <p className="navItem colWd-0-sm">Docs</p>
+                <a href="/layout/views" className="noDecoration"><p className="navItem colWd-0-sm">Docs</p></a>
                 <p className="navItem colWd-0-sm">Get Started</p>
                 <p className="navItem colWd-0-sm">Open Source</p>  
                 <p className="navItem colWd-0-ld">|||</p>            

@@ -1,10 +1,13 @@
+//Grid Variables
+$partitions: 15;
+$gutters: 60;
 
 //Global Variables - Dark
 $primaryBackground: #0e105a;
-$primaryText: #eaeaca;
+$primaryText: #fafafa;
 
 $accentBackground: #3e40ba;
-$accentText: #dadaba;
+$accentText: #eaeaea;
 
 /*
 //Global Variables - Light
@@ -23,23 +26,3 @@ $sidenavItemColor: $accentText;
 $sidenavBrandBR: 0px;
 $sidenavTitleBR: 3px;
 $sidenavItemBR: 5px;
-
-//Border Radius
-$brSmooth: 0.2rem;
-$brSmoother: 0.4rem;
-$brSmoothest: 1rem;
-$brCircle: 100%;
-
-.brSmooth{border-radius: 0.2rem};
-.brSmoother{border-radius: 0.4rem};
-.brSmoothest{border-radius: 1rem};
-.brCircle{border-radius: 100%};
-
-//Backgrounds
-.withPrimaryBackground{
-    background-color: transparentize($primaryBackground, 0.8);
-    backdrop-filter: $sidenavBackdropFilter;
-}
-.paddingSmall{
-    padding: 4px 10px;
-}

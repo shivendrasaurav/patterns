@@ -1,381 +1,142 @@
-@media screen and (min-aspect-ratio: 0.69) and (max-aspect-ratio: 1.25) {
-    .gridRow {
-        display: flex;
-        flex-grow: 1;
-        flex-wrap: nowrap;
-    
-        .colWd-0-sq{
-            display: none;
-        }
-        .colWd-1-sq{
-            flex: calc(1/15);
-            min-width: calc(100%/15*1);
-            max-width: calc(100%/15*1);
-        }
-        .colWd-2-sq{
-            flex: calc(2/15);
-            min-width: calc(100%/15*2);
-            max-width: calc(100%/15*3);
-        }
-        .colWd-3-sq{
-            flex: calc(3/15);
-            min-width: calc(100%/15*3);
-            max-width: calc(100%/15*3);
-        }
-        .colWd-4-sq{
-            flex: calc(4/15);
-            min-width: calc(100%/15*4);
-            max-width: calc(100%/15*4);
-        }
-        .colWd-5-sq{
-            flex: calc(5/15);
-            min-width: calc(100%/15*5);
-            max-width: calc(100%/15*5);
-        }
-        .colWd-6-sq{
-            flex: calc(6/15);
-            min-width: calc(100%/15*6);
-            max-width: calc(100%/15*6);
-        }
-        .colWd-7-sq{
-            flex: calc(7/15);
-            min-width: calc(100%/15*7);
-            max-width: calc(100%/15*7);
-        }
-        .colWd-8-sq{
-            flex: calc(8/15);
-            min-width: calc(100%/15*8);
-            max-width: calc(100%/15*8);
-        }
-        .colWd-9-sq{
-            flex: calc(9/15);
-            min-width: calc(100%/15*9);
-            max-width: calc(100%/15*9);
-        }
-        .colWd-10-sq{
-            flex: calc(10/15);
-            min-width: calc(100%/15*10);
-            max-width: calc(100%/15*10);
-        }
-        .colWd-11-sq{
-            flex: calc(11/15);
-            min-width: calc(100%/15*11);
-            max-width: calc(100%/15*11);
-        }
-        .colWd-12-sq{
-            flex: calc(12/15);
-            min-width: calc(100%/15*12);
-            max-width: calc(100%/15*12);
-        }
-        .colWd-13-sq{
-            flex: calc(13/15);
-            min-width: calc(100%/15*13);
-            max-width: calc(100%/15*13);
-        }
-        .colWd-14-sq{
-            flex: calc(14/15);
-            min-width: calc(100%/15*14);
-            max-width: calc(100%/15*14);
-        }
-        .colWd-15-sq{
-            flex: calc(15/15);
-            min-width: calc(100%/15*15);
-            max-width: calc(100%/15*15);
-        }
-    
-        &.rowLeft{
-            justify-content: flex-start;
-            justify-items: flex-start;
-        }
-        &.rowRight{
-            justify-content: flex-end;
-            justify-items: flex-end;
-        }
-        &.rowCenter{
-            justify-content: center;
-            justify-items: center;
-        }
-        &.rowTop{
-            align-items: flex-start;
-            align-content: flex-start;
-        }
-        &.rowBottom{
-            align-items: flex-end;
-            align-content: flex-end;
-        }
-        &.rowMiddle{
-            align-items: center;
-            align-content: center;
-        }
-    }
-}
-@media screen and (min-aspect-ratio: 1.25) and (max-aspect-ratio: 2.33) {
-    .gridRow {
-        display: flex;
-        flex-grow: 1;
-        flex-wrap: nowrap;
-    
-        .colWd-0-ld{
-            display: none;
-        }
-        .colWd-1-ld{
-            flex: calc(1/15);
-            min-width: calc(100%/15*1);
-            max-width: calc(100%/15*1);
-        }
-        .colWd-2-ld{
-            flex: calc(2/15);
-            min-width: calc(100%/15*2);
-            max-width: calc(100%/15*3);
-        }
-        .colWd-3-ld{
-            flex: calc(3/15);
-            min-width: calc(100%/15*3);
-            max-width: calc(100%/15*3);
-        }
-        .colWd-4-ld{
-            flex: calc(4/15);
-            min-width: calc(100%/15*4);
-            max-width: calc(100%/15*4);
-        }
-        .colWd-5-ld{
-            flex: calc(5/15);
-            min-width: calc(100%/15*5);
-            max-width: calc(100%/15*5);
-        }
-        .colWd-6-ld{
-            flex: calc(6/15);
-            min-width: calc(100%/15*6);
-            max-width: calc(100%/15*6);
-        }
-        .colWd-7-ld{
-            flex: calc(7/15);
-            min-width: calc(100%/15*7);
-            max-width: calc(100%/15*7);
-        }
-        .colWd-8-ld{
-            flex: calc(8/15);
-            min-width: calc(100%/15*8);
-            max-width: calc(100%/15*8);
-        }
-        .colWd-9-ld{
-            flex: calc(9/15);
-            min-width: calc(100%/15*9);
-            max-width: calc(100%/15*9);
-        }
-        .colWd-10-ld{
-            flex: calc(10/15);
-            min-width: calc(100%/15*10);
-            max-width: calc(100%/15*10);
-        }
-        .colWd-11-ld{
-            flex: calc(11/15);
-            min-width: calc(100%/15*11);
-            max-width: calc(100%/15*11);
-        }
-        .colWd-12-ld{
-            flex: calc(12/15);
-            min-width: calc(100%/15*12);
-            max-width: calc(100%/15*12);
-        }
-        .colWd-13-ld{
-            flex: calc(13/15);
-            min-width: calc(100%/15*13);
-            max-width: calc(100%/15*13);
-        }
-        .colWd-14-ld{
-            flex: calc(14/15);
-            min-width: calc(100%/15*14);
-            max-width: calc(100%/15*14);
-        }
-        .colWd-15-ld{
-            flex: calc(15/15);
-            min-width: calc(100%/15*15);
-            max-width: calc(100%/15*15);
-        }
-    
-        &.rowLeft{
-            justify-content: flex-start;
-            justify-items: flex-start;
-        }
-        &.rowRight{
-            justify-content: flex-end;
-            justify-items: flex-end;
-        }
-        &.rowCenter{
-            justify-content: center;
-            justify-items: center;
-        }
-        &.rowTop{
-            align-items: flex-start;
-            align-content: flex-start;
-        }
-        &.rowBottom{
-            align-items: flex-end;
-            align-content: flex-end;
-        }
-        &.rowMiddle{
-            align-items: center;
-            align-content: center;
-        }
-    }
-}
-@media screen and (min-aspect-ratio: 0.29) and (max-aspect-ratio: 0.69) {
-    .gridRow {
-        display: flex;
-        flex-grow: 1;
-        flex-wrap: nowrap;
+@import "variables";
 
-        &.colWd-0-sm{
-            display: none;
+//common devices - not responsive
+.gridRow {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+
+    @for $i from 0 through $partitions {
+        .colWd-#{$i} {
+            @if $i == 0 {
+                display: none;
+            }
+            @else {
+                flex: calc(#{$i} / $partitions);
+                min-width: calc(100% / $partitions * #{$i});
+                max-width: calc(100% / $partitions * #{$i});
+            }
         }
-    
-        .colWd-0-sm{
-            display: none;
+    }
+    @for $i from 0 through $gutters {
+        .gutterWd-#{$i} {
+            @if $i == 0 {
+                display: none;
+            }
+            @else {
+                content: " ";
+                flex: calc(#{$i} / $gutters);
+                min-width: calc(100% / $gutters * #{$i});
+                max-width: calc(100% / $gutters * #{$i});
+            }
         }
-        .colWd-1-sq{
-            flex: calc(1/15);
-            min-width: calc(100%/15*1);
-            max-width: calc(100%/15*1);
+    }
+}
+//square devices
+@media screen and (aspect-ratio: 1) {
+    .gridRow {
+      display: flex;
+      flex-grow: 1;
+      flex-wrap: nowrap;
+  
+        @for $i from 0 through $partitions {
+            .colWd-#{$i}-sq {
+                @if $i == 0 {
+                    display: none;
+                }
+                @else {
+                    flex: calc(#{$i} / $partitions);
+                    min-width: calc(100% / $partitions * #{$i});
+                    max-width: calc(100% / $partitions * #{$i});
+                }
+            }
         }
-        .colWd-2-sq{
-            flex: calc(2/15);
-            min-width: calc(100%/15*2);
-            max-width: calc(100%/15*3);
+    }
+}
+
+//portrait devices
+@media screen and (max-aspect-ratio: 1) {
+    .gridRow {
+      display: flex;
+      flex-grow: 1;
+      flex-wrap: nowrap;
+  
+        @for $i from 0 through $partitions {
+            .colWd-#{$i}-sm {
+                @if $i == 0 {
+                    display: none;
+                }
+                @else {
+                    flex: calc(#{$i} / $partitions);
+                    min-width: calc(100% / $partitions * #{$i});
+                    max-width: calc(100% / $partitions * #{$i});
+                }
+            }
         }
-        .colWd-3-sq{
-            flex: calc(3/15);
-            min-width: calc(100%/15*3);
-            max-width: calc(100%/15*3);
+    }
+}
+
+//landscape devices
+@media screen and (min-aspect-ratio: 1) {
+    .gridRow {
+      display: flex;
+      flex-grow: 1;
+      flex-wrap: nowrap;
+      
+      &.withBorder{
+        border: 1px solid $primaryText;
+
+        *{
+            border: 1px solid $primaryText;
         }
-        .colWd-4-sq{
-            flex: calc(4/15);
-            min-width: calc(100%/15*4);
-            max-width: calc(100%/15*4);
+      }
+  
+        @for $i from 0 through $partitions {
+            .colWd-#{$i}-ld {
+                @if $i == 0 {
+                    display: none;
+                }
+                @else {
+                    flex: calc(#{$i} / $partitions);
+                    min-width: calc(100% / $partitions * #{$i});
+                    max-width: calc(100% / $partitions * #{$i});
+                }
+            }
         }
-        .colWd-5-sq{
-            flex: calc(5/15);
-            min-width: calc(100%/15*5);
-            max-width: calc(100%/15*5);
-        }
-        .colWd-6-sq{
-            flex: calc(6/15);
-            min-width: calc(100%/15*6);
-            max-width: calc(100%/15*6);
-        }
-        .colWd-7-sq{
-            flex: calc(7/15);
-            min-width: calc(100%/15*7);
-            max-width: calc(100%/15*7);
-        }
-        .colWd-8-sq{
-            flex: calc(8/15);
-            min-width: calc(100%/15*8);
-            max-width: calc(100%/15*8);
-        }
-        .colWd-9-sq{
-            flex: calc(9/15);
-            min-width: calc(100%/15*9);
-            max-width: calc(100%/15*9);
-        }
-        .colWd-10-sq{
-            flex: calc(10/15);
-            min-width: calc(100%/15*10);
-            max-width: calc(100%/15*10);
-        }
-        .colWd-11-sq{
-            flex: calc(11/15);
-            min-width: calc(100%/15*11);
-            max-width: calc(100%/15*11);
-        }
-        .colWd-12-sq{
-            flex: calc(12/15);
-            min-width: calc(100%/15*12);
-            max-width: calc(100%/15*12);
-        }
-        .colWd-13-sq{
-            flex: calc(13/15);
-            min-width: calc(100%/15*13);
-            max-width: calc(100%/15*13);
-        }
-        .colWd-14-sq{
-            flex: calc(14/15);
-            min-width: calc(100%/15*14);
-            max-width: calc(100%/15*14);
-        }
-        .colWd-15-sq{
-            flex: calc(15/15);
-            min-width: calc(100%/15*15);
-            max-width: calc(100%/15*15);
-        }
-    
-        &.rowLeft{
-            justify-content: flex-start;
-            justify-items: flex-start;
-        }
-        &.rowRight{
-            justify-content: flex-end;
-            justify-items: flex-end;
-        }
-        &.rowCenter{
-            justify-content: center;
-            justify-items: center;
-        }
-        &.rowTop{
-            align-items: flex-start;
-            align-content: flex-start;
-        }
-        &.rowBottom{
-            align-items: flex-end;
-            align-content: flex-end;
-        }
-        &.rowMiddle{
-            align-items: center;
-            align-content: center;
-        }
-    }    
+    }
+}
+
+.rowLeft{
+    justify-content: flex-start;
+    justify-items: flex-start;
+}
+.rowRight{
+    justify-content: flex-end;
+    justify-items: flex-end;
+}
+.rowCenter{
+    justify-content: center;
+    justify-items: center;
+}
+.rowTop{
+    align-items: flex-start;
+    align-content: flex-start;
+}
+.rowBottom{
+    align-items: flex-end;
+    align-content: flex-end;
+}
+.rowMiddle{
+    align-items: center;
+    align-content: center;
 }
 
 /* Define the row height classes */
 .colHi-auto{
     height: max-content;
 }
-.colHi-1 {
-    height: 10vh; /* Take up 10% of the viewport height */
-}
-
-.colHi-2 {
-    height: 20vh; /* Take up 20% of the viewport height */
-}
-
-.colHi-3 {
-    height: 30vh; /* Take up 30% of the viewport height */
-}
-
-.colHi-4 {
-    height: 40vh; /* Take up 40% of the viewport height */
-}
-
-.colHi-5 {
-    height: 50vh; /* Take up 50% of the viewport height */
-}
-
-.colHi-6 {
-    height: 60vh; /* Take up 60% of the viewport height */
-}
-
-.colHi-7 {
-    height: 70vh; /* Take up 70% of the viewport height */
-}
-
-.colHi-8 {
-    height: 80vh; /* Take up 80% of the viewport height */
-}
-
-.colHi-9 {
-    height: 90vh; /* Take up 90% of the viewport height */
-}
-
-.colHi-10 {
-    height: 100vh; /* Take up 100% of the viewport height */
+@for $i from 0 through 10 {
+    .colHi-#{$i} {
+        height: calc(10vh * #{$i});
+    }
 }

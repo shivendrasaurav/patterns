@@ -13,9 +13,10 @@ const Grids = () => {
             </div>
             <br/>
             <div className="gridRow rowCenter">
-                <div className="colWd-3-ld colWd-0-sm colHi-auto">
+                <div className="colWd-2-ld colWd-0-sm colHi-auto">
                     <DocsSideNav />
                 </div>
+                <div className="gutterWd-1"></div>
                 <div className="colWd-10-ld colWd-13-sm colHi-auto">
                     <Content />
                 </div>      

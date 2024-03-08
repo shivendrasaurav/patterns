@@ -1,5 +1,9 @@
 @import "variables";
 
+$gr102: 1.75rem;
+$gr175: 2.83rem;
+$gr066: 1.08rem;
+
 *{
     color: $primaryText;
     font-weight: regular;
@@ -10,17 +14,17 @@ h1, h2, h3, h4, h5, h6{
     width: inherit;
 }
 .title{
-    font-size: 2.8315594825rem;
+    font-size: $gr175;
     font-weight: 800;
     padding: 0rem 2vw 0rem 0rem;
 }
 .subtitle{
-    font-size: 1.75rem;
+    font-size: $gr102;
     color: $accentText;
     padding: 0rem 2vw 0rem 0rem;
 }
 .text{
-    font-size: 1.081559479476695rem;
+    font-size: $gr066;
     color: $accentText;
     padding: 0rem 2vw 0rem 0rem;
 }
@@ -80,22 +84,20 @@ ul, ol{
     border: 1px solid $accentBackground;
     background: transparentize($accentBackground, 0.6);
     color: $accentText;
-    border-radius: $brSmoother;
     padding: 0 0.2rem;
     font-family: monospace;
+    font-size: $gr066;
 }
 .codeBlock{
     margin: 1rem 2vw 0.5rem 0rem;
-    border-radius: $brSmoother;
     background: transparentize($accentBackground, 0.6);
 
     .codeLanguage{
         width: 100%;
         padding: 0.4rem 0.6rem;
-        font-size: 1rem;
+        font-size: $gr066;
         background:  transparentize($accentText, 0.6);
         color: $accentBackground;
-        border-radius: $brSmoother;
         font-weight: bold;
     }
     .codeText{
@@ -109,16 +111,14 @@ ul, ol{
 }
 .previewBlock{
     margin: 1rem 2vw 0.5rem 0rem;
-    border-radius: $brSmoother;
     background: transparentize($accentBackground, 0.6);
 
     .previewTitle{
         width: 100%;
         padding: 0.4rem 0.6rem;
-        font-size: 1rem;
+        font-size: $gr066;
         background:  transparentize($accentText, 0.6);
         color: $accentBackground;
-        border-radius: $brSmoother;
         font-weight: bold;
     }
     .previewRender{

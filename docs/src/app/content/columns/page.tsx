@@ -11,7 +11,7 @@ const Columns = () => {
                 <DocsTopNav />
             </div>
             <div className="gridRow rowHi-8 rowCenter">
-                <div className="colWd-3">
+                <div className="colWd-2">
                     <DocsSideNav />
                 </div>
                 <div className="colWd-10">

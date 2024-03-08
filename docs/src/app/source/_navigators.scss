@@ -70,10 +70,9 @@
 
 .sideNav{    
     display: flex;
-    width: 90%;
+    width: 100%;
     flex-direction: column;
     margin: 0 auto;
-    border-radius: $brSmooth;
 
     .itemGroup{
         display: flex;
@@ -109,7 +108,6 @@
         font-weight: 500;
         border: 2px solid transparent;
         padding: 0.5rem 0.8rem;
-        border-radius: $sidenavItemBR;
         cursor: pointer;
 
         &.outline{

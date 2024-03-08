@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Docs - Views',
+  title: 'Docs - Columns',
   description: 'documentation for diffent view types of invrz patterns ui library',
 }
 

@@ -4,7 +4,13 @@ const Content = () => {
                         <h1 className="title">Columns</h1>
                         <h2 className="subtitle">Shape up your app’s partition</h2>
                         <p className="text">
-                            Columns are the vertical divisions of a grid structure in each row defined using <span className="inlineCode">.gridRow</span>. They help you create responsive and flexible layouts for your app. Each column has a class name that starts with <span className="inlineCode">.colWd-*</span> followed by a number from 1 to 15. This number indicates how much space the column takes in a row. For example, <span className="inlineCode">.colWd-9-ld</span> means the column takes 9 units of space in a row in a large display. The total space in a row is 15 units, so you can use any combination of column classes that add up to 15 or less. To use a column in HTML, you need to add the column class to a <span className="inlineCode">{"<div>"}</span> element inside a <span className="inlineCode">.gridRow</span> element. For example:
+                            
+                            <span className="highlighted">
+                            invrz patterns comes out of the box with max column partitions as 15, which can be changed as per requirements by editing the <span className="inlineCode">$partitions</span> value in <span className="inlineCode">variables.scss</span> file according to your needs. For this documentation we will stick to the default 15 column layout but the general rules will be same for any number of <span className="inlineCode">$partitions</span> you set.
+                            </span><br/><br/>
+
+                            Columns are the vertical divisions of a grid structure in each row defined using <span className="inlineCode">.gridRow</span>. They help you create responsive and flexible layouts for your app. Each column has a class name that starts with <span className="inlineCode">.colWd-*</span> followed by a number from 1 to 15(default max). This number indicates how much space the column takes in a row. For example, <span className="inlineCode">.colWd-9-ld</span> means the column takes 9 units of space in a row in a large display. <br/>
+                            The total space in a row is 15 units by default, so you can use any combination of column classes that add up to 15 or less. To use a column in HTML, you need to add the column class to a <span className="inlineCode">{"<div>"}</span> element inside a <span className="inlineCode">.gridRow</span> element. For example:
                             <br/>
                             <div className="codeBlock">
                                 <p className="codeLanguage">HTML</p>
@@ -84,7 +90,8 @@ const Content = () => {
 
                         <h2 className="subtitle">Add your columns upto 15</h2>
                         <p className="text">
-                            You can add as many columns as you want in a row, as long as the sum of their space units does not exceed 15. This is because the total space in a row is 15 units, and if you use more than that, the columns will overflow or wrap to the next line. You can use any combination of column classes that add up to 15 or less. For example, you can use <span className="inlineCode">.colWd-4-ld</span>,  <span className="inlineCode">.colWd-5-ld</span>, and  <span className="inlineCode">.colWd-6-ld</span> to create three columns that take 4, 5, and 6 units of space respectively. To add columns in a row in HTML, you need to add multiple  <span className="inlineCode">{"<div>"}</span> elements with different column classes inside a  <span className="inlineCode">.gridRow</span> element. For example:
+                            
+                            You can add as many columns as you want in a row, as long as the sum of their space units does not exceed 15(default max paritions). This is because the total space in a row is 15 units, and if you use more than that, the columns will overflow or wrap to the next line. You can use any combination of column classes that add up to 15 or less. For example, you can use <span className="inlineCode">.colWd-4-ld</span>,  <span className="inlineCode">.colWd-5-ld</span>, and  <span className="inlineCode">.colWd-6-ld</span> to create three columns that take 4, 5, and 6 units of space respectively. To add columns in a row in HTML, you need to add multiple  <span className="inlineCode">{"<div>"}</span> elements with different column classes inside a  <span className="inlineCode">.gridRow</span> element. For example:
                             <br/>
                             
                             <div className="codeBlock">

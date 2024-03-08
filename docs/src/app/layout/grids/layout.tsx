@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'docs - grids',
+  title: 'docs - Grids',
   description: 'documentation for grids of invrz patterns ui library',
 }
 
