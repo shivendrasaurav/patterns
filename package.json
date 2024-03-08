@@ -15,7 +15,7 @@
     "bugs": {
       "url": "https://github.com/invrz/patterns/issues"
     },
-    "homepage": "https://invrz.com",
+    "homepage": "https://patterns.invrz.com/",
     "publishConfig": {
       "registry": "https://registry.npmjs.org/"
     }
