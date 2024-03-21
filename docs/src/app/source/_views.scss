@@ -6,8 +6,8 @@
   position: relative; /* Set the position to relative */
 }
 
-/* Define the scrollHorizontal class */
-.scrollHorizontal {
+/* Define the listViewHorizontal class */
+.listViewHorizontal {
   height: initial; /* Inherit the height from the parent element */
   width: inherit; /* Inherit the width from the parent element */
   overflow-y: auto; /* Hide the horizontal overflow content */
@@ -22,8 +22,8 @@
   }
 }
 
-/* Define the scrollVertical class */
-.scrollVertical {
+/* Define the listViewVertical class */
+.listViewVertical {
   height: inherit; /* Inherit the height from the parent element */
   width: inherit; /* Inherit the width from the parent element */
   overflow-x: hidden; /* Hide the horizontal overflow content */

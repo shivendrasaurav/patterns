@@ -1,6 +1,6 @@
 const Content = () => {
     return(
-        <div className="withPrimaryBackground scrollVertical paddingSmall brSmooth">
+        <div className="withPrimaryBackground listViewVertical paddingSmall brSmooth">
                         <h1 className="title">Grids</h1>
                         <h2 className="subtitle">Define your app’s layout</h2>
                         <p className="text">

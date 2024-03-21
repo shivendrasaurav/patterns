@@ -2,12 +2,14 @@
 $partitions: 15;
 $gutters: 60;
 
-//Global Variables - Dark
+//Global Variables - Dark Colors
 $primaryBackground: #0e105a;
 $primaryText: #fafafa;
+$brandColor: $primaryBackground;
 
 $accentBackground: #3e40ba;
 $accentText: #eaeaea;
+$brandAccent: $accentBackground;
 
 /*
 //Global Variables - Light

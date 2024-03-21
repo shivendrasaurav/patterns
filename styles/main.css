@@ -812,8 +812,8 @@ $accentText: #0e0e0e;
   position: relative; /* Set the position to relative */
 }
 
-/* Define the scrollHorizontal class */
-.scrollHorizontal {
+/* Define the listViewHorizontal class */
+.listViewHorizontal {
   height: initial; /* Inherit the height from the parent element */
   width: inherit; /* Inherit the width from the parent element */
   overflow-y: auto; /* Hide the horizontal overflow content */
@@ -823,12 +823,12 @@ $accentText: #0e0e0e;
   flex-wrap: nowrap;
   flex-grow: 1;
 }
-.scrollHorizontal * {
+.listViewHorizontal * {
   flex: 1;
 }
 
-/* Define the scrollVertical class */
-.scrollVertical {
+/* Define the listViewVertical class */
+.listViewVertical {
   height: inherit; /* Inherit the height from the parent element */
   width: inherit; /* Inherit the width from the parent element */
   overflow-x: hidden; /* Hide the horizontal overflow content */
@@ -999,7 +999,6 @@ $accentBackground: #3e40ba;
 $accentText: #0e0e0e;
 */
 * {
-  color: #fafafa;
   font-weight: regular;
 }
 
@@ -1016,18 +1015,24 @@ h1, h2, h3, h4, h5, h6 {
 
 .subtitle {
   font-size: 1.75rem;
-  color: #eaeaea;
   padding: 0rem 2vw 0rem 0rem;
 }
 
 .text {
   font-size: 1.08rem;
-  color: #eaeaea;
   padding: 0rem 2vw 0rem 0rem;
 }
 
-strong {
-  color: #fafafa;
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-family: italic;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .taCenter {
@@ -1081,24 +1086,20 @@ ul, ol {
 }
 
 .inlineCode {
-  border: 1px solid #3e40ba;
-  background: rgba(62, 64, 186, 0.4);
   color: #eaeaea;
   padding: 0 0.2rem;
   font-family: monospace;
+  font-style: italic;
   font-size: 1.08rem;
 }
 
 .codeBlock {
   margin: 1rem 2vw 0.5rem 0rem;
-  background: rgba(62, 64, 186, 0.4);
 }
 .codeBlock .codeLanguage {
   width: 100%;
   padding: 0.4rem 0.6rem;
   font-size: 1.08rem;
-  background: rgba(234, 234, 234, 0.4);
-  color: #3e40ba;
   font-weight: bold;
 }
 .codeBlock .codeText {
@@ -1111,14 +1112,11 @@ ul, ol {
 
 .previewBlock {
   margin: 1rem 2vw 0.5rem 0rem;
-  background: rgba(62, 64, 186, 0.4);
 }
 .previewBlock .previewTitle {
   width: 100%;
   padding: 0.4rem 0.6rem;
   font-size: 1.08rem;
-  background: rgba(234, 234, 234, 0.4);
-  color: #3e40ba;
   font-weight: bold;
 }
 .previewBlock .previewRender {
@@ -1153,6 +1151,114 @@ ul, ol {
 
 .noBorders {
   border: none;
+}
+
+.bgDark {
+  background: #0e0e0e;
+}
+
+.bgLight {
+  background: #fafafa;
+}
+
+.bgBrand {
+  background: #0e105a;
+}
+
+.bgAccent {
+  background: #3e40ba;
+}
+
+.textDark {
+  color: #0e0e0e;
+}
+
+.textLight {
+  color: #fafafa;
+}
+
+.textBrand {
+  color: #0e105a;
+}
+
+.textAccent {
+  color: #3e40ba;
+}
+
+.colorDark {
+  border-color: #0e0e0e;
+}
+
+.colorLight {
+  background: #fafafa;
+}
+
+.colorBrand {
+  background: #0e105a;
+}
+
+.colorAccent {
+  background: #3e40ba;
+}
+
+.border.styleSolid {
+  border-style: solid;
+}
+.border.styleDashed {
+  border-style: dashed;
+}
+.border.styleDbldash {
+  border-style: double;
+}
+.border.styleDotted {
+  border-style: dotted;
+}
+.border.onlyLeft {
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+}
+.border.onlyRight {
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+}
+.border.onlyTop {
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+}
+.border.onlyBottom {
+  border-right: none;
+  border-top: none;
+  border-left: none;
+}
+.border.thin {
+  border-width: 1px;
+}
+.border.fit {
+  border-width: 2px;
+}
+.border.fat {
+  border-width: 4px;
+}
+.border.obese {
+  border-width: 8px;
+}
+.border.colorDark {
+  border-color: #0e0e0e;
+}
+.border.colorLight {
+  background: #fafafa;
+}
+.border.colorBrand {
+  background: #0e105a;
+}
+.border.colorAccent {
+  background: #3e40ba;
+}
+.border.colorTransparent {
+  background: #3e40ba;
 }
 
 a button {

@@ -1,6 +1,7 @@
 {
     "name": "patterns-ui",
-    "version": "0.0.1",
+    "version": "0.0.2",
+    "versionName": "ivysaur",
     "description": "A truly responsive css framwork",
     "main": "./styles/main.css",
     "scripts": {

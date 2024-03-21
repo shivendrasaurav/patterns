@@ -1,6 +1,6 @@
 const Content = () => {
     return(
-        <div className="withPrimaryBackground scrollVertical paddingSmall">
+        <div className="withPrimaryBackground listViewVertical paddingSmall">
                         <h1 className="title">Views</h1>
                         <h2 className="subtitle">The basic building blocks</h2>
                         <p className="text">
@@ -94,7 +94,7 @@ const Content = () => {
                                 <p className="codeLanguage">HTML</p>
                                 <p className="codeText">
                                     {'<div class="pageView">\n'}
-                                    {'  <div class="scrollHorizontal paddingSmall">\n'}
+                                    {'  <div class="listViewHorizontal paddingSmall">\n'}
                                     {'    <div id="1">Element 1</div>\n'}
                                     {'    <div id="2">Element 2</div>\n'}
                                     {'    <div id="3">Element 3</div>\n'}
@@ -113,7 +113,7 @@ const Content = () => {
                                 <p className="previewTitle">Preview</p>
                                 <p className="previewRender">
                                     <div className="pageView">
-                                     <div className="scrollHorizontal paddingSmall">
+                                     <div className="listViewHorizontal paddingSmall">
                                        <div id="1" className="paddingSmall">Element 1</div>
                                        <div id="2" className="paddingSmall">Element 2</div>
                                        <div id="3" className="paddingSmall">Element 3</div>
@@ -160,7 +160,7 @@ const Content = () => {
                                 <p className="previewRender">
                                     <div className="gridRow colHi-2">
                                         <div className="pageView">
-                                            <div className="scrollVertical paddingSmall">
+                                            <div className="listViewVertical paddingSmall">
                                                 <div id="1" className="paddingSmall">Element 1</div>
                                                 <div id="2" className="paddingSmall">Element 2</div>
                                                 <div id="3" className="paddingSmall">Element 3</div>
@@ -189,10 +189,10 @@ const Content = () => {
                                 <p className="codeText">
                                     {'<div class="pageView">\n'}
                                     {'  <div class="rowCenter gridRow">\n'}
-                                    {'    <div class="colWd-3-ld scrollVertical">\n'}
+                                    {'    <div class="colWd-3-ld listViewVertical">\n'}
                                     {'      <!-- 3 Column Content -->\n'}
                                     {'    </div>\n'}
-                                    {'    <div class="colWd-10-ld scrollVertical">\n'}
+                                    {'    <div class="colWd-10-ld listViewVertical">\n'}
                                     {'      <!-- 10 Column Content -->\n'}
                                     {'    </div>\n'}
                                     {'  </div>\n'}
@@ -204,10 +204,10 @@ const Content = () => {
                                 <p className="previewRender">
                                     <div className="pageView">
                                       <div className="rowCenter gridRow">
-                                        <div className="colWd-3-ld scrollVertical">
+                                        <div className="colWd-3-ld listViewVertical">
                                           {'<!-- 3 Column Content -->'}
                                         </div>
-                                        <div className="colWd-10-ld scrollVertical">
+                                        <div className="colWd-10-ld listViewVertical">
                                           {'<!-- 10 Column Content -->'}
                                         </div>
                                       </div>
