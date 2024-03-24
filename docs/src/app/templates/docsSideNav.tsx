@@ -4,7 +4,7 @@ import "../source/main.css";
 const DocsSideNav = () => {
 
     return(
-        <div className="sideNav scrollViewVert withPrimaryBackground paddingSmall smoothEdge">
+        <div className="sideNav scrollViewVert bgBrand smoothEdge">
             <div className="itemGroup onTop">
                 <p className="navTitle">Layout</p>
                 <a href="/layout/views" className="navItem noDecoration smootherEdge">Views</a>

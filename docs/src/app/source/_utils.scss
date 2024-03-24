@@ -42,20 +42,6 @@
     color: $brandAccent;
 }
 
-// border colors
-.colorDark{
-    border-color: #0e0e0e;
-}
-.colorLight{
-    background: #fafafa;
-}
-.colorBrand{
-    background: $brandColor;
-}
-.colorAccent{
-    background: $brandAccent;
-}
-
 .border{
     // border styles
     &.styleSolid{
@@ -112,16 +98,16 @@
         border-color: #0e0e0e;
     }
     &.colorLight{
-        background: #fafafa;
+        border-color: #fafafa;
     }
     &.colorBrand{
-        background: $brandColor;
+        border-color: $brandColor;
     }
     &.colorAccent{
-        background: $brandAccent;
+        border-color: $brandAccent;
     }
     &.colorTransparent{
-        background: $brandAccent;
+        border-color: $brandAccent;
     }
 
 }

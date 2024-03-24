@@ -1,6 +1,6 @@
 const Content = () => {
     return(
-        <div className="withPrimaryBackground listViewVertical paddingSmall brSmooth">
+        <div className="withPrimaryBackground listViewVertical paddingSmall brSmooth textLight">
                         <h1 className="title">Breakpoints</h1>
                         <h2 className="subtitle">Control how your app looks in different devicess</h2>
                         <p className="text">
@@ -8,7 +8,7 @@ const Content = () => {
                             <br/>
                             In Patterns UI, breakpoints are defined by the aspect ratio of the device, such as 16:9, 11:21, or 1:1. This approach is unique and innovative, as it targets the shape of the device instead of the width. This way, you can create truly responsive layouts that adapt to any device, regardless of its size or resolution.
                             <br/><br/>
-                            <span className="inlineCode">
+                            <span className="inlineCode bgAccent textLight">
                                 !!important - sometimes square breakpoints will not necessarily mean targetted to square screens but rather everything between portrait and landscape aspect ratios!!
                             </span>
                             <br/>
@@ -18,20 +18,20 @@ const Content = () => {
 
                         <h2 className="subtitle">Breakpoints in Patterns UI</h2>
                         <p className="text">
-                            Patterns UI provides three types of breakpoints that correspond to three common types of device shapes: portrait, landscape, and square. Each breakpoint has a class name that ends with <span className="inlineCode">-sm</span>, <span className="inlineCode">-ld</span>, or <span className="inlineCode">-sq</span>. These classes can be applied to any element to change its style or behavior based on the device aspect ratio. The types of breakpoints in Patterns UI are:
+                            Patterns UI provides three types of breakpoints that correspond to three common types of device shapes: portrait, landscape, and square. Each breakpoint has a class name that ends with <span className="inlineCode bgAccent textLight">-sm</span>, <span className="inlineCode bgAccent textLight">-ld</span>, or <span className="inlineCode bgAccent textLight">-sq</span>. These classes can be applied to any element to change its style or behavior based on the device aspect ratio. The types of breakpoints in Patterns UI are:
                             <br/>
                             <ul>
                                 <li>
                                     <strong>Portrait Breakpoint: </strong>
-                                    This breakpoint applies to devices that have a portrait orientation, such as phones or tablets. The aspect ratio range for this breakpoint is from 0.29 to 0.58. The class name for this breakpoint is <span className="inlineCode">-sm</span>.
+                                    This breakpoint applies to devices that have a portrait orientation, such as phones or tablets. The aspect ratio range for this breakpoint is from 0.29 to 0.58. The class name for this breakpoint is <span className="inlineCode bgAccent textLight">-sm</span>.
                                 </li>
                                 <li>
                                     <strong>Landscape Breakpoint: </strong>
-                                    This breakpoint applies to devices that have a landscape orientation, such as desktops, laptops, or TVs. The aspect ratio range for this breakpoint is from 1.25 to 2.33. The class name for this breakpoint is <span className="inlineCode">-ld</span>.
+                                    This breakpoint applies to devices that have a landscape orientation, such as desktops, laptops, or TVs. The aspect ratio range for this breakpoint is from 1.25 to 2.33. The class name for this breakpoint is <span className="inlineCode bgAccent textLight">-ld</span>.
                                 </li>
                                 <li>
                                     <strong>Square Breakpoint:</strong>
-                                    This breakpoint applies to devices that have a square shape, such as watches or hubs. The aspect ratio range for this breakpoint is from 0.8 to 1.2. The class name for this breakpoint is <span className="inlineCode">-sq</span>.
+                                    This breakpoint applies to devices that have a square shape, such as watches or hubs. The aspect ratio range for this breakpoint is from 0.8 to 1.2. The class name for this breakpoint is <span className="inlineCode bgAccent textLight">-sq</span>.
                                 </li>
                             </ul>
                         </p>
@@ -40,7 +40,7 @@ const Content = () => {
 
                         <h2 className="subtitle">colWd-0-* classes</h2>
                         <p className="text">
-                            The <span className="inlineColde">colWd-0-*</span> classes are special classes that can be used to hide columns from view based on the device aspect ratio. These classes can be applied to any column element to set its display property to none. This way, you can control which columns are visible or hidden on different devices. The <span className="inlineColde">colWd-0-*</span> classes are:
+                            The <span className="inlineCode bgAccent textLight">colWd-0-*</span> classes are special classes that can be used to hide columns from view based on the device aspect ratio. These classes can be applied to any column element to set its display property to none. This way, you can control which columns are visible or hidden on different devices. The <span className="inlineCode bgAccent textLight">colWd-0-*</span> classes are:
                             <br/>
                             <ul>
                                 <li>
@@ -62,10 +62,10 @@ const Content = () => {
 
                         <h2 className="subtitle">Truly responsive pages</h2>
                         <p className="text">
-                            You can use a combination of the breakpoint classes and the <span className="inlineColde">colWd-0-*</span> classes to create truly responsive pages that adapt to any device shape. You can use the breakpoint classes to change the style or behavior of any element based on the device aspect ratio. You can use the <span className="inlineColde">colWd-0-*</span> classes to hide or show columns based on the device aspect ratio. Here are some examples of how to use these classes to create truly responsive pages:
+                            You can use a combination of the breakpoint classes and the <span className="inlineCode bgAccent textLight">colWd-0-*</span> classes to create truly responsive pages that adapt to any device shape. You can use the breakpoint classes to change the style or behavior of any element based on the device aspect ratio. You can use the <span className="inlineCode bgAccent textLight">colWd-0-*</span> classes to hide or show columns based on the device aspect ratio. Here are some examples of how to use these classes to create truly responsive pages:
                             <br/>
-                            <div className="codeBlock">
-                                <p className="codeLanguage">HTML</p>
+                            <div className="codeBlock bgBrand textLight">
+                                <p className="codeLanguage bgAccent textLight">HTML</p>
                                 <p className="codeText">
                                     {'<div class="pageView">\n'}
                                     {'  <div class="rowCenter gridRow">\n'}
@@ -91,8 +91,8 @@ const Content = () => {
                                 </p>
                             </div>
                             <br/>
-                            <div className="previewBlock">
-                                <p className="previewTitle">Preview</p>
+                            <div className="previewBlock bgBrand textLight">
+                                <p className="previewTitle bgAccent textLight">Preview</p>
                                 <p className="previewRender">
                                     
                                  <div className="pageView">

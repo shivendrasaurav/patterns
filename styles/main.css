@@ -1185,22 +1185,6 @@ ul, ol {
   color: #3e40ba;
 }
 
-.colorDark {
-  border-color: #0e0e0e;
-}
-
-.colorLight {
-  background: #fafafa;
-}
-
-.colorBrand {
-  background: #0e105a;
-}
-
-.colorAccent {
-  background: #3e40ba;
-}
-
 .border.styleSolid {
   border-style: solid;
 }
@@ -1249,16 +1233,16 @@ ul, ol {
   border-color: #0e0e0e;
 }
 .border.colorLight {
-  background: #fafafa;
+  border-color: #fafafa;
 }
 .border.colorBrand {
-  background: #0e105a;
+  border-color: #0e105a;
 }
 .border.colorAccent {
-  background: #3e40ba;
+  border-color: #3e40ba;
 }
 .border.colorTransparent {
-  background: #3e40ba;
+  border-color: #3e40ba;
 }
 
 a button {

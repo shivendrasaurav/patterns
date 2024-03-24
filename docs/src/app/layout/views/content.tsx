@@ -1,6 +1,6 @@
 const Content = () => {
     return(
-        <div className="withPrimaryBackground listViewVertical paddingSmall">
+        <div className="withPrimaryBackground listViewVertical paddingSmall textLight">
                         <h1 className="title">Views</h1>
                         <h2 className="subtitle">The basic building blocks</h2>
                         <p className="text">
@@ -36,18 +36,18 @@ const Content = () => {
                         <p className="text">
                             A page view is a view that occupies the entire viewport and scrolls to show its content. A page view is useful for creating web pages that have a lot of content or need to adapt to different screen sizes.
                             <br/>
-                            To create a page view, you need to use the <span className="inlineCode">.pageView</span> class on a <span className="inlineCode">{"<div>"}</span> element. For example:
+                            To create a page view, you need to use the <span className="inlineCode bgAccent textLight">.pageView</span> class on a <span className="inlineCode bgAccent textLight">{"<div>"}</span> element. For example:
                             <br/>
-                            <div className="codeBlock">
-                                <p className="codeLanguage">HTML</p>
+                            <div className="codeBlock bgBrand textLight">
+                                <p className="codeLanguage bgAccent textLight">HTML</p>
                                 <p className="codeText">
                                     {'<div class="pageView">\n'}
                                     {'  <!-- page content goes here -->\n'}
                                     {'</div>'}
                                 </p>
                             </div>
-                            <div className="previewBlock">
-                                <p className="previewTitle">Preview</p>
+                            <div className="previewBlock bgBrand textLight">
+                                <p className="previewTitle bgAccent textLight">Preview</p>
                                 <p className="previewRender">
                                     <div className="pageView">
                                         {'<!-- page content goes here -->\n'}
@@ -60,10 +60,10 @@ const Content = () => {
 
                         <h2 className="subtitle">Content View</h2>
                         <p className="text">
-                            A content view is a view that takes up 100% of the height and width of its parent view. It can contain any content, such as text, images, buttons, etc. It is useful for displaying simple content without any scrolling or nesting. To use a content view in HTML, you need to add the class <span className="inlineCode">.contentView</span> to a <span className="inlineCode">{"<div>"}</span> element. For example:
+                            A content view is a view that takes up 100% of the height and width of its parent view. It can contain any content, such as text, images, buttons, etc. It is useful for displaying simple content without any scrolling or nesting. To use a content view in HTML, you need to add the class <span className="inlineCode bgAccent textLight">.contentView</span> to a <span className="inlineCode bgAccent textLight">{"<div>"}</span> element. For example:
                             <br/>
-                            <div className="codeBlock">
-                                <p className="codeLanguage">HTML</p>
+                            <div className="codeBlock bgBrand textLight">
+                                <p className="codeLanguage bgAccent textLight">HTML</p>
                                 <p className="codeText">
                                     {'<div class="pageView">\n'}
                                     {'  <div class="contentView paddingSmall">\n'}
@@ -72,8 +72,8 @@ const Content = () => {
                                     {'</div>'}
                                 </p>
                             </div>
-                            <div className="previewBlock">
-                                <p className="previewTitle">Preview</p>
+                            <div className="previewBlock bgBrand textLight">
+                                <p className="previewTitle bgAccent textLight">Preview</p>
                                 <p className="previewRender">
                                     <div className="pageView">
                                         <div className="contentView paddingSmall">
@@ -88,10 +88,10 @@ const Content = () => {
 
                         <h2 className="subtitle">Scroll View Horizontal</h2>
                         <p className="text">
-                            A scroll view horizontal is a view that allows horizontal scrolling of its content. It can contain any content, such as text, images, buttons, etc. It is useful for creating carousels, sliders, or tabs. To use a scroll view horizontal in HTML, you need to add the class <span className="inlineCode">.scrrollHorizonal</span> to a <span className="inlineCode">{"<div>"}</span> element. For example:
+                            A scroll view horizontal is a view that allows horizontal scrolling of its content. It can contain any content, such as text, images, buttons, etc. It is useful for creating carousels, sliders, or tabs. To use a scroll view horizontal in HTML, you need to add the class <span className="inlineCode bgAccent textLight">.scrrollHorizonal</span> to a <span className="inlineCode bgAccent textLight">{"<div>"}</span> element. For example:
                             <br/>
-                            <div className="codeBlock">
-                                <p className="codeLanguage">HTML</p>
+                            <div className="codeBlock bgBrand textLight">
+                                <p className="codeLanguage bgAccent textLight">HTML</p>
                                 <p className="codeText">
                                     {'<div class="pageView">\n'}
                                     {'  <div class="listViewHorizontal paddingSmall">\n'}
@@ -109,8 +109,8 @@ const Content = () => {
                                     {'</div>'}
                                 </p>
                             </div>
-                            <div className="previewBlock">
-                                <p className="previewTitle">Preview</p>
+                            <div className="previewBlock bgBrand textLight">
+                                <p className="previewTitle bgAccent textLight">Preview</p>
                                 <p className="previewRender">
                                     <div className="pageView">
                                      <div className="listViewHorizontal paddingSmall">
@@ -134,10 +134,10 @@ const Content = () => {
 
                         <h2 className="subtitle">Scroll View Vertical</h2>
                         <p className="text">
-                            A scroll view vertical is a view that allows vertical scrolling of its content. It can contain any content, such as text, images, buttons, etc. It is useful for creating lists, cards, or forms. To use a scroll view vertical in HTML, you need to add the class <span className="inlineCode">.scrrollVertical</span> to a <span className="inlineCode">{"<div>"}</span> element. For example:
+                            A scroll view vertical is a view that allows vertical scrolling of its content. It can contain any content, such as text, images, buttons, etc. It is useful for creating lists, cards, or forms. To use a scroll view vertical in HTML, you need to add the class <span className="inlineCode bgAccent textLight">.scrrollVertical</span> to a <span className="inlineCode bgAccent textLight">{"<div>"}</span> element. For example:
                             <br/>
-                            <div className="codeBlock">
-                                <p className="codeLanguage">HTML</p>
+                            <div className="codeBlock bgBrand textLight">
+                                <p className="codeLanguage bgAccent textLight">HTML</p>
                                 <p className="codeText">
                                     {'<div class="pageView">\n'}
                                     {'  <div class="scrrollVertical paddingSmall">\n'}
@@ -155,8 +155,8 @@ const Content = () => {
                                     {'</div>'}
                                 </p>
                             </div>
-                            <div className="previewBlock">
-                                <p className="previewTitle">Preview</p>
+                            <div className="previewBlock bgBrand textLight">
+                                <p className="previewTitle bgAccent textLight">Preview</p>
                                 <p className="previewRender">
                                     <div className="gridRow colHi-2">
                                         <div className="pageView">
@@ -182,10 +182,10 @@ const Content = () => {
 
                         <h2 className="subtitle">Nested Views</h2>
                         <p className="text">
-                            Nested views are a combination of different types of views inside each other. It can create complex layouts and interactions. It is useful for creating grids, columns, rows, or stacks. To use nested views in HTML, you need to nest <span className="inlineCode">{"<div>"}</span> elements with different view classes. For example:
+                            Nested views are a combination of different types of views inside each other. It can create complex layouts and interactions. It is useful for creating grids, columns, rows, or stacks. To use nested views in HTML, you need to nest <span className="inlineCode bgAccent textLight">{"<div>"}</span> elements with different view classes. For example:
                             <br/>
-                            <div className="codeBlock">
-                                <p className="codeLanguage">HTML</p>
+                            <div className="codeBlock bgBrand textLight">
+                                <p className="codeLanguage bgAccent textLight">HTML</p>
                                 <p className="codeText">
                                     {'<div class="pageView">\n'}
                                     {'  <div class="rowCenter gridRow">\n'}
@@ -199,8 +199,8 @@ const Content = () => {
                                     {'</div>'}
                                 </p>
                             </div>
-                            <div className="previewBlock">
-                                <p className="previewTitle">Preview</p>
+                            <div className="previewBlock bgBrand textLight">
+                                <p className="previewTitle bgAccent textLight">Preview</p>
                                 <p className="previewRender">
                                     <div className="pageView">
                                       <div className="rowCenter gridRow">
