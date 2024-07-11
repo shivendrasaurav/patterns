@@ -11,15 +11,15 @@ const Content = () => {
                             <ol type="1">
                                 <li>
                                     <strong>Define a view:</strong>
-                                    A view is a rectangular area on the screen that displays some content. Views are the basic building blocks of any user interface in Patterns UI. You can use any type of view, such as page view, content view, or scroll view, to create a grid. To use a view in HTML, you need to add the class for a view type to a <span className="inlineCode">{"<div>"}</span> element, where view type is the name of the view, such as .pageView or .contentView.
+                                    A view is a rectangular area on the screen that displays some content. Views are the basic building blocks of any user interface in Patterns UI. You can use any type of view, such as page view, content view, or scroll view, to create a grid. To use a view in HTML, you need to add the class for a view type to a <span className="inlineCode bgDark">{"<div>"}</span> element, where view type is the name of the view, such as .pageView or .contentView.
                                 </li>
                                 <li>
                                     <strong>Add a row:</strong>
-                                        A row is a horizontal division of a grid. It can contain one or more columns inside it. To add a row in HTML, you need to add the class <span className="inlineCode">.gridRow</span> to a <span className="inlineCode">{"<div>"}</span> element inside the view element. You can also use variations of the row class to create different effects, such as <span className="inlineCode">.rowLeft</span>, <span className="inlineCode">.rowRight</span>, or <span className="inlineCode">.rowCenter</span>.
+                                        A row is a horizontal division of a grid. It can contain one or more columns inside it. To add a row in HTML, you need to add the class <span className="inlineCode bgDark">.gridRow</span> to a <span className="inlineCode bgDark">{"<div>"}</span> element inside the view element. You can also use variations of the row class to create different effects, such as <span className="inlineCode bgDark">.rowLeft</span>, <span className="inlineCode bgDark">.rowRight</span>, or <span className="inlineCode bgDark">.rowCenter</span>.
                                 </li>
                                 <li>
                                     <strong>Add columns:</strong>
-                                    A column is a vertical division of a grid. It can contain any content or object inside it. To add a column in HTML, you need to add the class <span className="inlineCode">.colWd-*</span> to a <span className="inlineCode">{"<div>"}</span> element inside the row element, where <span className="inlineCode">*</span> is a number from 1 to 15. This number indicates how much space the column takes in a row. The total space in a row is 15 units, so you can use any combination of column classes that add up to 15 or less.
+                                    A column is a vertical division of a grid. It can contain any content or object inside it. To add a column in HTML, you need to add the class <span className="inlineCode bgDark">.colWd-*</span> to a <span className="inlineCode bgDark">{"<div>"}</span> element inside the row element, where <span className="inlineCode bgDark">*</span> is a number from 1 to 15. This number indicates how much space the column takes in a row. The total space in a row is 15 units, so you can use any combination of column classes that add up to 15 or less.
                                 </li>
                             </ol>
                             <br/>
@@ -31,9 +31,9 @@ const Content = () => {
                         <p className="text">
                             A 2 column grid is a grid that has two columns in each row. It is a simple and common layout that can be used for various purposes, such as displaying text and images, creating sidebars or menus, or comparing two items. Many websites or apps use a 2 column grid for their design, such as Medium, Wikipedia, or Gmail. Patterns UI docs is also based on a 2 column grid, where the left column shows the navigation menu and the right column shows the content.
                             <br/>
-                            Here is an example implementation of a 2 column grid where the columns are of height <span className="inlineCode">.colHi-2</span> and unit sizes of 4 and 6 with some text written inside of columns:
+                            Here is an example implementation of a 2 column grid where the columns are of height <span className="inlineCode bgDark">.colHi-2</span> and unit sizes of 4 and 6 with some text written inside of columns:
                             <br/>
-                            <div className="codeBlock">
+                            <div className="codeBlock bgDark">
                                 <p className="codeLanguage">HTML</p>
                                 <p className="codeText">
                                     {'<div class="pageView">\n'}
@@ -55,7 +55,7 @@ const Content = () => {
                                 </p>
                             </div>
                             <br/>
-                            <div className="previewBlock">
+                            <div className="previewBlock bgDark">
                                 <p className="previewTitle">Preview</p>
                                 <p className="previewRender">
                                     
@@ -86,9 +86,9 @@ const Content = () => {
                         <p className="text">
                             A 3 column grid is a grid that has three columns in each row. It is a more complex and versatile layout that can be used for various purposes, such as displaying multiple items, creating categories or sections, or showing different views or perspectives. Many websites or apps use a 3 column grid for their design, such as Pinterest, YouTube, or Twitter.
                             <br/>
-                            Here is an example implementation of a 3 column grid where the columns are of height <span className="inlineCode">.colHi-2</span> and unit sizes of 4, 4 and 4 with some text written inside of columns:
+                            Here is an example implementation of a 3 column grid where the columns are of height <span className="inlineCode bgDark">.colHi-2</span> and unit sizes of 4, 4 and 4 with some text written inside of columns:
                             <br/>
-                            <div className="codeBlock">
+                            <div className="codeBlock bgDark">
                                 <p className="codeLanguage">HTML</p>
                                 <p className="codeText">
                                     {'<div class="pageView">\n'}
@@ -115,7 +115,7 @@ const Content = () => {
                                 </p>
                             </div>
                             <br/>
-                            <div className="previewBlock">
+                            <div className="previewBlock bgDark">
                                 <p className="previewTitle">Preview</p>
                                 <p className="previewRender">
                                     
@@ -165,7 +165,7 @@ const Content = () => {
                                 </li>
                             </ul>
                             <br/>
-                            <div className="codeBlock">
+                            <div className="codeBlock bgDark">
                                 <p className="codeLanguage">HTML</p>
                                 <p className="codeText">
                                     {'<div class="pageView">\n'}
@@ -218,7 +218,7 @@ const Content = () => {
                                 </p>
                             </div>
                             <br/>
-                            <div className="previewBlock">
+                            <div className="previewBlock bgDark">
                                 <p className="previewTitle">Preview</p>
                                 <p className="previewRender">
                                     

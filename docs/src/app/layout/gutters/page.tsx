@@ -4,7 +4,7 @@ import DocsSideNav from "../../templates/docsSideNav";
 import DocsTopNav from "../../templates/docsTopNav";
 import Content from "./content";
 
-const Columns = () => {
+const Gutters = () => {
 
     return(
         <div className="pageView">
@@ -26,4 +26,4 @@ const Columns = () => {
 
 }
 
-export default Columns;
+export default Gutters;

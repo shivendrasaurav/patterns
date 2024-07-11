@@ -1,7 +1,7 @@
-.smoothEdge{border-radius: 0.2rem};
-.smootherEdge{border-radius: 0.4rem};
-.roundedEdge{border-radius: 1rem};
-.circularEdge{border-radius: 100%};
+.borderSmooth{border-radius: 0.2rem};
+.borderSmoother{border-radius: 0.4rem};
+.borderRounded{border-radius: 1rem};
+.borderCircular{border-radius: 100%; aspect-ratio: 1/1};
 
 //helpers
 .paddingSmall{

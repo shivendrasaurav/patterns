@@ -12,9 +12,9 @@ const Content = () => {
 
                         <h2 className="subtitle">Text align</h2>
                         <p className="text">
-                            The <span className="inlineCode">.ta*</span> classes are used to align text within an element. They set the <span className="inlineCode">text-align</span> property to one of the following values: <span className="inlineCode">left</span>, <span className="inlineCode">right</span>, <span className="inlineCode">center</span>, or <span className="inlineCode">justify</span>. To use a text align class in HTML, you need to add the class to the element that contains the text. For example:
+                            The <span className="inlineCode bgDark">.ta*</span> classes are used to align text within an element. They set the <span className="inlineCode bgDark">text-align</span> property to one of the following values: <span className="inlineCode bgDark">left</span>, <span className="inlineCode bgDark">right</span>, <span className="inlineCode bgDark">center</span>, or <span className="inlineCode bgDark">justify</span>. To use a text align class in HTML, you need to add the class to the element that contains the text. For example:
                             <br/>
-                            <div className="codeBlock">
+                            <div className="codeBlock bgDark">
                                 <p className="codeLanguage">HTML</p>
                                 <p className="codeText">
                                     {'<div class="pageView">\n'}
@@ -26,7 +26,7 @@ const Content = () => {
                                 </p>
                             </div>
                             <br/>
-                            <div className="previewBlock">
+                            <div className="previewBlock bgDark">
                                 <p className="previewTitle">Preview</p>
                                 <p className="previewRender">
                                     <div className="pageView">
@@ -48,9 +48,9 @@ const Content = () => {
 
                         <h2 className="subtitle">Horizontal object align</h2>
                         <p className="text">
-                            The <span className="inlineCode">.obj*</span> classes are used to align objects, such as images, divs, or other elements, horizontally within a parent element. To use a horizontal object align class in HTML, you need to add the class to the object element and make sure the parent element has the <span className="inlineCode">objAligner</span> class set to <span className="inlineCode">relative</span>. For example:
+                            The <span className="inlineCode bgDark">.obj*</span> classes are used to align objects, such as images, divs, or other elements, horizontally within a parent element. To use a horizontal object align class in HTML, you need to add the class to the object element and make sure the parent element has the <span className="inlineCode bgDark">objAligner</span> class set to <span className="inlineCode bgDark">relative</span>. For example:
                             <br/>
-                            <div className="codeBlock">
+                            <div className="codeBlock bgDark">
                                 <p className="codeLanguage">HTML</p>
                                 <p className="codeText">
                                     {'<div class="contentView ">\n'}
@@ -61,7 +61,7 @@ const Content = () => {
                                 </p>
                             </div>
                             <br/>
-                            <div className="previewBlock">
+                            <div className="previewBlock bgDark">
                                 <p className="previewTitle">Preview</p>
                                 <p className="previewRender">
                                     <div className="pageView">
@@ -84,9 +84,9 @@ const Content = () => {
 
                         <h2 className="subtitle">Horizontal grid align</h2>
                         <p className="text">
-                            The <span className="inlineCode">.rowLeft</span>, <span className="inlineCode">.rowRight</span> and <span className="inlineCode">.rowCenter</span> classes are used to align columns horizontally within a grid row. To use horizontal grid align classes in HTML, you need to add the class to the <span className="inlineCode">.gridRow</span> element that contains the grid items. For example:
+                            The <span className="inlineCode bgDark">.rowLeft</span>, <span className="inlineCode bgDark">.rowRight</span> and <span className="inlineCode bgDark">.rowCenter</span> classes are used to align columns horizontally within a grid row. To use horizontal grid align classes in HTML, you need to add the class to the <span className="inlineCode bgDark">.gridRow</span> element that contains the grid items. For example:
                             <br/>
-                            <div className="codeBlock">
+                            <div className="codeBlock bgDark">
                                 <p className="codeLanguage">HTML</p>
                                 <p className="codeText">
                                     {'<div class="pageView">\n'}
@@ -109,7 +109,7 @@ const Content = () => {
                                 </p>
                             </div>
                             <br/>
-                            <div className="previewBlock">
+                            <div className="previewBlock bgDark">
                                 <p className="previewTitle">Preview</p>
                                     <p className="previewRender">
                                         <div className="pageView">
@@ -138,9 +138,9 @@ const Content = () => {
 
                         <h2 className="subtitle">Vertical grid align</h2>
                         <p className="text">
-                            The <span className="inlineCode">.rowTop</span>, <span className="inlineCode">.rowBottom</span> and <span className="inlineCode">.rowMiddle</span> classes are used to align columns vertically within a grid row. To use vertical grid align classes in HTML, you need to add the class to the <span className="inlineCode">.gridRow</span> element that contains the grid items. For example:
+                            The <span className="inlineCode bgDark">.rowTop</span>, <span className="inlineCode bgDark">.rowBottom</span> and <span className="inlineCode bgDark">.rowMiddle</span> classes are used to align columns vertically within a grid row. To use vertical grid align classes in HTML, you need to add the class to the <span className="inlineCode bgDark">.gridRow</span> element that contains the grid items. For example:
                             <br/>
-                            <div className="codeBlock">
+                            <div className="codeBlock bgDark">
                                 <p className="codeLanguage">HTML</p>
                                 <p className="codeText">
                                     {'<div class="pageView">\n'}
@@ -163,7 +163,7 @@ const Content = () => {
                                 </p>
                             </div>
                             <br/>
-                            <div className="previewBlock">
+                            <div className="previewBlock bgDark">
                                 <p className="previewTitle">Preview</p>
                                 <p className="previewRender">
                                     <div className="pageView">
@@ -192,11 +192,11 @@ const Content = () => {
 
                         <h2 className="subtitle">Mixed Aligners</h2>
                         <p className="text">
-                            Patterns UI allows you to mix different types of aligners to align grids and objects however necessary. You can use the <span className="inlineCode">.ta*</span>, <span className="inlineCode">.obj*</span>, and <span className="inlineCode">.row*</span> classes together to create various combinations of horizontal and vertical alignment for text, images, divs, and other elements within a grid to create flexible and responsive layouts that adapt to different screen sizes and orientations.
+                            Patterns UI allows you to mix different types of aligners to align grids and objects however necessary. You can use the <span className="inlineCode bgDark">.ta*</span>, <span className="inlineCode bgDark">.obj*</span>, and <span className="inlineCode bgDark">.row*</span> classes together to create various combinations of horizontal and vertical alignment for text, images, divs, and other elements within a grid to create flexible and responsive layouts that adapt to different screen sizes and orientations.
                             <br/>
-                            Here is an example of a grid where the <span className="inlineCode">.rowGrid</span> has a height of <span className="inlineCode">.colHi-2</span> and the columns are centrally aligned with text centrally aligned as well. The row, column, and text have different background colors to make them easier to differentiate:
+                            Here is an example of a grid where the <span className="inlineCode bgDark">.rowGrid</span> has a height of <span className="inlineCode bgDark">.colHi-2</span> and the columns are centrally aligned with text centrally aligned as well. The row, column, and text have different background colors to make them easier to differentiate:
                             <br/>
-                            <div className="codeBlock">
+                            <div className="codeBlock bgDark">
                                 <p className="codeLanguage">HTML</p>
                                 <p className="codeText">
                                     {'<div class="pageView">\n'}
@@ -207,7 +207,7 @@ const Content = () => {
                                 </p>
                             </div>
                             <br/>
-                            <div className="previewBlock">
+                            <div className="previewBlock bgDark">
                                 <p className="previewTitle">Preview</p>
                                 <p className="previewRender">
                                     <div className="pageView">

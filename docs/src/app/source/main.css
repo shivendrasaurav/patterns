@@ -1086,11 +1086,11 @@ ul, ol {
 }
 
 .inlineCode {
-  color: #eaeaea;
   padding: 0 0.2rem;
   font-family: monospace;
   font-style: italic;
   font-size: 1.08rem;
+  filter: invert(20%) saturate(120%);
 }
 
 .codeBlock {
@@ -1125,20 +1125,21 @@ ul, ol {
   font-weight: 400;
 }
 
-.smoothEdge {
+.borderSmooth {
   border-radius: 0.2rem;
 }
 
-.smootherEdge {
+.borderSmoother {
   border-radius: 0.4rem;
 }
 
-.roundedEdge {
+.borderRounded {
   border-radius: 1rem;
 }
 
-.circularEdge {
+.borderCircular {
   border-radius: 100%;
+  aspect-ratio: 1/1;
 }
 
 .paddingSmall {
