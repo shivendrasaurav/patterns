@@ -1,0 +1,279 @@
+@import "variables";
+
+// Utility Classes for Color Roles
+
+/* Body Color */
+.bg-body {
+  background-color: var(--body-bg);
+}
+.text-body {
+  color: var(--body-text);
+}
+.bg-body-dark {
+  background-color: var(--body-bg-darker);
+}
+.bg-body-light {
+  background-color: var(--body-bg-lighter);
+}
+.border-body {
+  border-color: var(--body-bg);
+}
+.shadow-body {
+  box-shadow: 0 4px 6px -1px var(--body-bg), 0 2px 4px -1px var(--body-bg);
+}
+.hover\:bg-body:hover {
+  background-color: var(--body-bg-darker);
+}
+
+/* Brand Color */
+.bg-brand {
+  background-color: var(--brand-bg);
+}
+.text-brand {
+  color: var(--brand-text);
+}
+.bg-brand-dark {
+  background-color: var(--brand-bg-darker);
+}
+.bg-brand-light {
+  background-color: var(--brand-bg-lighter);
+}
+.border-brand {
+  border-color: var(--brand-bg);
+}
+.shadow-brand {
+  box-shadow: 0 4px 6px -1px var(--brand-bg), 0 2px 4px -1px var(--brand-bg);
+}
+.hover\:bg-brand:hover {
+  background-color: var(--brand-bg-darker);
+}
+
+/* Accent Color */
+.bg-accent {
+  background-color: var(--accent-bg);
+}
+.text-accent {
+  color: var(--accent-text);
+}
+.bg-accent-dark {
+  background-color: var(--accent-bg-darker);
+}
+.bg-accent-light {
+  background-color: var(--accent-bg-lighter);
+}
+.border-accent {
+  border-color: var(--accent-bg);
+}
+.shadow-accent {
+  box-shadow: 0 4px 6px -1px var(--accent-bg), 0 2px 4px -1px var(--accent-bg);
+}
+.hover\:bg-accent:hover {
+  background-color: var(--accent-bg-darker);
+}
+
+/* Secondary Color */
+.bg-secondary {
+  background-color: var(--secondary-bg);
+}
+.text-secondary {
+  color: var(--secondary-text);
+}
+.bg-secondary-dark {
+  background-color: var(--secondary-bg-darker);
+}
+.bg-secondary-light {
+  background-color: var(--secondary-bg-lighter);
+}
+.border-secondary {
+  border-color: var(--secondary-bg);
+}
+.shadow-secondary {
+  box-shadow: 0 4px 6px -1px var(--secondary-bg), 0 2px 4px -1px var(--secondary-bg);
+}
+.hover\:bg-secondary:hover {
+  background-color: var(--secondary-bg-darker);
+}
+
+/* Muted Color */
+.bg-muted {
+  background-color: var(--muted-bg);
+}
+.text-muted {
+  color: var(--muted-text);
+}
+.bg-muted-dark {
+  background-color: var(--muted-bg-darker);
+}
+.bg-muted-light {
+  background-color: var(--muted-bg-lighter);
+}
+.border-muted {
+  border-color: var(--muted-bg);
+}
+.shadow-muted {
+  box-shadow: 0 4px 6px -1px var(--muted-bg), 0 2px 4px -1px var(--muted-bg);
+}
+.hover\:bg-muted:hover {
+  background-color: var(--muted-bg-darker);
+}
+
+/* Highlight Color */
+.bg-highlight {
+  background-color: var(--highlight-bg);
+}
+.text-highlight {
+  color: var(--highlight-text);
+}
+.bg-highlight-dark {
+  background-color: var(--highlight-bg-darker);
+}
+.bg-highlight-light {
+  background-color: var(--highlight-bg-lighter);
+}
+.border-highlight {
+  border-color: var(--highlight-bg);
+}
+.shadow-highlight {
+  box-shadow: 0 4px 6px -1px var(--highlight-bg), 0 2px 4px -1px var(--highlight-bg);
+}
+.hover\:bg-highlight:hover {
+  background-color: var(--highlight-bg-darker);
+}
+
+/* Info Color */
+.bg-info {
+  background-color: var(--info-bg);
+}
+.text-info {
+  color: var(--info-text);
+}
+.bg-info-dark {
+  background-color: var(--info-bg-darker);
+}
+.bg-info-light {
+  background-color: var(--info-bg-lighter);
+}
+.border-info {
+  border-color: var(--info-bg);
+}
+.shadow-info {
+  box-shadow: 0 4px 6px -1px var(--info-bg), 0 2px 4px -1px var(--info-bg);
+}
+.hover\:bg-info:hover {
+  background-color: var(--info-bg-darker);
+}
+
+/* Warning Color */
+.bg-warning {
+  background-color: var(--warning-bg);
+}
+.text-warning {
+  color: var(--warning-text);
+}
+.bg-warning-dark {
+  background-color: var(--warning-bg-darker);
+}
+.bg-warning-light {
+  background-color: var(--warning-bg-lighter);
+}
+.border-warning {
+  border-color: var(--warning-bg);
+}
+.shadow-warning {
+  box-shadow: 0 4px 6px -1px var(--warning-bg), 0 2px 4px -1px var(--warning-bg);
+}
+.hover\:bg-warning:hover {
+  background-color: var(--warning-bg-darker);
+}
+
+/* Error Color */
+.bg-error {
+  background-color: var(--error-bg);
+}
+.text-error {
+  color: var(--error-text);
+}
+.bg-error-dark {
+  background-color: var(--error-bg-darker);
+}
+.bg-error-light {
+  background-color: var(--error-bg-lighter);
+}
+.border-error {
+  border-color: var(--error-bg);
+}
+.shadow-error {
+  box-shadow: 0 4px 6px -1px var(--error-bg), 0 2px 4px -1px var(--error-bg);
+}
+.hover\:bg-error:hover {
+  background-color: var(--error-bg-darker);
+}
+
+/* Success Color */
+.bg-success {
+  background-color: var(--success-bg);
+}
+.text-success {
+  color: var(--successtext);
+}
+.bg-success-dark {
+  background-color: var(--success-bg-darker);
+}
+.bg-success-light {
+  background-color: var(--success-bg-lighter);
+}
+.border-success {
+  border-color: var(--success-bg);
+}
+.shadow-success {
+  box-shadow: 0 4px 6px -1px var(--success-bg), 0 2px 4px -1px var(--success-bg);
+}
+.hover\:bg-success:hover {
+  background-color: var(--success-bg-darker);
+}
+
+/* High Contrast Color */
+.bg-high-contrast {
+  background-color: var(--high-contrast-bg);
+}
+.text-high-contrast {
+  color: var(--high-contrast-text);
+}
+.bg-high-contrast-dark {
+  background-color: var(--high-contrast-bg-darker);
+}
+.bg-high-contrast-light {
+  background-color: var(--high-contrast-bg-lighter);
+}
+.border-high-contrast {
+  border-color: var(--high-contrast-bg);
+}
+.shadow-high-contrast {
+  box-shadow: 0 4px 6px -1px var(--high-contrast-bg), 0 2px 4px -1px var(--high-contrast-bg);
+}
+.hover\:bg-high-contrast:hover {
+  background-color: var(--high-contrast-bg-darker);
+}
+
+/* Low Contrast Color */
+.bg-low-contrast {
+  background-color: var(--low-contrast-bg);
+}
+.text-low-contrast {
+  color: var(--low-contrast-text);
+}
+.bg-low-contrast-dark {
+  background-color: var(--low-contrast-bg-darker);
+}
+.bg-low-contrast-light {
+  background-color: var(--low-contrast-bg-lighter);
+}
+.border-low-contrast {
+  border-color: var(--low-contrast-bg);
+}
+.shadow-low-contrast {
+  box-shadow: 0 4px 6px -1px var(--low-contrast-bg), 0 2px 4px -1px var(--low-contrast-bg);
+}
+.hover\:bg-low-contrast:hover {
+  background-color: var(--low-contrast-bg-darker);
+}

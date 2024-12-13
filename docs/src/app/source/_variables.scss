@@ -2,29 +2,361 @@
 $partitions: 15;
 $gutters: 60;
 
-//Global Variables - Dark Colors
-$primaryBackground: #0e105a;
-$primaryText: #fafafa;
-$brandColor: $primaryBackground;
 
-$accentBackground: #3e40ba;
-$accentText: #eaeaea;
-$brandAccent: $accentBackground;
+// golden ratio sizes
+$gr102: 1.75rem;
+$gr175: 2.83rem;
+$gr066: 1.08rem;
+$gr033: 0.56rem;
 
-/*
-//Global Variables - Light
-$primaryBackground: #0e115a;
-$primaryText: #1e1e1e;
+// Core Color Variables for both light and dark modes
+@media (prefers-color-scheme: light){
 
-$accentBackground: #3e40ba;
-$accentText: #0e0e0e;
-*/
+  $bodyBg: #FBF5F3;
+  $bodyBgDarker: #F5E6E0;
+  $bodyBgLighter: #FDFCFA;
+  $bodyText: #0A0A0A;
 
+  $brandBg: #4FB286;
+  $brandBgDarker: #38805F;
+  $brandBgLighter: #71C19D;
+  $brandText: #0A0A0A;
 
-//Navigation Variables
-$sidenavBackdropFilter: saturate(180%) contrast(120%) blur(4px);
-$sidenavTitleColor: $primaryText;
-$sidenavItemColor: $accentText;
-$sidenavBrandBR: 0px;
-$sidenavTitleBR: 3px;
-$sidenavItemBR: 5px;
+  $accentBg: #065143;
+  $accentBgDarker: #064C3F;
+  $accentBgLighter: #09725F;
+  $accentText: #FBF5F3;
+
+  $secondaryBg: #2A4494;
+  $secondaryBgDarker: #1F336F;
+  $secondaryBgLighter: #3658BF;
+  $secondaryText: #FBF5F3;
+
+  $mutedBg: #F7C59F;
+  $mutedBgDarker: #F6BB8E;
+  $mutedBgLighter: #F9D2B4;
+  $mutedText: #0A0A0A;
+
+  $highlightBg: #FF3366;
+  $highlightBgDarker: #F5003D;
+  $highlightBgLighter: #FF7094;
+  $highlightText: #0A0A0A;
+
+  $infoBg: #E1E9F4;
+  $infoBgDarker: #C5D5EA;
+  $infoBgLighter: #F0F4FA;
+  $infoText: #0A0A0A;
+
+  $warningBg: #F0F465;
+  $warningBgDarker: #ECF240;
+  $warningBgLighter: #F3F78D;
+  $warningText: #0A0A0A;
+
+  $errorBg: #AF0823;
+  $errorBgDarker: #9C072C;
+  $errorBgLighter: #C30938;
+  $errorText: #FBF5F3;
+
+  $successBg: #39D085;
+  $successBgDarker: #2BB670;
+  $successBgLighter: #7BE0AD;
+  $successText: #0A0A0A;
+
+  $highContrastBg: #021012;
+  $highContrastBgDarker: #010001;
+  $highContrastBgLighter: #122022;
+  $highContrastText: #FAFAFA;
+
+  $lowContrastBg: #F8FCFF;
+  $lowContrastBgDarker: #E2FAFC;
+  $lowContrastBgLighter: #FEFEFE;
+  $lowContrastText: #010001;
+
+    
+  :root {
+    //Body Colors
+    --body-bg: #{$bodyBg};
+    --body-text: #{$bodyText};
+    --body-bg-darker: #{$bodyBgDarker};
+    --body-bg-lighter: #{$bodyBgLighter};
+    --body-bg-hover: #{$bodyBgDarker};
+    --body-border: #{$bodyBgLighter};
+    --brand-shadow: rgba(0, 0, 0, 0.1);
+
+    // Brand Colors
+    --brand-bg: #{$brandBg};
+    --brand-text: #{$brandText};
+    --brand-bg-darker: #{$brandBgDarker};
+    --brand-bg-lighter: #{$brandBgLighter};
+    --brand-bg-hover: #{$brandBgDarker};
+    --brand-border: #{$brandBgLighter};
+    --brand-shadow: rgba(0, 0, 0, 0.1);
+
+    // Accent Colors
+    --accent-bg: #{$accentBg};
+    --accent-text: #{$accentText};
+    --accent-bg-darker: #{$accentBgDarker};
+    --accent-bg-lighter: #{$accentBgLighter};
+    --accent-bg-hover: #{$accentBgDarker};
+    --accent-border: #{$accentBgLighter};
+    --accent-shadow: rgba(0, 0, 0, 0.1);
+
+    // Secondary Colors
+    --secondary-bg: #{$secondaryBg};
+    --secondary-text: #{$secondaryText};
+    --secondary-bg-darker: #{$secondaryBgDarker};
+    --secondary-bg-lighter: #{$secondaryBgLighter};
+    --secondary-bg-hover: #{$secondaryBgDarker};
+    --secondary-border: #{$secondaryBgLighter};
+    --secondary-shadow: rgba(0, 0, 0, 0.1);
+
+    // Muted Colors
+    --muted-bg: #{$mutedBg};
+    --muted-text: #{$mutedText};
+    --muted-bg-darker: #{$mutedBgDarker};
+    --muted-bg-lighter: #{$mutedBgLighter};
+    --muted-bg-hover: #{$mutedBgDarker};
+    --muted-border: #{$mutedBgLighter};
+    --muted-shadow: rgba(0, 0, 0, 0.1);
+
+    // Highlight Colors
+    --highlight-bg: #{$highlightBg};
+    --highlight-text: #{$highlightText};
+    --highlight-bg-darker: #{$highlightBgDarker};
+    --highlight-bg-lighter: #{$highlightBgLighter};
+    --highlight-bg-hover: #{$highlightBgDarker};
+    --highlight-border: #{$highlightBgLighter};
+    --highlight-shadow: rgba(0, 0, 0, 0.1);
+
+    // Info Colors
+    --info-bg: #{$infoBg};
+    --info-text: #{$infoText};
+    --info-bg-darker: #{$infoBgDarker};
+    --info-bg-lighter: #{$infoBgLighter};
+    --info-bg-hover: #{$infoBgDarker};
+    --info-border: #{$infoBgLighter};
+    --info-shadow: rgba(0, 0, 0, 0.1);
+
+    // Warning Colors
+    --warning-bg: #{$warningBg};
+    --warning-text: #{$warningText};
+    --warning-bg-darker: #{$warningBgDarker};
+    --warning-bg-lighter: #{$warningBgLighter};
+    --warning-bg-hover: #{$warningBgDarker};
+    --warning-border: #{$warningBgLighter};
+    --warning-shadow: rgba(0, 0, 0, 0.1);
+
+    // Error Colors
+    --error-bg: #{$errorBg};
+    --error-text: #{$errorText};
+    --error-bg-darker: #{$errorBgDarker};
+    --error-bg-lighter: #{$errorBgLighter};
+    --error-bg-hover: #{$errorBgDarker};
+    --error-border: #{$errorBgLighter};
+    --error-shadow: rgba(0, 0, 0, 0.1);
+
+    // Success Colors
+    --success-bg: #{$successBg};
+    --success-text: #{$successText};
+    --success-bg-darker: #{$successBgDarker};
+    --success-bg-lighter: #{$successBgLighter};
+    --success-bg-hover: #{$successBgDarker};
+    --success-border: #{$successBgLighter};
+    --success-shadow: rgba(0, 0, 0, 0.1);
+
+    // High Contrast Colors
+    --high-contrast-bg: #{$highContrastBg};
+    --high-contrast-text: #{$highContrastText};
+    --high-contrast-bg-darker: #{$highContrastBgDarker};
+    --high-contrast-bg-lighter: #{$highContrastBgLighter};
+    --high-contrast-bg-hover: #{$highContrastBgDarker};
+    --high-contrast-border: #{$highContrastBgLighter};
+    --high-contrast-shadow: rgba(0, 0, 0, 0.1);
+
+    // Low Contrast Colors
+    --low-contrast-bg: #{$lowContrastBg};
+    --low-contrast-text: #{$lowContrastText};
+    --low-contrast-bg-darker: #{$lowContrastBgDarker};
+    --low-contrast-bg-lighter: #{$lowContrastBgLighter};
+    --low-contrast-bg-hover: #{$lowContrastBgDarker};
+    --low-contrast-border: #{$lowContrastBgLighter};
+    --low-contrast-shadow: rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (prefers-color-scheme: dark){
+//    $current-theme: map-get($themes, dark);
+
+  $bodyBg: #212529;
+  $bodyBgDarker: #1c1f22;
+  $bodyBgLighter: #30363b;
+  $bodyText: #F1F1F1;
+
+  $brandBg: #065143;
+  $brandBgDarker: #064C3F;
+  $brandBgLighter: #09725F;
+  $brandText: #FBF5F3;
+
+  $accentBg: #4FB286;
+  $accentBgDarker: #38805F;
+  $accentBgLighter: #71C19D;
+  $accentText: #0A0A0A;
+
+  $secondaryBg: #2A4494;
+  $secondaryBgDarker: #1F336F;
+  $secondaryBgLighter: #3658BF;
+  $secondaryText: #FBF5F3;
+
+  $mutedBg: #F7C59F;
+  $mutedBgDarker: #F6BB8E;
+  $mutedBgLighter: #F9D2B4;
+  $mutedText: #0A0A0A;
+
+  $highlightBg: #FF3366;
+  $highlightBgDarker: #F5003D;
+  $highlightBgLighter: #FF7094;
+  $highlightText: #0A0A0A;
+
+  $infoBg: #E1E9F4;
+  $infoBgDarker: #C5D5EA;
+  $infoBgLighter: #F0F4FA;
+  $infoText: #0A0A0A;
+
+  $warningBg: #F0F465;
+  $warningBgDarker: #ECF240;
+  $warningBgLighter: #F3F78D;
+  $warningText: #0A0A0A;
+
+  $errorBg: #AF0823;
+  $errorBgDarker: #9C072C;
+  $errorBgLighter: #C30938;
+  $errorText: #FBF5F3;
+
+  $successBg: #39D085;
+  $successBgDarker: #2BB670;
+  $successBgLighter: #7BE0AD;
+  $successText: #0A0A0A;
+
+  $highContrastBg: #021012;
+  $highContrastBgDarker: #010001;
+  $highContrastBgLighter: #122022;
+  $highContrastText: #FAFAFA;
+
+  $lowContrastBg: #F8FCFF;
+  $lowContrastBgDarker: #E2FAFC;
+  $lowContrastBgLighter: #FEFEFE;
+  $lowContrastText: #010001;
+
+  
+  :root {
+    //Body Colors
+    --body-bg: #{$bodyBg};
+    --body-text: #{$bodyText};
+    --body-bg-darker: #{$bodyBgDarker};
+    --body-bg-lighter: #{$bodyBgLighter};
+    --body-bg-hover: #{$bodyBgDarker};
+    --body-border: #{$bodyBgLighter};
+    --brand-shadow: rgba(0, 0, 0, 0.1);
+
+    // Brand Colors
+    --brand-bg: #{$brandBg};
+    --brand-text: #{$brandText};
+    --brand-bg-darker: #{$brandBgDarker};
+    --brand-bg-lighter: #{$brandBgLighter};
+    --brand-bg-hover: #{$brandBgDarker};
+    --brand-border: #{$brandBgLighter};
+    --brand-shadow: rgba(0, 0, 0, 0.1);
+
+    // Accent Colors
+    --accent-bg: #{$accentBg};
+    --accent-text: #{$accentText};
+    --accent-bg-darker: #{$accentBgDarker};
+    --accent-bg-lighter: #{$accentBgLighter};
+    --accent-bg-hover: #{$accentBgDarker};
+    --accent-border: #{$accentBgLighter};
+    --accent-shadow: rgba(0, 0, 0, 0.1);
+
+    // Secondary Colors
+    --secondary-bg: #{$secondaryBg};
+    --secondary-text: #{$secondaryText};
+    --secondary-bg-darker: #{$secondaryBgDarker};
+    --secondary-bg-lighter: #{$secondaryBgLighter};
+    --secondary-bg-hover: #{$secondaryBgDarker};
+    --secondary-border: #{$secondaryBgLighter};
+    --secondary-shadow: rgba(0, 0, 0, 0.1);
+
+    // Muted Colors
+    --muted-bg: #{$mutedBg};
+    --muted-text: #{$mutedText};
+    --muted-bg-darker: #{$mutedBgDarker};
+    --muted-bg-lighter: #{$mutedBgLighter};
+    --muted-bg-hover: #{$mutedBgDarker};
+    --muted-border: #{$mutedBgLighter};
+    --muted-shadow: rgba(0, 0, 0, 0.1);
+
+    // Highlight Colors
+    --highlight-bg: #{$highlightBg};
+    --highlight-text: #{$highlightText};
+    --highlight-bg-darker: #{$highlightBgDarker};
+    --highlight-bg-lighter: #{$highlightBgLighter};
+    --highlight-bg-hover: #{$highlightBgDarker};
+    --highlight-border: #{$highlightBgLighter};
+    --highlight-shadow: rgba(0, 0, 0, 0.1);
+
+    // Info Colors
+    --info-bg: #{$infoBg};
+    --info-text: #{$infoText};
+    --info-bg-darker: #{$infoBgDarker};
+    --info-bg-lighter: #{$infoBgLighter};
+    --info-bg-hover: #{$infoBgDarker};
+    --info-border: #{$infoBgLighter};
+    --info-shadow: rgba(0, 0, 0, 0.1);
+
+    // Warning Colors
+    --warning-bg: #{$warningBg};
+    --warning-text: #{$warningText};
+    --warning-bg-darker: #{$warningBgDarker};
+    --warning-bg-lighter: #{$warningBgLighter};
+    --warning-bg-hover: #{$warningBgDarker};
+    --warning-border: #{$warningBgLighter};
+    --warning-shadow: rgba(0, 0, 0, 0.1);
+
+    // Error Colors
+    --error-bg: #{$errorBg};
+    --error-text: #{$errorText};
+    --error-bg-darker: #{$errorBgDarker};
+    --error-bg-lighter: #{$errorBgLighter};
+    --error-bg-hover: #{$errorBgDarker};
+    --error-border: #{$errorBgLighter};
+    --error-shadow: rgba(0, 0, 0, 0.1);
+
+    // Success Colors
+    --success-bg: #{$successBg};
+    --success-text: #{$successText};
+    --success-bg-darker: #{$successBgDarker};
+    --success-bg-lighter: #{$successBgLighter};
+    --success-bg-hover: #{$successBgDarker};
+    --success-border: #{$successBgLighter};
+    --success-shadow: rgba(0, 0, 0, 0.1);
+
+    // High Contrast Colors
+    --high-contrast-bg: #{$highContrastBg};
+    --high-contrast-text: #{$highContrastText};
+    --high-contrast-bg-darker: #{$highContrastBgDarker};
+    --high-contrast-bg-lighter: #{$highContrastBgLighter};
+    --high-contrast-bg-hover: #{$highContrastBgDarker};
+    --high-contrast-border: #{$highContrastBgLighter};
+    --high-contrast-shadow: rgba(0, 0, 0, 0.1);
+
+    // Low Contrast Colors
+    --low-contrast-bg: #{$lowContrastBg};
+    --low-contrast-text: #{$lowContrastText};
+    --low-contrast-bg-darker: #{$lowContrastBgDarker};
+    --low-contrast-bg-lighter: #{$lowContrastBgLighter};
+    --low-contrast-bg-hover: #{$lowContrastBgDarker};
+    --low-contrast-border: #{$lowContrastBgLighter};
+    --low-contrast-shadow: rgba(0, 0, 0, 0.1);
+  }
+
+}
+  

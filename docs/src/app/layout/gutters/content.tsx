@@ -1,42 +1,42 @@
 const Content = () => {
     return(
-        <div className="withPrimaryBackground listViewVertical paddingSmall">
+        <div className="bg-body list-view-vertical padding--small">
                         <h1 className="title">Gutters</h1>
                         <h2 className="subtitle">Give your columns some breathing space</h2>
-                        <p className="text">
+                        <p className="text-regular">
                         <span className="highlighted">
-                            invrz patterns comes out of the box with max gutter sizes till 60, which can be changed as per requirements by editing the <span className="inlineCode bgDark">$gutters</span> value in <span className="inlineCode bgDark">variables.scss</span> file according to your needs. For this documentation we will stick to the default 60 gutter sizes but the general rules will be same for any number of <span className="inlineCode bgDark">$gutters</span> you set.
+                            invrz patterns comes out of the box with max gutter sizes till 60, which can be changed as per requirements by editing the <span className="code--inline bg-muted-dark text-muted">$gutters</span> value in <span className="code--inline bg-muted-dark text-muted">variables.scss</span> file according to your needs. For this documentation we will stick to the default 60 gutter sizes but the general rules will be same for any number of <span className="code--inline bg-muted-dark text-muted">$gutters</span> you set.
                         </span><br/><br/>
 
                         Gutters are essential for creating separations between grid columns, providing spacing and visual clarity in layouts. <br/>
-                        You can use classes <span className="inlineCode bgDark">.gutterWd-*</span> to add gutters of size <span className="inlineCode bgDark">*</span> where  <span className="inlineCode bgDark">*</span>  ranges from 1 to 60 by default. The larger the number, the bigger will be space between your columns. For example:
+                        You can use classes <span className="code--inline bg-muted-dark text-muted">.gutter-width-*</span> to add gutters of size <span className="code--inline bg-muted-dark text-muted">*</span> where  <span className="code--inline bg-muted-dark text-muted">*</span>  ranges from 1 to 60 by default. The larger the number, the bigger will be space between your columns. For example:
                             <br/>
-                            <div className="codeBlock bgDark">
-                                <p className="codeLanguage">HTML</p>
-                                <p className="codeText">
-                                    {'<div class="pageView">\n'}
-                                    {'  <div class="gridRow rowCenter">\n'}
-                                    {'    <div class="colWd-6-ld taCenter" style="background: #0e0e0e">\n'}
+                            <div className="code--block bg-muted-dark text-muted">
+                                <p className="code--language bg-body-dark text-body">HTML</p>
+                                <p className="code--text">
+                                    {'<div class="page-view">\n'}
+                                    {'  <div class="grid-row row-center">\n'}
+                                    {'    <div class="col-width-6-ld text-align--center" style="background: #0e0e0e">\n'}
                                     {'      these columns have\n'}
                                     {'    </div>\n'}
-                                    {'    <div class="gutterWd-1"></div>\n'}
-                                    {'    <div class="colWd-6-ld taCenter" style="background: #0e0e0e">\n'}
+                                    {'    <div class="gutter-width-1"></div>\n'}
+                                    {'    <div class="col-width-6-ld text-align--center" style="background: #0e0e0e">\n'}
                                     {'      gutter of size 1\n'}
                                     {'    </div>\n'}
                                     {'  </div>\n'}
                                     {'</div>'}
                                 </p>
                             </div>
-                            <div className="previewBlock bgDark">
-                                <p className="previewTitle">Preview</p>
-                                <p className="previewRender">
-                                    <div className="pageView">
-                                        <div className="gridRow rowCenter">
-                                            <div className="colWd-6-ld taCenter" style={{background: "#0e0e0e"}}>
+                            <div className="preview--block bg-body-dark text-body">
+                                <p className="preview--language bg-accent-dark text-accent">Preview</p>
+                                <p className="preview--render">
+                                    <div className="page-view">
+                                        <div className="grid-row row-center">
+                                            <div className="col-width-6-ld text-align--center" style={{background: "#0e0e0e"}}>
                                                 {'    these columns have gutter\n'}
                                             </div>
-                                            <div className="gutterWd-1"></div>
-                                            <div className="colWd-6-ld taCenter" style={{background: "#0e0e0e"}}>
+                                            <div className="gutter-width-1"></div>
+                                            <div className="col-width-6-ld text-align--center" style={{background: "#0e0e0e"}}>
                                                 {'    of size 1 between them\n'}
                                             </div>
                                         </div>
@@ -49,8 +49,8 @@ const Content = () => {
                         <br />
 
                         <br/><br/>
-                        <a className="buttonLink" href="./views">Prev: Views</a>
-                        <a className="buttonLink" href="./breakpoints">Next: Breakpoints</a>
+                        <a href="./columns"><button className="padding--small bg-accent-dark text-accent no-border border--smoother">Prev: Columns</button></a>&nbsp;&nbsp;&nbsp;
+                        <a href="./breakpoints"><button className="padding--small bg-accent-dark text-accent no-border border--smoother">Next: Breakpoints</button></a>
                         <br/><br/>
                     </div>
     );

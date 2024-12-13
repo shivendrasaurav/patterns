@@ -1,133 +1,175 @@
 @import "variables";
 
-// golden ratio sizes
-$gr102: 1.75rem;
-$gr175: 2.83rem;
-$gr066: 1.08rem;
-
-*{
-    font-weight: regular;
+// Global Font Settings
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
 }
 
-// text sizes
-h1, h2, h3, h4, h5, h6{
-    font-weight: 600;
-    width: inherit;
-}
-.title{
+// Heading Styles
+.heading {
+  &--h1 {
     font-size: $gr175;
-    font-weight: 800;
-    padding: 0rem 2vw 0rem 0rem;
-}
-.subtitle{
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  &--h2, .title {
     font-size: $gr102;
-    padding: 0rem 2vw 0rem 0rem;
-}
-.text{
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  &--h3, .subtitle {
+    font-size: $gr066 * 1.5;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  &--h4 {
     font-size: $gr066;
-    padding: 0rem 2vw 0rem 0rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  &--h5 {
+    font-size: $gr033 * 2;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+  &--h6 {
+    font-size: $gr033 * 1.5;
+    font-weight: 500;
+    line-height: 1.7;
+  }
 }
 
+// Paragraph and Text Styles
+.text {
+  &--large {
+    font-size: $gr102;
+    line-height: 1.6;
+  }
+  &--regular {
+    font-size: $gr066;
+    line-height: 1.7;
+  }
+  &--small {
+    font-size: $gr033;
+    line-height: 1.8;
+  }
 
-//text styles
-.bold{
-    font-weight: bold;
-}
-.italic{
-    font-family: italic;
-}
-.underline{
+  &--bold {
+    font-weight: 700;
+  }
+  &--italic {
+    font-style: italic;
+  }
+  &--underline {
     text-decoration: underline;
-}
-
-// text aligners
-.taCenter{
-    text-align: center;
-}
-.taLeft{
-    text-align: left;
-}
-.taRight{
-    text-align: right;
-}
-.taJustify{
-    text-align: justify;
-}
-.noDecoration{
+  }
+  &--no-decoration {
     text-decoration: none;
-}
-ul, ol{
-    margin-left: 1rem;
-}
+  }
 
-//Object aligners
-.objAligner{
-    display: flex;
-
-    .objLeft{
-        display: block;
-        margin-left: 0;
-    }
-    .objRight{
-        display: block;
-        margin-left: auto;
-    }
-    .objCenter{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .objTop{
-        align-self: top;
-    }
-    .objBottom{
-        align-self: bottom;
-    }
-    .objMiddle{
-        align-self: center;
-    }
-    
+  &--dark {
+    filter: contrast(140%);
+  }
+  &--light {
+    filter: contrast(60%);
+  }
+  &--brand {
+    color: var(--brand-color);
+  }
+  &--accent {
+    color: var(--accent-color);
+  }
+  &--highlight {
+    color: var(--highlight-color);
+  }
 }
 
-//codeblocks
-.inlineCode{
+// Text Alignment
+.text-align {
+  &--center {
+    text-align: center;
+  }
+  &--left {
+    text-align: left;
+  }
+  &--right {
+    text-align: right;
+  }
+  &--justify {
+    text-align: justify;
+  }
+}
+
+// Lists
+.list {
+  &--unordered {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+  }
+  &--ordered {
+    list-style-type: decimal;
+    margin-left: 1.5rem;
+  }
+}
+
+// Code Blocks
+.code, .preview {
+  &--inline {
     padding: 0 0.2rem;
     font-family: monospace;
-    font-style: italic;
     font-size: $gr066;
-    filter: invert(20%) saturate(120%);
+    border-radius: 0.2rem;
+    filter: contrast(70%);
+  }
+  &--block {
+    margin: 1rem 0;
+    font-family: monospace;
+    font-size: $gr066;
+    border-radius: 0.4rem;
+    filter: contrast(70%);
+  }
+  &--language {
+    width: 100%;
+    padding: 0.4rem 0.6rem;
+    font-size: $gr066;
+    font-weight: bold;
+  }
+  &--text {
+    white-space: pre;
+    text-wrap: wrap;
+    padding: 1rem 0.6rem;
+    font-family: monospace;
+    font-weight: 400;
+  }
+  &--render{
+    display: block;
+    padding: 1rem 0.6rem;
+    font-weight: 400;
+  }
 }
-.codeBlock{
-    margin: 1rem 2vw 0.5rem 0rem;
 
-    .codeLanguage{
-        width: 100%;
-        padding: 0.4rem 0.6rem;
-        font-size: $gr066;
-        font-weight: bold;
-    }
-    .codeText{
-        white-space: pre;
-        text-wrap: wrap;
-        padding: 1rem 0.6rem;
-        font-family: monospace;
-        font-weight: 400;
-    }
-    
-}
-.previewBlock{
-    margin: 1rem 2vw 0.5rem 0rem;
+// Object Alignment
+.object-align, .object-alignment-wrapper {
+  display: flex;
 
-    .previewTitle{
-        width: 100%;
-        padding: 0.4rem 0.6rem;
-        font-size: $gr066;
-        font-weight: bold;
-    }
-    .previewRender{
-        display: block;
-        padding: 1rem 0.6rem;
-        font-weight: 400;
-    }
-    
+  &--left {
+    margin-left: 0;
+  }
+  &--right {
+    margin-left: auto;
+  }
+  &--center {
+    margin: 0 auto;
+  }
+  &--top {
+    align-self: flex-start;
+  }
+  &--bottom {
+    align-self: flex-end;
+  }
+  &--middle {
+    align-self: center;
+  }
 }

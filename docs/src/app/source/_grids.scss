@@ -1,13 +1,13 @@
 @import "variables";
 
-//common devices - not responsive
-.gridRow {
+// Common Devices - Not Responsive
+.grid-row {
     display: flex;
     flex-grow: 1;
     flex-wrap: nowrap;
 
     @for $i from 0 through $partitions {
-        .colWd-#{$i} {
+        .col-width-#{$i} {
             @if $i == 0 {
                 display: none;
             }
@@ -19,7 +19,7 @@
         }
     }
     @for $i from 0 through $gutters {
-        .gutterWd-#{$i} {
+        .gutter-width-#{$i} {
             @if $i == 0 {
                 display: none;
             }
@@ -32,15 +32,16 @@
         }
     }
 }
-//square devices
+
+// Square Devices
 @media screen and (aspect-ratio: 1) {
-    .gridRow {
-      display: flex;
-      flex-grow: 1;
-      flex-wrap: nowrap;
-  
+    .grid-row {
+        display: flex;
+        flex-grow: 1;
+        flex-wrap: nowrap;
+
         @for $i from 0 through $partitions {
-            .colWd-#{$i}-sq {
+            .col-width-#{$i}-sq {
                 @if $i == 0 {
                     display: none;
                 }
@@ -54,15 +55,15 @@
     }
 }
 
-//portrait devices
+// Portrait Devices
 @media screen and (max-aspect-ratio: 1) {
-    .gridRow {
-      display: flex;
-      flex-grow: 1;
-      flex-wrap: nowrap;
-  
+    .grid-row {
+        display: flex;
+        flex-grow: 1;
+        flex-wrap: nowrap;
+
         @for $i from 0 through $partitions {
-            .colWd-#{$i}-sm {
+            .col-width-#{$i}-sm {
                 @if $i == 0 {
                     display: none;
                 }
@@ -76,23 +77,15 @@
     }
 }
 
-//landscape devices
+// Landscape Devices
 @media screen and (min-aspect-ratio: 1) {
-    .gridRow {
-      display: flex;
-      flex-grow: 1;
-      flex-wrap: nowrap;
-      
-      &.withBorder{
-        border: 1px solid $primaryText;
+    .grid-row {
+        display: flex;
+        flex-grow: 1;
+        flex-wrap: nowrap;
 
-        *{
-            border: 1px solid $primaryText;
-        }
-      }
-  
         @for $i from 0 through $partitions {
-            .colWd-#{$i}-ld {
+            .col-width-#{$i}-ld {
                 @if $i == 0 {
                     display: none;
                 }
@@ -106,37 +99,38 @@
     }
 }
 
-.rowLeft{
+// Row Alignment
+.row-left {
     justify-content: flex-start;
     justify-items: flex-start;
 }
-.rowRight{
+.row-right {
     justify-content: flex-end;
     justify-items: flex-end;
 }
-.rowCenter{
+.row-center {
     justify-content: center;
     justify-items: center;
 }
-.rowTop{
+.row-top {
     align-items: flex-start;
     align-content: flex-start;
 }
-.rowBottom{
+.row-bottom {
     align-items: flex-end;
     align-content: flex-end;
 }
-.rowMiddle{
+.row-middle {
     align-items: center;
     align-content: center;
 }
 
-/* Define the row height classes */
-.colHi-auto{
+// Define the Row Height Classes
+.col-height-auto {
     height: max-content;
 }
 @for $i from 0 through 10 {
-    .colHi-#{$i} {
+    .col-height-#{$i} {
         height: calc(10vh * #{$i});
     }
 }

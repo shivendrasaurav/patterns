@@ -1,9 +1,9 @@
 const Content = () => {
     return(
-        <div className="withPrimaryBackground listViewVertical paddingSmall">
+        <div className="bg-body list-view-vertical padding--small">
                         <h1 className="title">Aligners</h1>
                         <h2 className="subtitle">Align adapt justify</h2>
-                        <p className="text">
+                        <p className="text-regular">
                             Aligners are a set of classes that help you align content and objects in your app. They allow you to control the horizontal and vertical alignment of text, images, divs, and other elements. They also allow you to adjust the spacing and distribution of elements in a grid. Aligners are useful for creating consistent and responsive layouts that adapt to different screen sizes and orientations.
                             <br/>
                         </p>
@@ -11,31 +11,31 @@ const Content = () => {
                         <br/>
 
                         <h2 className="subtitle">Text align</h2>
-                        <p className="text">
-                            The <span className="inlineCode bgDark">.ta*</span> classes are used to align text within an element. They set the <span className="inlineCode bgDark">text-align</span> property to one of the following values: <span className="inlineCode bgDark">left</span>, <span className="inlineCode bgDark">right</span>, <span className="inlineCode bgDark">center</span>, or <span className="inlineCode bgDark">justify</span>. To use a text align class in HTML, you need to add the class to the element that contains the text. For example:
+                        <p className="text-regular">
+                            The <span className="code--inline bg-muted-dark text-muted">.text-align--*</span> classes are used to align text within an element. They set the <span className="code--inline bg-muted-dark text-muted">text-align</span> property to one of the following values: <span className="code--inline bg-muted-dark text-muted">left</span>, <span className="code--inline bg-muted-dark text-muted">right</span>, <span className="code--inline bg-muted-dark text-muted">center</span>, or <span className="code--inline bg-muted-dark text-muted">justify</span>. To use a text align class in HTML, you need to add the class to the element that contains the text. For example:
                             <br/>
-                            <div className="codeBlock bgDark">
-                                <p className="codeLanguage">HTML</p>
-                                <p className="codeText">
-                                    {'<div class="pageView">\n'}
-                                    {'  <p class="taJustify" style="background: #6cacac">This text is justified.</p>\n'}
-                                    {'  <p class="taLeft" style="background: #acacac">This text is aligned to the left.</p>\n'}
-                                    {'  <p class="taCenter" style="background: #ac6cac">This text is centered.</p>\n'}
-                                    {'  <p class="taRight" style="background: #acac6c">This text is aligned to the right.</p>\n'}
+                            <div className="code--block bg-muted-dark text-muted">
+                                <p className="code--language bg-body-dark text-body">HTML</p>
+                                <p className="code--text">
+                                    {'<div class="page-view">\n'}
+                                    {'  <p class="text-align--justify" style="background: #6cacac">This text is justified.</p>\n'}
+                                    {'  <p class="text-align--left" style="background: #acacac">This text is aligned to the left.</p>\n'}
+                                    {'  <p class="text-align--center" style="background: #ac6cac">This text is centered.</p>\n'}
+                                    {'  <p class="text-align--right" style="background: #acac6c">This text is aligned to the right.</p>\n'}
                                     {'</div>'}
                                 </p>
                             </div>
                             <br/>
-                            <div className="previewBlock bgDark">
-                                <p className="previewTitle">Preview</p>
-                                <p className="previewRender">
-                                    <div className="pageView">
-                                        <div className="gridRow rowCenter">
-                                            <div className="colWd-12-ld colWd-12-sq colWd-12-sm">
-                                                <p className="taJustify" style={{background: "#6cacac"}}>This text is justified.</p>
-                                                <p className="taLeft" style={{background: "#acacac"}}>This text is aligned to the left.</p>
-                                                <p className="taCenter" style={{background: "#ac6cac"}}>This text is centered.</p>
-                                                <p className="taRight" style={{background: "#acac6c"}}>This text is aligned to the right.</p>
+                            <div className="preview--block bg-body-dark text-body">
+                                <p className="preview--language bg-accent-dark text-accent">Preview</p>
+                                <p className="preview--render">
+                                    <div className="page-view">
+                                        <div className="grid-row row-center">
+                                            <div className="col-width-12-ld col-width-12-sq col-width-12-sm">
+                                                <p className="text-align--justify" style={{background: "#6cacac"}}>This text is justified.</p>
+                                                <p className="text-align--left" style={{background: "#acacac"}}>This text is aligned to the left.</p>
+                                                <p className="text-align--center" style={{background: "#ac6cac"}}>This text is centered.</p>
+                                                <p className="text-align--right" style={{background: "#acac6c"}}>This text is aligned to the right.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -47,30 +47,30 @@ const Content = () => {
                         <br />
 
                         <h2 className="subtitle">Horizontal object align</h2>
-                        <p className="text">
-                            The <span className="inlineCode bgDark">.obj*</span> classes are used to align objects, such as images, divs, or other elements, horizontally within a parent element. To use a horizontal object align class in HTML, you need to add the class to the object element and make sure the parent element has the <span className="inlineCode bgDark">objAligner</span> class set to <span className="inlineCode bgDark">relative</span>. For example:
+                        <p className="text-regular">
+                            The <span className="code--inline bg-muted-dark text-muted">.object-align--*</span> classes are used to align objects, such as images, divs, or other elements, horizontally within a parent element. To use a horizontal object align class in HTML, you need to add the class to the object element and make sure the parent element has the <span className="code--inline bg-muted-dark text-muted">object-alignment-wrapper</span> class set to <span className="code--inline bg-muted-dark text-muted">relative</span>. For example:
                             <br/>
-                            <div className="codeBlock bgDark">
-                                <p className="codeLanguage">HTML</p>
-                                <p className="codeText">
-                                    {'<div class="contentView ">\n'}
-                                    {'  <img src="https://www.invrz.com/icon.png" class="objLeft" alt="Logo" />\n'}
-                                    {'  <img src="https://www.invrz.com/icon.png" class="objCenter" alt="Logo" />\n'}
-                                    {'  <img src="https://www.invrz.com/icon.png" class="objRight" alt="Logo" />\n'}
+                            <div className="code--block bg-muted-dark text-muted">
+                                <p className="code--language bg-body-dark text-body">HTML</p>
+                                <p className="code--text">
+                                    {'<div class="content-view object-alignment-wrapper">\n'}
+                                    {'  <img src="https://www.invrz.com/icon.png" class="object-align--left" alt="Logo" />\n'}
+                                    {'  <img src="https://www.invrz.com/icon.png" class="object-align--center" alt="Logo" />\n'}
+                                    {'  <img src="https://www.invrz.com/icon.png" class="object-align--right" alt="Logo" />\n'}
                                     {'</div>'}
                                 </p>
                             </div>
                             <br/>
-                            <div className="previewBlock bgDark">
-                                <p className="previewTitle">Preview</p>
-                                <p className="previewRender">
-                                    <div className="pageView">
-                                        <div className="gridRow rowCenter">
-                                            <div className="colWd-12-ld colWd-12-sq colWd-12-sm">
-                                                <div className="contentView objAligner" style={{position: "relative"}}>
-                                                    <img src="https://www.invrz.com/icon.png" className="objLeft imgIcon" alt="Logo" />
-                                                    <img src="https://www.invrz.com/icon.png" className="objCenter imgIcon" alt="Logo" />
-                                                    <img src="https://www.invrz.com/icon.png" className="objRight imgIcon" alt="Logo" />
+                            <div className="preview--block bg-body-dark text-body">
+                                <p className="preview--language bg-accent-dark text-accent">Preview</p>
+                                <p className="preview--render">
+                                    <div className="page-view">
+                                        <div className="grid-row row-center">
+                                            <div className="col-width-12-ld col-width-12-sq col-width-12-sm">
+                                                <div className="content-view object-alignment-wrapper" style={{position: "relative"}}>
+                                                    <img src="https://www.invrz.com/icon.png" className="object-align--left imgIcon" alt="Logo" />
+                                                    <img src="https://www.invrz.com/icon.png" className="object-align--center imgIcon" alt="Logo" />
+                                                    <img src="https://www.invrz.com/icon.png" className="object-align--right imgIcon" alt="Logo" />
                                                 </div>
                                             </div>
                                         </div>
@@ -83,50 +83,50 @@ const Content = () => {
                         <br />
 
                         <h2 className="subtitle">Horizontal grid align</h2>
-                        <p className="text">
-                            The <span className="inlineCode bgDark">.rowLeft</span>, <span className="inlineCode bgDark">.rowRight</span> and <span className="inlineCode bgDark">.rowCenter</span> classes are used to align columns horizontally within a grid row. To use horizontal grid align classes in HTML, you need to add the class to the <span className="inlineCode bgDark">.gridRow</span> element that contains the grid items. For example:
+                        <p className="text-regular">
+                            The <span className="code--inline bg-muted-dark text-muted">.row-left</span>, <span className="code--inline bg-muted-dark text-muted">.row-right</span> and <span className="code--inline bg-muted-dark text-muted">.row-center</span> classes are used to align columns horizontally within a grid row. To use horizontal grid align classes in HTML, you need to add the class to the <span className="code--inline bg-muted-dark text-muted">.grid-row</span> element that contains the grid items. For example:
                             <br/>
-                            <div className="codeBlock bgDark">
-                                <p className="codeLanguage">HTML</p>
-                                <p className="codeText">
-                                    {'<div class="pageView">\n'}
-                                    {'  <div class="gridRow rowLeft colHi-1" style="background: #acac6c">\n'}
-                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">left</p>\n'}
-                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">aligned</p>\n'}
-                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">columns</p>\n'}
+                            <div className="code--block bg-muted-dark text-muted">
+                                <p className="code--language bg-body-dark text-body">HTML</p>
+                                <p className="code--text">
+                                    {'<div class="page-view">\n'}
+                                    {'  <div class="grid-row row-left col-height-1" style="background: #acac6c">\n'}
+                                    {'    <p class="col-width-2-ld col-width-2-sm col-width-2-sq">left</p>\n'}
+                                    {'    <p class="col-width-2-ld col-width-2-sm col-width-2-sq">aligned</p>\n'}
+                                    {'    <p class="col-width-2-ld col-width-2-sm col-width-2-sq">columns</p>\n'}
                                     {'  </div>\n'}
-                                    {'  <div class="gridRow rowCenter colHi-1" style="background: #ac6cac">\n'}
-                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">center</p>\n'}
-                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">aligned</p>\n'}
-                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">columns</p>\n'}
+                                    {'  <div class="grid-row row-center col-height-1" style="background: #ac6cac">\n'}
+                                    {'    <p class="col-width-2-ld col-width-2-sm col-width-2-sq">center</p>\n'}
+                                    {'    <p class="col-width-2-ld col-width-2-sm col-width-2-sq">aligned</p>\n'}
+                                    {'    <p class="col-width-2-ld col-width-2-sm col-width-2-sq">columns</p>\n'}
                                     {'  </div>\n'}
-                                    {'  <div class="gridRow rowRight colHi-1" style="background: #6cacac">\n'}
-                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">right</p>\n'}
-                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">aligned</p>\n'}
-                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">columns</p>\n'}
+                                    {'  <div class="grid-row row-right col-height-1" style="background: #6cacac">\n'}
+                                    {'    <p class="col-width-2-ld col-width-2-sm col-width-2-sq">right</p>\n'}
+                                    {'    <p class="col-width-2-ld col-width-2-sm col-width-2-sq">aligned</p>\n'}
+                                    {'    <p class="col-width-2-ld col-width-2-sm col-width-2-sq">columns</p>\n'}
                                     {'  </div>\n'}
                                     {'</div>'}
                                 </p>
                             </div>
                             <br/>
-                            <div className="previewBlock bgDark">
-                                <p className="previewTitle">Preview</p>
-                                    <p className="previewRender">
-                                        <div className="pageView">
-                                            <div className="gridRow rowLeft colHi-1" style={{background: "#acac6c"}}>
-                                                <p className="colWd-2-ld colWd-2-sm colWd-2-sq">left</p>
-                                                <p className="colWd-2-ld colWd-2-sm colWd-2-sq">aligned</p>
-                                                <p className="colWd-2-ld colWd-2-sm colWd-2-sq">columns</p>
+                            <div className="preview--block bg-body-dark text-body">
+                                <p className="preview--language bg-accent-dark text-accent">Preview</p>
+                                    <p className="preview--render">
+                                        <div className="page-view">
+                                            <div className="grid-row row-left col-height-1" style={{background: "#acac6c"}}>
+                                                <p className="col-width-2-ld col-width-2-sm col-width-2-sq">left</p>
+                                                <p className="col-width-2-ld col-width-2-sm col-width-2-sq">aligned</p>
+                                                <p className="col-width-2-ld col-width-2-sm col-width-2-sq">columns</p>
                                             </div>
-                                            <div className="gridRow rowCenter colHi-1" style={{background: "#ac6c6a"}}>
-                                                <p className="colWd-2-ld colWd-2-sm colWd-2-sq">center</p>
-                                                <p className="colWd-2-ld colWd-2-sm colWd-2-sq">aligned</p>
-                                                <p className="colWd-2-ld colWd-2-sm colWd-2-sq">columns</p>
+                                            <div className="grid-row row-center col-height-1" style={{background: "#ac6c6a"}}>
+                                                <p className="col-width-2-ld col-width-2-sm col-width-2-sq">center</p>
+                                                <p className="col-width-2-ld col-width-2-sm col-width-2-sq">aligned</p>
+                                                <p className="col-width-2-ld col-width-2-sm col-width-2-sq">columns</p>
                                             </div>
-                                            <div className="gridRow rowRight colHi-1" style={{background: "#6cacac"}}>
-                                                <p className="colWd-2-ld colWd-2-sm colWd-2-sq">right</p>
-                                                <p className="colWd-2-ld colWd-2-sm colWd-2-sq">aligned</p>
-                                                <p className="colWd-2-ld colWd-2-sm colWd-2-sq">columns</p>
+                                            <div className="grid-row row-right col-height-1" style={{background: "#6cacac"}}>
+                                                <p className="col-width-2-ld col-width-2-sm col-width-2-sq">right</p>
+                                                <p className="col-width-2-ld col-width-2-sm col-width-2-sq">aligned</p>
+                                                <p className="col-width-2-ld col-width-2-sm col-width-2-sq">columns</p>
                                             </div>
                                         </div>
                                 </p>
@@ -137,50 +137,50 @@ const Content = () => {
                         <br />
 
                         <h2 className="subtitle">Vertical grid align</h2>
-                        <p className="text">
-                            The <span className="inlineCode bgDark">.rowTop</span>, <span className="inlineCode bgDark">.rowBottom</span> and <span className="inlineCode bgDark">.rowMiddle</span> classes are used to align columns vertically within a grid row. To use vertical grid align classes in HTML, you need to add the class to the <span className="inlineCode bgDark">.gridRow</span> element that contains the grid items. For example:
+                        <p className="text-regular">
+                            The <span className="code--inline bg-muted-dark text-muted">.row-top</span>, <span className="code--inline bg-muted-dark text-muted">.row-bottom</span> and <span className="code--inline bg-muted-dark text-muted">.row-middle</span> classes are used to align columns vertically within a grid row. To use vertical grid align classes in HTML, you need to add the class to the <span className="code--inline bg-muted-dark text-muted">.grid-row</span> element that contains the grid items. For example:
                             <br/>
-                            <div className="codeBlock bgDark">
-                                <p className="codeLanguage">HTML</p>
-                                <p className="codeText">
-                                    {'<div class="pageView">\n'}
-                                    {'  <div class="gridRow colHi-2 rowTop" style="background: #acac6c">\n'}
-                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">top</p>\n'}
-                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">aligned</p>\n'}
-                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">columns</p>\n'}
+                            <div className="code--block bg-muted-dark text-muted">
+                                <p className="code--language bg-body-dark text-body">HTML</p>
+                                <p className="code--text">
+                                    {'<div class="page-view">\n'}
+                                    {'  <div class="grid-row col-height-2 row-top" style="background: #acac6c">\n'}
+                                    {'    <p class="col-width-2-ld col-width-2-sm col-width-2-sq">top</p>\n'}
+                                    {'    <p class="col-width-2-ld col-width-2-sm col-width-2-sq">aligned</p>\n'}
+                                    {'    <p class="col-width-2-ld col-width-2-sm col-width-2-sq">columns</p>\n'}
                                     {'  </div>\n'}
-                                    {'  <div class="gridRow colHi-2 rowMiddle" style="background: #ac6cac">\n'}
-                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">middle</p>\n'}
-                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">aligned</p>\n'}
-                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">columns</p>\n'}
+                                    {'  <div class="grid-row col-height-2 row-middle" style="background: #ac6cac">\n'}
+                                    {'    <p class="col-width-2-ld col-width-2-sm col-width-2-sq">middle</p>\n'}
+                                    {'    <p class="col-width-2-ld col-width-2-sm col-width-2-sq">aligned</p>\n'}
+                                    {'    <p class="col-width-2-ld col-width-2-sm col-width-2-sq">columns</p>\n'}
                                     {'  </div>\n'}
-                                    {'  <div class="gridRow colHi-3 rowBottom" style="background: #6cacac">\n'}
-                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">bottom</p>\n'}
-                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">aligned</p>\n'}
-                                    {'    <p class="colWd-2-ld colWd-2-sm colWd-2-sq">columns</p>\n'}
+                                    {'  <div class="grid-row col-height-3 row-bottom" style="background: #6cacac">\n'}
+                                    {'    <p class="col-width-2-ld col-width-2-sm col-width-2-sq">bottom</p>\n'}
+                                    {'    <p class="col-width-2-ld col-width-2-sm col-width-2-sq">aligned</p>\n'}
+                                    {'    <p class="col-width-2-ld col-width-2-sm col-width-2-sq">columns</p>\n'}
                                     {'  </div>\n'}
                                     {'</div>'}
                                 </p>
                             </div>
                             <br/>
-                            <div className="previewBlock bgDark">
-                                <p className="previewTitle">Preview</p>
-                                <p className="previewRender">
-                                    <div className="pageView">
-                                        <div className="gridRow colHi-2 rowTop" style={{background: "#acac6c"}}>
-                                            <p className="colWd-2-ld colWd-2-sm colWd-2-sq">top</p>
-                                            <p className="colWd-2-ld colWd-2-sm colWd-2-sq">aligned</p>
-                                            <p className="colWd-2-ld colWd-2-sm colWd-2-sq">columns</p>
+                            <div className="preview--block bg-body-dark text-body">
+                                <p className="preview--language bg-accent-dark text-accent">Preview</p>
+                                <p className="preview--render">
+                                    <div className="page-view">
+                                        <div className="grid-row col-height-2 row-top" style={{background: "#acac6c"}}>
+                                            <p className="col-width-2-ld col-width-2-sm col-width-2-sq">top</p>
+                                            <p className="col-width-2-ld col-width-2-sm col-width-2-sq">aligned</p>
+                                            <p className="col-width-2-ld col-width-2-sm col-width-2-sq">columns</p>
                                         </div>
-                                        <div className="gridRow colHi-2 rowMiddle" style={{background: "#ac6c6a"}}>
-                                            <p className="colWd-2-ld colWd-2-sm colWd-2-sq">middle</p>
-                                            <p className="colWd-2-ld colWd-2-sm colWd-2-sq">aligned</p>
-                                            <p className="colWd-2-ld colWd-2-sm colWd-2-sq">columns</p>
+                                        <div className="grid-row col-height-2 row-middle" style={{background: "#ac6c6a"}}>
+                                            <p className="col-width-2-ld col-width-2-sm col-width-2-sq">middle</p>
+                                            <p className="col-width-2-ld col-width-2-sm col-width-2-sq">aligned</p>
+                                            <p className="col-width-2-ld col-width-2-sm col-width-2-sq">columns</p>
                                         </div>
-                                        <div className="gridRow colHi-2 rowBottom" style={{background: "#6cacac"}}>
-                                            <p className="colWd-2-ld colWd-2-sm colWd-2-sq">bottom</p>
-                                            <p className="colWd-2-ld colWd-2-sm colWd-2-sq">aligned</p>
-                                            <p className="colWd-2-ld colWd-2-sm colWd-2-sq">columns</p>
+                                        <div className="grid-row col-height-2 row-bottom" style={{background: "#6cacac"}}>
+                                            <p className="col-width-2-ld col-width-2-sm col-width-2-sq">bottom</p>
+                                            <p className="col-width-2-ld col-width-2-sm col-width-2-sq">aligned</p>
+                                            <p className="col-width-2-ld col-width-2-sm col-width-2-sq">columns</p>
                                         </div>
                                     </div>
                                 </p>
@@ -191,28 +191,28 @@ const Content = () => {
                         <br />
 
                         <h2 className="subtitle">Mixed Aligners</h2>
-                        <p className="text">
-                            Patterns UI allows you to mix different types of aligners to align grids and objects however necessary. You can use the <span className="inlineCode bgDark">.ta*</span>, <span className="inlineCode bgDark">.obj*</span>, and <span className="inlineCode bgDark">.row*</span> classes together to create various combinations of horizontal and vertical alignment for text, images, divs, and other elements within a grid to create flexible and responsive layouts that adapt to different screen sizes and orientations.
+                        <p className="text-regular">
+                            Patterns UI allows you to mix different types of aligners to align grids and objects however necessary. You can use the <span className="code--inline bg-muted-dark text-muted">.text-align--*</span>, <span className="code--inline bg-muted-dark text-muted">.object-align--*</span>, and <span className="code--inline bg-muted-dark text-muted">.row-*</span> classes together to create various combinations of horizontal and vertical alignment for text, images, divs, and other elements within a grid to create flexible and responsive layouts that adapt to different screen sizes and orientations.
                             <br/>
-                            Here is an example of a grid where the <span className="inlineCode bgDark">.rowGrid</span> has a height of <span className="inlineCode bgDark">.colHi-2</span> and the columns are centrally aligned with text centrally aligned as well. The row, column, and text have different background colors to make them easier to differentiate:
+                            Here is an example of a grid where the <span className="code--inline bg-muted-dark text-muted">.grid-row</span> has a height of <span className="code--inline bg-muted-dark text-muted">.col-height-2</span> and the columns are centrally aligned with text centrally aligned as well. The row, column, and text have different background colors to make them easier to differentiate:
                             <br/>
-                            <div className="codeBlock bgDark">
-                                <p className="codeLanguage">HTML</p>
-                                <p className="codeText">
-                                    {'<div class="pageView">\n'}
-                                    {'  <div class="gridRow colHi-2 rowCenter" style="background: #acac6c">\n'}
-                                    {'    <p class="colWd-8-ld colWd-8-sm colWd-8-sqtaCenter" style="background: #ac6cac">this text is centrally aligned inside a centrally aligned row</p>\n'}
+                            <div className="code--block bg-muted-dark text-muted">
+                                <p className="code--language bg-body-dark text-body">HTML</p>
+                                <p className="code--text">
+                                    {'<div class="page-view">\n'}
+                                    {'  <div class="grid-row col-height-2 row-center" style="background: #acac6c">\n'}
+                                    {'    <p class="col-width-8-ld col-width-8-sm col-width-8-sq text-align--center" style="background: #ac6cac">this text is centrally aligned inside a centrally aligned row</p>\n'}
                                     {'  </div>\n'}
                                     {'</div>'}
                                 </p>
                             </div>
                             <br/>
-                            <div className="previewBlock bgDark">
-                                <p className="previewTitle">Preview</p>
-                                <p className="previewRender">
-                                    <div className="pageView">
-                                        <div className="gridRow colHi-2 rowCenter rowMiddle" style={{background: "#acac6c"}}>
-                                            <p className="colWd-8-ld colWd-8-sm colWd-8-sqtaCenter" style={{background: "#ac6cac"}}>this text is centrally aligned inside a centrally aligned row</p>
+                            <div className="preview--block bg-body-dark text-body">
+                                <p className="preview--language bg-accent-dark text-accent">Preview</p>
+                                <p className="preview--render">
+                                    <div className="page-view">
+                                        <div className="grid-row col-height-2 row-center row-middle" style={{background: "#acac6c"}}>
+                                            <p className="col-width-8-ld col-width-8-sm col-width-8-sq text-align--center" style={{background: "#ac6cac"}}>this text is centrally aligned inside a centrally aligned row</p>
                                         </div>
                                     </div>
                                 </p>
@@ -222,8 +222,8 @@ const Content = () => {
                         </p>
 
                         <br/><br/>
-                        <a className="buttonLink" href="./breakpoints">Prev: Breakpoints</a>
-                        <a className="buttonLink" href="./grids">Next: Grids</a>
+                        <a href="./breakpoints"><button className="padding--small bg-accent-dark text-accent no-border border--smoother">Prev: Breakpoints</button></a>&nbsp;&nbsp;&nbsp;
+                        <a href="./grids"><button className="padding--small bg-accent-dark text-accent no-border border--smoother">Next: Grids</button></a>
                         <br/><br/>
                     </div>
     );

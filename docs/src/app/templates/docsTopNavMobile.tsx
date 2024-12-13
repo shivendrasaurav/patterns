@@ -1,14 +1,17 @@
+import "../globals.css";
+import "../source/main.css";
+
 const DocsTopNavMobile = () =>{
 
     return(
-        <div className="navBar colWd-0-ld colWd-13-sm">
-            <div className="itemGroup onLeft">
-                <p className="navBrand">invrz patterns</p>
+        <div className="navbar col-width-0-ld col-width-15-sm">
+            <div className="navbar-group align-left">
+                <p className="navbar-brand">invrz patterns</p>
             </div>
-            <div className="itemGroup onRight">
-                <p className="navItem">Docs</p>
-                <p className="navItem">Get Started</p>
-                <p className="navItem">Open Source</p>                        
+            <div className="navbar-group align-right">
+                <p className="navbar-item">Docs</p>
+                <p className="navbar-item">Get Started</p>
+                <p className="navbar-item">Open Source</p>                        
             </div>
         </div>
     );

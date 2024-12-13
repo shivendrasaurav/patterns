@@ -1,159 +1,159 @@
 @import "variables";
 
 /* Navigation Bar Base */
-.navBar {
+.navbar {
     display: flex;
     align-items: center;
 
-    .itemGroup{
+    .navbar-group {
         display: flex;
         flex: 1;
 
-        &.onLeft{
+        &.align-left {
             margin-left: 0;
             justify-content: flex-start;
-            
-            *{
+
+            * {
                 margin-right: 0.4rem;
             }
         }
-        &.onRight{
+        &.align-right {
             margin-left: auto;
             justify-content: flex-end;
-            
-            *{
+
+            * {
                 margin-left: 0.4rem;
             }
         }
-        &.onCenter{
+        &.align-center {
             margin: 0 auto;
-            justify-content: center;    
+            justify-content: center;
 
-            *{
+            * {
                 margin: 0 0.4rem;
             }
         }
     }
 
-    .navItem, .navBrand{
+    .navbar-item, .navbar-brand {
         font-size: 1.2rem;
         font-weight: 500;
-        background-color: transparent;
         border: 2px solid transparent;
         padding: 0.2rem 0.5rem;
         cursor: pointer;
+        color: var(--body-text);
 
-        &.outline{
-            border: 2px solid $primaryText;
+        &.outline {
+            border: 2px solid var(--body-text);
         }
-        &.underline{
-            border-bottom: 2px solid $primaryText;
+        &.underline {
+            border-bottom: 2px solid var(--body-text);
         }
-        &.solid{
-            background-color: $primaryBackground;
-            color: $primaryText;
+        &.solid {
+            background-color: var(--brand-color);
+            color: var(--high-contrast-text);
         }
-        &:hover{
+        &:hover {
             filter: contrast(125%);
             transition: 360ms;
         }
-        &:active{
+        &:active {
             filter: contrast(125%) saturate(160%);
         }
     }
 
-    .navBrand{
+    .navbar-brand {
         font-size: 1.6rem;
         font-weight: bold;
     }
 }
 
-.sideNav{    
+/* Side Navigation */
+.sidenav {
     display: flex;
     width: 100%;
     flex-direction: column;
     margin: 0 auto;
 
-    .itemGroup{
+    .sidenav-group {
         display: flex;
         flex-direction: column;
         flex: 1;
 
-        &.onTop{
+        &.align-top {
             justify-content: flex-start;
-            
-            *{
+
+            * {
                 margin-top: 0.4rem;
             }
         }
-        &.onBottom{
+        &.align-bottom {
             justify-content: flex-end;
-            
-            *{
+
+            * {
                 margin-bottom: 0.4rem;
             }
         }
-        &.onMiddle{
-            align-content: center;    
+        &.align-middle {
+            align-content: center;
 
-            *{
+            * {
                 margin: 0 0.4rem;
             }
         }
     }
-    
 
-    .navItem, .navTitle, .navBrand{
+    .sidenav-item, .sidenav-title, .sidenav-brand {
         font-size: 0.9rem;
         font-weight: 500;
         border: 2px solid transparent;
         padding: 0.5rem 0.8rem;
         cursor: pointer;
 
-        &.outline{
-            border: 2px solid $primaryText;
+        &.outline {
+            border: 2px solid var(--body-text);
         }
-        &.underline{
-            border-bottom: 2px solid $primaryText;
+        &.underline {
+            border-bottom: 2px solid var(--body-text);
         }
-        &.solid{
-            background-color: $primaryBackground;
-            color: $primaryText;
+        &.solid {
+            background-color: var(--brand-color);
+            color: var(--high-contrast-text);
         }
-        &:hover{
+        &:hover {
             filter: contrast(125%);
             transition: 360ms;
         }
-        &:active{
+        &:active {
             filter: contrast(125%) saturate(160%);
         }
     }
 
-    .navItem{
-        color: $sidenavItemColor;
+    .sidenav-item {
+        color: var(--body-text);
 
-        &:hover{
-            background-color: $primaryBackground;
+        &:hover {
+            background-color: var(--accent-color);
         }
-        &:active{
-            background-color: $accentBackground;
+        &:active {
+            background-color: var(--info-color);
         }
-        &.active{
-            background-color: $accentBackground;
+        &.active {
+            background-color: var(--info-color);
             filter: saturate(160%) contrast(200%);
         }
     }
 
-    .navBrand{
+    .sidenav-brand {
         font-size: 1.6rem;
         font-weight: bold;
-        border-radius: $sidenavBrandBR;
+        border-radius: 0.25rem; // Customize as needed
     }
 
-    .navTitle{
+    .sidenav-title {
         font-size: 1.4rem;
         font-weight: bold;
-        color: $sidenavTitleColor;
-        border-radius: $sidenavTitleBR;
+        color: var(--body-text);
+        border-radius: 0.25rem; // Customize as needed
     }
 }

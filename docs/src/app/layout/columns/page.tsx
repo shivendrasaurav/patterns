@@ -7,17 +7,17 @@ import Content from "./content";
 const Columns = () => {
 
     return(
-        <div className="pageView">
-            <div className="gridRow colHi-1 rowCenter">
+        <div className="page-view">
+            <div className="grid-row col-height-1 row-center">
                 <DocsTopNav />
             </div>
             <br/>
-            <div className="gridRow rowCenter">
-                <div className="colWd-2-ld colWd-0-sm colHi-auto">
+            <div className="grid-row row-center">
+                <div className="col-width-2-ld col-width-0-sm col-height-auto">
                     <DocsSideNav />
                 </div>
                 <div className="gutterWd-1"></div>
-                <div className="colWd-10-ld colWd-13-sm colHi-auto">
+                <div className="col-width-10-ld col-width-13-sm col-height-auto">
                     <Content />
                 </div>      
             </div><br/><br/>

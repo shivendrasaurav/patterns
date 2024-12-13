@@ -1,127 +1,82 @@
-.borderSmooth{border-radius: 0.2rem};
-.borderSmoother{border-radius: 0.4rem};
-.borderRounded{border-radius: 1rem};
-.borderCircular{border-radius: 100%; aspect-ratio: 1/1};
+@import "variables";
 
-//helpers
-.paddingSmall{
-    padding: 0.5rem 1.25rem;
-}
-.marginSmall{
-    padding: 4px 10px;
-}
-.noBorders{
-    border: none;
-}
+// Border Styles
+.border {
+  &--smooth {
+    border-radius: 0.2rem;
+  }
+  &--smoother {
+    border-radius: 0.4rem;
+  }
+  &--rounded {
+    border-radius: 1rem;
+  }
+  &--circular {
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+  }
 
-// background colors
-.bgDark{
-    background: #0e0e0e;
-}
-.bgLight{
-    background: #fafafa;
-}
-.bgBrand{
-    background: $brandColor;
-}
-.bgAccent{
-    background: $brandAccent;
-}
+  &--thin {
+    border-width: 1px;
+  }
+  &--medium {
+    border-width: 2px;
+  }
+  &--thick {
+    border-width: 4px;
+  }
 
-// text colors
-.textDark{
-    color: #0e0e0e;
-}
-.textLight{
-    color: #fafafa;
-}
-.textBrand{
-    color: $brandColor;
-}
-.textAccent{
-    color: $brandAccent;
-}
+  &--solid {
+    border-style: solid;
+  }
+  &--dashed {
+    border-style: dashed;
+  }
+  &--double {
+    border-style: double;
+  }
+  &--dotted {
+    border-style: dotted;
+  }
 
-// border colors
-.colorDark{
-    border-color: #0e0e0e;
-}
-.colorLight{
-    background: #fafafa;
-}
-.colorBrand{
-    background: $brandColor;
-}
-.colorAccent{
-    background: $brandAccent;
 }
 
-.border{
-    // border styles
-    &.styleSolid{
-        border-style: solid;
-    }
-    &.styleDashed{
-        border-style: dashed;
-    }
-    &.styleDbldash{
-        border-style: double;
-    }
-    &.styleDotted{
-        border-style: dotted;
-    }
+// Padding Utilities
+.padding {
+  &--tiny {
+    padding: $gr033;
+  }
+  &--small {
+    padding: $gr066;
+  }
+  &--medium {
+    padding: $gr102;
+  }
+  &--large {
+    padding: $gr175;
+  }
+}
 
-    // border sides
-    &.onlyLeft{
-        border-right: none;
-        border-top: none;
-        border-bottom: none;
-    }
-    &.onlyRight{
-        border-left: none;
-        border-top: none;
-        border-bottom: none;
-    }
-    &.onlyTop{
-        border-right: none;
-        border-left: none;
-        border-bottom: none;
-    }
-    &.onlyBottom{
-        border-right: none;
-        border-top: none;
-        border-left: none;
-    }
+// Margin Utilities
+.margin {
+  &--tiny {
+    margin: $gr033;
+  }
+  &--small {
+    margin: $gr066;
+  }
+  &--medium {
+    margin: $gr102;
+  }
+  &--large {
+    margin: $gr175;
+  }
+}
 
-    // border size
-    &.thin{
-        border-width: 1px;
-    }
-    &.fit{
-        border-width: 2px;
-    }
-    &.fat{
-        border-width: 4px;
-    }
-    &.obese{
-        border-width: 8px;
-    }
-    
-    // border colors
-    &.colorDark{
-        border-color: #0e0e0e;
-    }
-    &.colorLight{
-        background: #fafafa;
-    }
-    &.colorBrand{
-        background: $brandColor;
-    }
-    &.colorAccent{
-        background: $brandAccent;
-    }
-    &.colorTransparent{
-        background: $brandAccent;
-    }
-
+// No Borders
+.no-border {
+  border: none;
+}
+.no-decoration {
+  text-decoration: none;
 }

@@ -1,40 +1,42 @@
-/* Define the pageView class */
-.pageView {
-  height: inherit; /* Inherit the height from the parent element */
-  width: inherit; /* Inherit the width from the parent element */
-  overflow: auto; /* Hide the overflow content */
-  position: relative; /* Set the position to relative */
+@import "variables";
+
+// Page View Styles
+.page-view {
+  height: inherit; // Inherit the height from the parent element
+  width: inherit; // Inherit the width from the parent element
+  overflow: auto; // Allow scrolling for overflow content
+  position: relative; // Set the position to relative
 }
 
-/* Define the listViewHorizontal class */
-.listViewHorizontal {
-  height: initial; /* Inherit the height from the parent element */
-  width: inherit; /* Inherit the width from the parent element */
-  overflow-y: auto; /* Hide the horizontal overflow content */
-  overflow-y: hidden; /* Make the view vertically scrollable */
-  position: relative; /* Set the position to relative */
+// Horizontal List View Styles
+.list-view-horizontal {
+  height: auto; // Reset height to allow flexibility
+  width: inherit; // Inherit the width from the parent element
+  overflow-y: hidden; // Hide vertical overflow content
+  overflow-x: auto; // Enable horizontal scrolling
+  position: relative; // Set the position to relative
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap; // Ensure items don't wrap
   flex-grow: 1;
-  
-  *{
-    flex: 1;
+
+  * {
+    flex: 1; // Distribute child elements evenly
   }
 }
 
-/* Define the listViewVertical class */
-.listViewVertical {
-  height: inherit; /* Inherit the height from the parent element */
-  width: inherit; /* Inherit the width from the parent element */
-  overflow-x: hidden; /* Hide the horizontal overflow content */
-  overflow-y: auto; /* Make the view vertically scrollable */
-  position: relative; /* Set the position to relative */
+// Vertical List View Styles
+.list-view-vertical {
+  height: inherit; // Inherit the height from the parent element
+  width: inherit; // Inherit the width from the parent element
+  overflow-x: hidden; // Hide horizontal overflow content
+  overflow-y: auto; // Enable vertical scrolling
+  position: relative; // Set the position to relative
 }
 
-/* Define the contentView class */
-.contentView {
-  height: 100%; /* Takes up 100% height from the parent element */
-  width: 100%; /* Takes up 100% width from the parent element */
-  overflow: auto; /* Hide the overflow content */
-  position: relative; /* Set the position to relative */
+// Content View Styles
+.content-view {
+  height: 100%; // Take up full height of parent
+  width: 100%; // Take up full width of parent
+  overflow: auto; // Allow scrolling for overflow content
+  position: relative; // Set the position to relative
 }
