@@ -4,7 +4,11 @@
 .grid-row {
     display: flex;
     flex-grow: 1;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+
+    &--vertical{
+        flex-direction: column;
+    }
 
     @for $i from 0 through $partitions {
         .col-width-#{$i} {
@@ -38,7 +42,11 @@
     .grid-row {
         display: flex;
         flex-grow: 1;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+
+        &--vertical{
+            flex-direction: column;
+        }
 
         @for $i from 0 through $partitions {
             .col-width-#{$i}-sq {
@@ -56,11 +64,15 @@
 }
 
 // Portrait Devices
-@media screen and (max-aspect-ratio: 1) {
+@media screen and (max-aspect-ratio: 0.9999) {
     .grid-row {
         display: flex;
         flex-grow: 1;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+
+        &--vertical{
+            flex-direction: column;
+        }
 
         @for $i from 0 through $partitions {
             .col-width-#{$i}-sm {
@@ -78,11 +90,15 @@
 }
 
 // Landscape Devices
-@media screen and (min-aspect-ratio: 1) {
+@media screen and (min-aspect-ratio: 1.0001) {
     .grid-row {
         display: flex;
         flex-grow: 1;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+
+        &--vertical{
+            flex-direction: column;
+        }
 
         @for $i from 0 through $partitions {
             .col-width-#{$i}-ld {
@@ -129,8 +145,23 @@
 .col-height-auto {
     height: max-content;
 }
+.col-height {
+    &--auto{
+        height: max-content;
+    }
+    &--inherit{
+        height: inherit;
+    }
+}
 @for $i from 0 through 10 {
     .col-height-#{$i} {
         height: calc(10vh * #{$i});
+
+        &--min{
+            min-height: calc(10vh * #{$i});
+        }
+        &--max{
+            max-height: calc(10vh * #{$i});
+        }
     }
 }

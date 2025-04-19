@@ -1,4 +1,17 @@
 const Content = () => {
+
+    const toggleWindow = (id: string) => {
+        const windowstyle = document.getElementById(id);
+        if(windowstyle){
+            if(windowstyle.style.display == "block"){
+                windowstyle.style.display = "none";
+            }
+            else{
+                windowstyle.style.display = "block";
+            }    
+        }
+    }
+
     return(
         <div className="bg-body list-view-vertical padding--small">
                         <h1 className="title">Views</h1>
@@ -80,6 +93,47 @@ const Content = () => {
                                             {'<!-- page content goes here -->'}
                                         </div>
                                     </div>
+                                </p>
+                            </div>
+                        </p>
+
+                        <br />
+
+                        
+
+                        <h2 className="subtitle">Window View</h2>
+                        <p className="text-regular">
+                            A window view is a view that takes up 100% of the height and width of its parent view. It genrally contains a window or modal with all the stuff in background still running but not interactable. It is useful for displaying simple content without going to a different url. To use a modal view in HTML, you need to add the class <span className="code--inline bg-muted-dark text-muted">.modal-view</span> to a <span className="code--inline bg-muted-dark text-muted">{"<div>"}</span> element and add an id which can be used to control it. For example:
+                            <br/>
+                            <div className="code--block bg-muted-dark text-muted">
+                                <p className="code--language bg-body-dark text-body">HTML</p>
+                                <p className="code--text">
+
+                                {'<div className="window-view padding--small" id="windowviewid">\n'}
+                                {'    <div className="window-title bg-muted-light text-muted">\n'}
+                                {'        <span className="window-title-text">Window Title Goes Here</span>\n'}
+                                {'        <button className="window-title-action bg-error border--none border--smooth" onclick="toggleWindow(\'windowviewid\')">&nbsp;&nbsp; X &nbsp;&nbsp;</button>\n'}
+                                {'    </div>\n'}
+                                {'    <div className="window-content bg-body-dark text-body">\n'}
+                                {'        <div className="content-view padding--small">\n'}
+
+                                {'            <h1>Window Content Goes Here {"(It Is Going To Be Different In Preview)"}</h1>\n'}
+
+                                {'        </div>\n'}
+                                {'    </div>\n'}
+                                {'</div>\n'}
+
+                                <br/><br/>
+
+                                {'<button className="padding--small bg-secondary-dark border--none border--smooth" onclick="toggleWindow(\'windowviewid\')">Click To Open A Window</button>'}
+
+                                </p>
+                            </div>
+                            In the above example code we are using <span className="code--inline bg-muted-dark text-muted">{"windowviewid"}</span> as our id for our modal window, which is being observed by our <span className="code--inline bg-muted-dark text-muted">{"toggleWindow(id)"}</span> method to show or hide our modal window based on its current state. Try clicking on the button below to preview what a window would look like in a web app.
+                            <div className="preview--block bg-body-dark text-body">
+                                <p className="preview--language bg-accent-dark text-accent">Preview</p>
+                                <p className="preview--render">
+                                    <button className="padding--small bg-secondary-dark border--none border--smooth" onClick={()=>toggleWindow("windowviewid")}>Click To Open A Window</button>
                                 </p>
                             </div>
                         </p>
@@ -229,6 +283,61 @@ const Content = () => {
                         <br/><br/>
                         <a href="./columns"><button className="padding--small bg-accent-dark text-accent no-border border--smoother">Next: Columns</button></a>&nbsp;&nbsp;&nbsp;
                         <br/><br/>
+                        
+                        <div className="window-view padding--small" id="windowviewid">
+                            <div className="window-title bg-muted-light text-muted">
+                                <span className="window-title-text">Setup a Patterns UI window</span>
+                                <button className="window-title-action bg-error border--none border--smooth" onClick={()=>toggleWindow("windowviewid")}>&nbsp;&nbsp; X &nbsp;&nbsp;</button>
+                            </div>
+                            <div className="window-content bg-body-dark text-body">
+                                <div className="content-view padding--small">
+                                    Also, Window View is one of the few components in Patterns UI which uses javascript to run. 
+                                    Don't panic, you don't have to install a full blown js library for this, just add this javascript 
+                                    function in your index.html/public.html file {"(or anywhere you're comfortable using this to use along other scripts you might have written)"}.<br/><br/>
+                                    
+                                    <div className="code--block bg-muted-dark text-muted">
+                                        <p className="code--language bg-body-dark text-body">ES6 Version With Type Support {"(Remove Type If Not Required)"}</p>
+                                        <p className="code--text">
+
+                                        
+                                        {"    const toggleWindow = (id: string) => {"}<br/>
+                                        {"        const windowstyle = document.getElementById(id);"}<br/>
+                                        {"        if(windowstyle){"}<br/>
+                                        {"            if(windowstyle.style.display == \"block\"){"}<br/>
+                                        {"                windowstyle.style.display = \"none\";"}<br/>
+                                        {"            }"}<br/>
+                                        {"            else{"}<br/>
+                                        {"                windowstyle.style.display = \"block\";"}<br/>
+                                        {"            }"}<br/>
+                                        {"        }"}<br/>
+                                        {"    }"}<br/>
+                                        
+                                        </p>
+                                    </div>
+
+                                    <div className="code--block bg-muted-dark text-muted">
+                                        <p className="code--language bg-body-dark text-body">Vanilla Version Without Type Support</p>
+                                        <p className="code--text">
+
+                                        
+                                        {"    function toggleWindow (id) {"}<br/>
+                                        {"        var windowstyle = document.getElementById(id);"}<br/>
+                                        {"        if(windowstyle){"}<br/>
+                                        {"            if(windowstyle.style.display == \"block\"){"}<br/>
+                                        {"                windowstyle.style.display = \"none\";"}<br/>
+                                        {"            }"}<br/>
+                                        {"            else{"}<br/>
+                                        {"                windowstyle.style.display = \"block\";"}<br/>
+                                        {"            }"}<br/>
+                                        {"        }"}<br/>
+                                        {"    }"}<br/>
+                                        
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
     );
 }

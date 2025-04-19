@@ -1,7 +1,7 @@
 {
     "name": "patterns-ui",
-    "version": "0.0.3",
-    "versionName": "venusaur",
+    "version": "0.0.5",
+    "versionName": "charmaleon",
     "description": "A truly responsive css framwork",
     "main": "./styles/main.css",
     "scripts": {

@@ -40,3 +40,43 @@
   overflow: auto; // Allow scrolling for overflow content
   position: relative; // Set the position to relative
 }
+
+// Window View Styles
+.window-view {
+  display: none;
+  height: 100vh; // Take up full height of parent
+  width: 100%; // Take up full width of parent
+  overflow: none; // Allow scrolling for overflow content
+  position: fixed; // Set the position to relative
+  left: 0;
+  top: 0;
+  z-index: 990;
+  background-color: #abacac55;
+  backdrop-filter: blur(4px) saturate(60%) grayscale(30%) sepia(30%);
+  padding: 4% 6%;
+
+  .window-title{
+    height: 32px;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 6px 10px;
+
+    .window-title-text{
+      text-align: left;
+    }
+    .windw-title-action{
+      text-align: right;
+    }
+  }
+  .window-content{
+    height: calc(90vh - (32px));
+    width: 100%;
+    border-radius:0 0 8px 8px;
+    padding: 8px 12px;
+    gap: 6px 10px;
+  }
+}

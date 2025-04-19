@@ -8,7 +8,7 @@ import Breakpoints from "./app/layout/breakpoints/page";
 import Aligners from "./app/layout/aligners/page";
 import Grids from "./app/layout/grids/page";
 
-function App() {
+const App = () => {
 
   return (
     <BrowserRouter>

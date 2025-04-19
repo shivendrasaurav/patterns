@@ -10,7 +10,6 @@ $gr066: 1.08rem;
 $gr033: 0.56rem;
 
 // Core Color Variables for both light and dark modes
-@media (prefers-color-scheme: light){
 
   $bodyBg: #FBF5F3;
   $bodyBgDarker: #F5E6E0;
@@ -73,7 +72,7 @@ $gr033: 0.56rem;
   $lowContrastText: #010001;
 
     
-  :root {
+  :root, .light-theme {
     //Body Colors
     --body-bg: #{$bodyBg};
     --body-text: #{$bodyText};
@@ -182,7 +181,8 @@ $gr033: 0.56rem;
     --low-contrast-border: #{$lowContrastBgLighter};
     --low-contrast-shadow: rgba(0, 0, 0, 0.1);
   }
-}
+
+
 
 @media (prefers-color-scheme: dark){
 //    $current-theme: map-get($themes, dark);

@@ -1,0 +1,62 @@
+@import "variables";
+
+.btn{
+    border: none;
+    padding: 10px 16px;
+}
+
+.modal-box{
+    display: none;
+    min-height: 18vh;
+    height: max-content;
+    min-width: 32vh;
+    width: max-content;
+    overflow: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    z-index: 991;
+
+    .modal-title{
+        height: 32px;
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 12px;
+        gap: 6px 10px;
+    
+        .window-title-text{
+          text-align: left;
+        }
+        .windw-title-action{
+          text-align: right;
+        }
+    }
+    
+    .modal-message{
+        height: calc(18vh - (80px));
+        width: 100%;
+        padding: 8px 12px;
+        gap: 6px 10px;
+    }
+
+    .modal-action{
+        height: 48px;
+        width: 100%;
+        border-radius:0 0 8px 8px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 8px 12px;
+        gap: 6px 10px;
+
+        .modal-action-button{
+            display: block;
+            padding: 6px 10px;
+        }
+    }
+
+}
